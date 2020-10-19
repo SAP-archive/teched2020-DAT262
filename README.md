@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# DAT262 - Integrating SAP S/4HANA into SAP Data Intelligence: Deep Dive and Hands On
 
 ## Description
 
