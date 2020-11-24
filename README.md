@@ -7,7 +7,7 @@ DAT262 - Integrating SAP S/4HANA into SAP Data Intelligence: Deep Dive and Hands
 
 ## Overview
 
-This session introduces attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems 
+This session introduces attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems with enterprise-wide, holistic Data Orchestration capabilities for SAP and non-SAP environments.
 
 ## Requirements
 
