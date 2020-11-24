@@ -7,11 +7,14 @@ DAT262 - Integrating SAP S/4HANA into SAP Data Intelligence: Deep Dive and Hands
 
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems 
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are:
+- Basic knowhow about the usage and scope of S/4HANA 
+- General skills in the areas of Enterprise Data Management and ETL (Extraction, Transformation, Load)
+- Basic programming skill in ABAP are of advantage
 
 ## Exercises
 
@@ -30,9 +33,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 Start the exercises [here](exercises/myPDFDoc.pdf).
     
-**OR** Link to the Tutorial Navigator for example...
 
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
 **IMPORTANT**
 
