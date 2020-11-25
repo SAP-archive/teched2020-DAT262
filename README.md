@@ -3,7 +3,7 @@
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session called
-DAT262 - Integrating SAP S/4HANA into SAP Data Intelligence: Deep Dive and Hands On.
+**DAT262 - Integrating SAP S/4HANA into SAP Data Intelligence: Deep Dive and Hands On**.
 
 ## Overview
 
