@@ -21,12 +21,17 @@ The requirements to follow the exercises in this repository are:
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
 - [Getting Started](exercises/ex0/)
+
 - [Deep Dive 1 - ABAP CDS View based data extraction](exercises/dd01/)
     - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#exercise-11-sub-exercise-1-description)
     - [Deep Dive 1.2 - Realize Delta Extraction based on ABAP CDS Views in ADT](exercises/dd1#exercise-12-sub-exercise-2-description)
 - [Deep Dive 2 - Calling an ABAP function module from SAP Data Intelligence](exercises/dd01/)
-    - [Deep Dive 1.1 - Create a custom ABAP Operator in SAP S/4HANA](exercises/dd2#exercise-21-sub-exercise-1-description)
-    - [Deep Dive 1.2 - Integrate the custom ABAP Operator in a Data Intelligence Pipeline](exercises/dd2#exercise-22-sub-exercise-2-description)
+    - [Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA](exercises/dd2#exercise-21-sub-exercise-1-description)
+    - [Deep Dive 2.2 - Integrate the custom ABAP Operator in a Data Intelligence Pipeline](exercises/dd2#exercise-22-sub-exercise-2-description)
+    
+- [Exercise 1 - First Exercise Description](exercises/ex2/)
+    - [Exercise 1.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - [Exercise 1.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
@@ -35,10 +40,6 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 You can also find the exercise documentation [here](exercises/myPDFDoc.pdf).
     
 
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## How to obtain support
 
