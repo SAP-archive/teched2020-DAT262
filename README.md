@@ -22,8 +22,8 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - [Getting Started](exercises/ex0/)
 - [Deep Dive 1 - ABAP CDS View based data extraction](exercises/dd01/)
-    - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd01#exercise-11-sub-exercise-1-description)
-    - [Deep Dive 1.2 - Realize Delta Extraction based on ABAP CDS Views in ADT](exercises/dd01#exercise-12-sub-exercise-2-description)
+    - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#exercise-11-sub-exercise-1-description)
+    - [Deep Dive 1.2 - Realize Delta Extraction based on ABAP CDS Views in ADT](exercises/dd1#exercise-12-sub-exercise-2-description)
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
