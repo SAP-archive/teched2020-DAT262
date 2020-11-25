@@ -24,7 +24,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - **[Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence](exercises/dd1/)**
     - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#exercise-11-sub-exercise-1-description)
-    - [Deep Dive 1.2 - Realize Delta Extraction in ABAP CDS Views](exercises/dd1#exercise-12-sub-exercise-2-description)
+    - [Deep Dive 1.2 - Enable Delta Extraction in simple and komplex ABAP CDS Views](exercises/dd1#exercise-12-sub-exercise-2-description)
     - [Deep Dive 1.3 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines](exercises/dd1#exercise-12-sub-exercise-2-description)
 - **[Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](exercises/dd2/)**
     - [Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA](exercises/dd2#exercise-21-sub-exercise-1-description)
@@ -36,7 +36,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 1.2 - Model a Pipeline that extracts Customer data from an ABAP CDS View](exercises/ex1#exercise-12-sub-exercise-1-description)
     - [Exercise 1.3 - Extend the Pipeline with Sales Order data from an ABAP CDS View](exercises/ex1#exercise-13-sub-exercise-1-description)
     - [Exercise 1.4 - Persist the results in an S3 Object Store](exercises/ex1#exercise-14-sub-exercise-1-description)
-    - [Exercise 1.5 - Enable Delta Replication](exercises/ex1#exercise-15-sub-exercise-2-description)
+    - [Exercise 1.5 - Implement Delta Replication of Sales Order data in Pipelines](exercises/ex1#exercise-15-sub-exercise-2-description)
 - **[Exercise 2 - Triggering the execution of a function module in a remote S/4HANA system](exercises/ex2/)**
     - [Exercise 2.1 - Making custom ABAP Operators available in SAP Data Intelligence](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders](exercises/ex2#exercise-22-sub-exercise-2-description)
