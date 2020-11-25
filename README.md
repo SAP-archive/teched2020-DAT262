@@ -7,7 +7,7 @@ This repository contains the material for the SAP TechEd 2020 session called<br>
 
 ## Overview
 
-This session introduces attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems with enterprise-wide, holistic Data Orchestration capabilities for SAP and non-SAP environments.
+This session introduces attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems with its enterprise-wide, holistic Data Management and Data Orchestration capabilities for SAP and non-SAP environments.
 
 ## Requirements
 
@@ -24,6 +24,9 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Deep Dive 1 - ABAP CDS View based data extraction](exercises/dd01/)
     - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#exercise-11-sub-exercise-1-description)
     - [Deep Dive 1.2 - Realize Delta Extraction based on ABAP CDS Views in ADT](exercises/dd1#exercise-12-sub-exercise-2-description)
+- [Deep Dive 2 - Calling an ABAP function module from SAP Data Intelligence](exercises/dd01/)
+    - [Deep Dive 1.1 - Create a custom ABAP Operator in SAP S/4HANA](exercises/dd2#exercise-21-sub-exercise-1-description)
+    - [Deep Dive 1.2 - Integrate the custom ABAP Operator in a Data Intelligence Pipeline](exercises/dd2#exercise-22-sub-exercise-2-description)
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
