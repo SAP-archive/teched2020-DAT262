@@ -47,7 +47,7 @@ If you haven't provided that value before, you can easily search for and add you
 ![](/exercises/dd1/images/1-006a.JPG)
 
 7.	Delete the not needed fields in the SELECT statement, add the annotation ```@ClientHandling.type: #CLIENT_DEPENDENT``` and beautify the view.<br><br>
-![](/exercises/dd1/images/1-006a.JPG)<br><br>
+![](/exercises/dd1/images/1-007a.JPG)<br><br>
 The code may now look as follows:
 ```abap
 @AbapCatalog.sqlViewName: 'Z_SQL_EPM_BUPA'
