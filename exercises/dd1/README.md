@@ -19,7 +19,7 @@ This sub section you will see how to create a CDS (Core Data Services) View usin
 
 1. Create a CDS View
 In the context menu of your package choose New and then choose Other ABAP Repository Object.
-
+![](/exercises/dd1/images/1-001a.jpg)
 
 2.	Insert this line of code.
 ```abap
