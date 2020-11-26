@@ -7,7 +7,7 @@ As a matter of fact, it was neither possible to make the ABAP Development Tools 
 >Even though it contains step by step instructions, **this part does not belong to the hands-on exercises!**<br>
 <br>
 ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools.<br>
-You can find more information about ADT [here](https://tools.hana.ondemand.com/#abap).<br>
+You can find more information about ADT [here](https://tools.hana.ondemand.com/#abap) and [GitHub](http://github.com).<br>
 <br>
 CDS is an extension of the ABAP Dictionary that allows you to define semantically rich data models in the database and to use these data models in your ABAP programs. CDS is a central part of enabling code push-down in ABAP applications.<br>
 You can find more information about CDS in the [ABAP keyword documentation](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abencds.htm) and the [SAP Community](https://community.sap.com/topics/abap).<br>
