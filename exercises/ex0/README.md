@@ -1,13 +1,16 @@
-# Level 1 Heading
+# Getting Started
 
-In this exercise, you will...
+The idea of ABAP Integration is to establish a unified model to consolidate all interaction scenarios between SAP Data Intelligence and an ABAP-based SAP system (directional and bi-directional).
+
+The primary use cases for ABAP integration in SAP Data Intelligence are metadata retrieval, data provisioning, and functional execution.
+
 
 ## Level 2 Heading
 
 After completing these steps you will have....
 
 1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
+
 
 2.	Insert this code.
 ```
@@ -23,4 +26,4 @@ After completing these steps you will have....
 ## Summary
 
 Now that you have ... 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Continue to - [Deep Dive 1 - Exercise 1 Description](../dd1/README.md)
