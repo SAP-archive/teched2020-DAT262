@@ -5,15 +5,17 @@ As a matter of fact, it was neither possible to make the ABAP Development Tools 
 The documentation in this section is intended as guidance for you to reproduce the described steps in your own environments later on.<br>
 It is **not a part** of the hands-on exercises!<br>
 <br>
-<br>
-ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools.
+ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools.<br>
 You can find more information about ADT ***[here](https://tools.hana.ondemand.com/#abap)***.<br>
 <br>
+CDS is an extension of the ABAP Dictionary that allows you to define semantically rich data models in the database and to use these data models in your ABAP programs. CDS is a central part of enabling code push-down in ABAP applications.<br>
+You can find more information about CDS in the ***[ABAP keyword documentation](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abencds.htm)*** and the ***[SAP Community](https://community.sap.com/topics/abap)***.
 
+After completing the steps in this Deep Dive section we will have created two new custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.
 
-## Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)
+## Deep Dive 1.1 - Create a simple ABAP CDS View using ABAP Develoment Tools (ADT)
 
-After completing these steps you will have created...
+This sub section you will see how to create a CDS (Core Data Services) view using ABAP Development Tools (ADT). In particular, it is shown how to create a CDS View to  
 
 1. Click here.
 <br>![](/exercises/ex1/images/01_01_0010.png)
