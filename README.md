@@ -13,7 +13,7 @@ This session introduces attendees to the options that SAP Data Intelligence offe
 
 The requirements to follow the exercises in this repository are:
 - Basic knowhow about the usage and scope of S/4HANA 
-- General skills in the areas of Enterprise Data Management and ETL (Extraction, Transformation, Load)
+- General understanding of Enterprise Data Management and ETL (Extraction, Transformation, Load)
 - Basic programming skills in ABAP are of advantage
 
 ## Deep Dive Demos and Hands-On Exercises
