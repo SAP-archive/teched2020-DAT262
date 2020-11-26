@@ -2,7 +2,7 @@
 
 As a matter of fact, it was neither possible to make the ABAP Development Tools (ADT) available for the participants of this virtual hands-on workshop, nor is it feasible to provide a SAP GUI. For this reason, **this Deep Dive section is presented by the trainer** live in ADT and the SAP GUI connected to the underlying SAP S/4HANA system.<br>
 <br>
-**IMPORTANT**<br>
+**IMPORTANT NOTE**<br>
 The documentation in this section is intended as a later guidance for you to reproduce the described steps in your own environments.<br>
 It is **not a part** of the hands-on exercises!<br>
 <br>
