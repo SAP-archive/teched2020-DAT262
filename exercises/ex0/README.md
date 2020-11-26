@@ -13,27 +13,22 @@ For example, you may want to obtain the replication data from an SAP S/4HANA sys
 The ABAP data provisioning gives you access to SAP S/4HANA and allows you to consume ABAP CDS views directly in a pipeline. ABAP CDS is the semantically rich data model in SAP S/4 HANA and allows the consistent representation of a business object (such as a business partner). It is feasible to just get this data in an initial load, but also to have a stream approach established to consume every update, insert, and delete that happens in the SAP S/4HANA system.<br>For details about what options you have with the different release levels and release combinations, see [SAP Note 2830276](https://launchpad.support.sap.com/#%2Fnotes%2F2830276).
 
 **2. ABAP Functional Execution**<br>
-In certain scenarios, it is required to enhance the scope of a data-driven application by accessing and writing data into an SAP S/4HANA system. For example, it may be necessary to execute a function module or BAPI within a pipeline to read data into SAP Data Intelligence, post information into an ABAP-based SAP system, or trigger an execution in the remote system. If you require this type, you can now create your own operator in SAP Data Intelligence that references the corresponding ABAP functionality. You can find a list of all available operators in the ABAP section of the [Repository Object Reference for SAP Data Intelligence](https://help.sap.com/doc/d131eca2150049da86c541ee0895177c/Cloud/en-US/cloud_loiod131eca2150049da86c541ee0895177c.pdf).
+In certain scenarios, it is required to enhance the scope of a data-driven application by accessing and writing data into an SAP S/4HANA system. For example, it may be necessary to execute a function module or BAPI within a pipeline to read data into SAP Data Intelligence, post information into an ABAP-based SAP system, or trigger an execution in the remote system. If you require this type, you can create your own operator in SAP Data Intelligence that references the corresponding ABAP functionality. You can find a list of all available operators in the ABAP section of the [Repository Object Reference for SAP Data Intelligence](https://help.sap.com/doc/d131eca2150049da86c541ee0895177c/Cloud/en-US/cloud_loiod131eca2150049da86c541ee0895177c.pdf).
 
 ## Deep Dive vs. Exercise sections in this document
 
-After completing these steps you will have....
+Other than in the on-site TechEd events in the last years, it was not feasible to provide the Eclipse based ABAP Development Tools (ADT) and the SAP GUI to our participants. But it is a goal of this workshop to show and get the hands on the complete end-to-end implementation processes of ABAP integration with SAP Data Intelligence.<br>
+For this reason, all parts of this session that require these (local) applications will be presented as a live ***Deep Dive demo*** in ADT and on SAP S/4HANA by the trainer.<br>
+The ***Exercises*** are then intended to be performed by the participants in SAP Data Intelligence and will leverage the objects in S/4HANA that got created during the Deep Dive sections.
 
-1.	Click here. 
 
+## Access to the exercise Data Intelligence environment
 
-2.	Insert this code.
-```
- DATA(lt_params) = request->get_form_fields(  ).
- READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+All participant should have received the URL of the assigned SAP Data Intelligence tenant and an individual user/password combination, e.g.
+- URL to SAP Data Intelligence: https://vsystem.ingress.dh-xyz.dhaas-live.xyz.xyz.k8s-hana.ondemand.com/login/?redirectUrl=%2Fapp%2Fdatahub-app-launchpad%2F
+- User: TAXX
+- PW: Welcome00
 
-## Summary
+All SAP Data Intelligence environments that are used for this hands-on workshop already have a Connection of type RFC to the backend SAP S/4HANA system set up (see in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage the existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop. 
 
-Now that you have ... 
-Continue to - [Deep Dive 1 - Exercise 1 Description](../dd1/README.md)
+If you have made yourself familiar with the structure of the workshop and your credentials for SAP Data Intelligence, please continue to the [Deep Dive 1 section](../dd1/README.md).
