@@ -15,7 +15,7 @@ The ABAP data provisioning gives you access to SAP S/4HANA and allows you to con
 **2. ABAP Functional Execution**<br>
 In certain scenarios, it is required to enhance the scope of a data-driven application by accessing and writing data into an SAP S/4HANA system. For example, it may be necessary to execute a function module or BAPI within a pipeline to read data into SAP Data Intelligence, post information into an ABAP-based SAP system, or trigger an execution in the remote system. If you require this type, you can now create your own operator in SAP Data Intelligence that references the corresponding ABAP functionality. You can find a list of all available operators in the ABAP section of the [Repository Object Reference for SAP Data Intelligence](https://help.sap.com/doc/d131eca2150049da86c541ee0895177c/Cloud/en-US/cloud_loiod131eca2150049da86c541ee0895177c.pdf).
 
-## Deep Dive vs. 
+## Deep Dive vs. Exercises
 
 After completing these steps you will have....
 
