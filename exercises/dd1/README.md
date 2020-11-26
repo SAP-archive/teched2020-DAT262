@@ -77,8 +77,9 @@ define view Z_CDS_EPM_BUPA
 }
 ```
 
-8.	***Save*** (CTRL+S or disk symbol in menue bar)** and ***Activate*** (CTRL+F3 or magic wand symbol in menue bar) the CDS View.<br><br>
-![](/exercises/dd1/images/1-008a.JPG)         ![](/exercises/dd1/images/1-008b.JPG)<br><br>
+8.	***Save (CTRL+S or disk symbol in menue bar)*** and ***Activate (CTRL+F3 or magic wand symbol in menue bar)*** the CDS View.<br><br>
+(first ![](/exercises/dd1/images/1-008a.JPG)<br>
+then ![](/exercises/dd1/images/1-008b.JPG))<br><br>
 
 
 agdfg
