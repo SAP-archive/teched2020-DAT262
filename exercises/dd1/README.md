@@ -89,7 +89,7 @@ We have now successfully created the first simple CDS View in SAP S/4HANA. In th
 
 
 
-## Deep Dive 1.2 - Create a complex ABAP CDS View in ABAP Development Tools (ADT) (joining multiple tables)
+## Deep Dive 1.2 - Create a complex ABAP CDS View in ADT (joining multiple tables)
 
 After completing these steps you will have...
 
