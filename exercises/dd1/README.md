@@ -25,6 +25,7 @@ In the context menu of your package choose ***New*** and then choose ***Other AB
 2.	Select ***Data Definition***, then choose ***Next***.<br><br>
 ![](/exercises/dd1/images/1-002a.JPG)
 
+
 3. Enter the following values, then choose Next.
 - Name, e.g. ```Z_CDS_EPM_BUPA```
 - Description: **CDS View for EPM Business Partner Extraction**
