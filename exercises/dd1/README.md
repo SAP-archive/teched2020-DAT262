@@ -1,6 +1,8 @@
-# Exercise 1 - Exercise 1 Description
+# Deep Dive 1:
 
-In this exercise, we will create...
+As a matter of fact, it is neither possible to make the ABAP Development Tools (ADT) available for the participants of this virtual workshop, nor is it feasible to provide a SAP GUI. For this reason, this Deep Dive part is presented by the trainer directly in ADT and the SAP GUI of the S/4HANA system.
+<br>
+Here is the documentation of these steps that should allow you to reproduce the described steps in your own environments later on.
 
 ## Exercise 1.1 Sub Exercise 1 Description
 
