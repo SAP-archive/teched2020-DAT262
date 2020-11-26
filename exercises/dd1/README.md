@@ -83,10 +83,9 @@ define view Z_CDS_EPM_BUPA
 then ![](/exercises/dd1/images/1-008b.JPG))<br><br>
 
 9.	We are now able to verify the results in the ***Data Preview*** by choosing ***F8***. Our CDS View data preview should look like this:<br><br>
-(![](/exercises/dd1/images/1-009a.JPG)<br>
+![](/exercises/dd1/images/1-009a.JPG)<br><br>
 
 We have now successfully created the first simple CDS View in SAP S/4HANA. In the next step we'll be implementing a nore complex view that joins multiple tables.
-
 
 
 
