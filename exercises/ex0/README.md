@@ -3,7 +3,7 @@
 The idea of ABAP Integration is to establish a unified model to consolidate all interaction scenarios between SAP Data Intelligence and an ABAP-based SAP system (directional and bi-directional).
 
 The primary use cases for ABAP integration in SAP Data Intelligence are metadata retrieval, data provisioning, and functional execution.
-![](/exercises/ex0/images/1-001a.JPG)
+![](/images/0-001a.JPG)
 
 ## Level 2 Heading
 
