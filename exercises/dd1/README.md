@@ -22,8 +22,16 @@ This sub section you will see how to create a CDS (Core Data Services) View usin
 In the context menu of your package choose ***New*** and then choose ***Other ABAP Repository Object***.<br><br>
 ![](/exercises/dd1/images/1-001a.JPG)
 
-2.	Select ***Data Definition***, then choose ***Next***.<br>
+2.	Select ***Data Definition***, then choose ***Next***.<br><br>
 ![](/exercises/dd1/images/1-002a.JPG)
+
+3. Enter the following values, then choose Next.
+- Name, e.g. ```Z_CDS_EPM_BUPA```
+- Description: **CDS View for EPM Business Partner Extraction**
+- Referenced Object: **SNWD_BPA**<br><br>
+![](/exercises/dd1/images/1-003a.JPG)
+
+
 
 
 
