@@ -20,7 +20,7 @@ The requirements to follow the exercises in this repository are:
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
-- **[Getting Started](exercises/ex0/)**
+- **[Overview and Getting Started](exercises/ex0/)**
 
 - **[Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence](exercises/dd1/)**
     - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#deep-dive-11---create-a-simple-abap-cds-view-using-abap-develoment-tools-adt)
