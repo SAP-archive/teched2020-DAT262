@@ -9,7 +9,7 @@ The primary use cases for ABAP integration in SAP Data Intelligence are metadata
 
 After completing these steps you will have....
 
-1.	Click here.
+1.	Click here. 
 
 
 2.	Insert this code.
