@@ -6,8 +6,7 @@ The documentation in this section is intended as guidance for you to reproduce t
 It is **not a part** of the hands-on exercises!<br>
 <br>
 <br>
-ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform.<br>
-Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools.
+ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools.
 You can find more information about ADT [here](https://tools.hana.ondemand.com/).<br>
 <br>
 
