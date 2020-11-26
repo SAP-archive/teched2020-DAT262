@@ -23,7 +23,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - **[Getting Started](exercises/ex0/)**
 
 - **[Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence](exercises/dd1/)**
-    - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#Deep Dive 1.1 - Create a simple ABAP CDS View using ABAP Develoment Tools (ADT))
+    - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#deep-dive-11---create-a-simple-abap-cds-view-using-abap-develoment-tools-adt)
     - [Deep Dive 1.2 - Enable Delta Extraction in simple and komplex ABAP CDS Views](exercises/dd1#exercise-12-sub-exercise-2-description)
     - [Deep Dive 1.3 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines](exercises/dd1#exercise-12-sub-exercise-2-description)
 - **[Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](exercises/dd2/)**
