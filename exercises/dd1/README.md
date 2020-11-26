@@ -77,25 +77,14 @@ define view Z_CDS_EPM_BUPA
 }
 ```
 
-8.	***Save (CTRL+S or disk symbol in menue bar)*** and ***Activate (CTRL+F3 or magic wand symbol in menue bar)*** the CDS View.<br><br>
+8.	***Save (CTRL+S or disk symbol in menue bar)*** and ***Activate (CTRL+F3 or magic wand symbol in menue bar)*** the CDS View.<br>
 (first ![](/exercises/dd1/images/1-008a.JPG) 
 then ![](/exercises/dd1/images/1-008b.JPG))<br><br>
 
-9.	We are now able to verify the results in the ***Data Preview*** by choosing ***F8***. Your CDS View data preview should look like this:<br><br>
+9.	We are now able to verify the results in the ***Data Preview*** by choosing ***F8***. Our CDS View data preview should look like this:<br><br>
 (![](/exercises/dd1/images/1-009a.JPG)<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
+We have now successfully created the first simple CDS View in SAP S/4HANA. In the next step we'll be implementing a nore complex view that joins multiple tables.
 
 
 
