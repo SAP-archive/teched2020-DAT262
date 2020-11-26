@@ -1,8 +1,9 @@
-# Deep Dive 1:
+# Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence
 
-As a matter of fact, it is neither possible to make the ABAP Development Tools (ADT) available for the participants of this virtual workshop, nor is it feasible to provide a SAP GUI. For this reason, this Deep Dive part is presented by the trainer directly in ADT and the SAP GUI of the S/4HANA system.
+As a matter of fact, it is neither possible to make the ABAP Development Tools (ADT) available for the participants of this virtual workshop, nor is it feasible to provide a SAP GUI. For this reason, this Deep Dive section is presented by the trainer live in ADT and the SAP GUI of the underlying SAP S/4HANA system.<br>
 <br>
-Here is the documentation of these steps that should allow you to reproduce the described steps in your own environments later on.
+This part of the documentation is intended as guidance for you to reproduce the described steps in your own environments later on.<br>
+It is **not a part** of the hands-on exercises!
 
 ## Exercise 1.1 Sub Exercise 1 Description
 
