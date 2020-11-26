@@ -2,9 +2,9 @@
 
 As a matter of fact, it was neither possible to make the ABAP Development Tools (ADT) available for the participants of this virtual hands-on workshop, nor is it feasible to provide a SAP GUI. For this reason, **this Deep Dive section is presented by the trainer** live in ADT and the SAP GUI connected to the underlying SAP S/4HANA system.<br>
 <br>
-**IMPORTANT NOTE**<br>
-The documentation in this section is intended as a later guidance for you to reproduce the described steps in your own environments.<br>
-Even though it contains step by step instructions, **this part does not belong to the hands-on exercises!**<br>
+>**IMPORTANT NOTE**<br>
+>The documentation in this section is intended as a later guidance for you to reproduce the described steps in your own environments.<br>
+>Even though it contains step by step instructions, **this part does not belong to the hands-on exercises!**<br>
 <br>
 ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools.<br>
 You can find more information about ADT **[here](https://tools.hana.ondemand.com/#abap)**.<br>
