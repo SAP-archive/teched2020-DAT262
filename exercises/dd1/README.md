@@ -18,10 +18,34 @@ After completing the steps in this Deep Dive section we will have created two ne
 This sub section you will see how to create a CDS (Core Data Services) View using ABAP Development Tools (ADT). In particular, it is demonstrated how to create a CDS View to access data of the EPM table SNWD_BPA, which contains the Business Partner records.
 
 1. Create a CDS View
-In the context menu of your package choose New and then choose Other ABAP Repository Object.<br>
+In the context menu of your package choose ***New*** and then choose ***Other ABAP Repository Object***.<br>
+<br>
 ![](/exercises/dd1/images/1-001a.JPG)
 
-2.	Insert this line of code.
+2.	Select ***Data Definition***, then choose ***Next***.<br>
+<br>
+![](/exercises/dd1/images/1-002a.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```abap
 response->set_text( |Hello World! | ). 
 ```
