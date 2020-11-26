@@ -38,11 +38,15 @@ In the context menu of your package choose ***New*** and then choose ***Other AB
 ![](/exercises/dd1/images/1-005a.JPG)
 
 6.	Enter the data source. The new view appears in an editor, with an error showing up because of the still missing SQL View name.<br>
-In this editor, enter value for the SQL View name, e.g. ```Z_SQL_EPM_BUPA```.<br>
-The SQL view name is the internal/technical name of the view which will be created in the database.<br>
-```Z_SQL_EPM_BUPA``` is the name of the CDS view which provides enhanced view-building capabilities in ABAP. 
+In this editor, enter value for the SQL View name in the annotation ```@AbapCatalog.sqlViewName```, e.g. ***Z_SQL_EPM_BUPA***.<br>
+The SQL view name is the internal/technical name of the view which will be created in the database. 
+***Z_SQL_EPM_BUPA*** is the name of the CDS view which provides enhanced view-building capabilities in ABAP. 
 You should always use the CDS view name in your ABAP applications.<br><br>
-![](/exercises/dd1/images/1-005a.JPG)
+
+The data source plus its fields have automatically been added to the view definition because of the reference to the data source object we gave in step 3.
+If you haven't provided that value before, you can easily search for and add your data source using the keyboard shortcut **CTRL+SPACE**
+<br><br>
+![](/exercises/dd1/images/1-006a.JPG)
 
 
 
