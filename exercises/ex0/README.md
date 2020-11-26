@@ -5,7 +5,7 @@ The idea of ABAP Integration is to establish a unified model to consolidate all 
 The primary use cases for ABAP integration in SAP Data Intelligence are metadata retrieval, data provisioning, and functional execution.
 ![](images/0-001a.JPG)
 
-This Deep Dive and Hands-On Session concentrates on the uses cases of **ABAP Data Provisioning** and **ABAP Functional Execution**<br><br>
+This Deep Dive and Hands-On Session concentrates on the uses cases of **ABAP Data Provisioning** and **ABAP Functional Execution**.<br><br>
 
 **1. ABAP Data Provisioning**<br>
 Getting access to and using real business data in an SAP Data Intelligence pipeline helps you to build new intelligent applications and data flows.<br>
