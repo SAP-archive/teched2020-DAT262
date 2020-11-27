@@ -21,6 +21,10 @@ Other than in the on-site TechEd events in the last years, it was not feasible t
 For this reason, all parts of this session that require these (local) applications will be presented as a live ***Deep Dive demo*** in ADT and on SAP S/4HANA by the trainer.<br>
 The ***Exercises*** are then intended to be performed by the participants in SAP Data Intelligence and will leverage the objects in S/4HANA that got created during the Deep Dive sections.
 
+## Short introduction to the Enterprise Procurement Model (EPM) in S/4
+
+
+
 
 ## Access to the exercise Data Intelligence environment
 
@@ -31,4 +35,4 @@ All participant should have received the URL of the assigned SAP Data Intelligen
 
 All SAP Data Intelligence environments that are used for this hands-on workshop already have a Connection of type RFC to the backend SAP S/4HANA system set up (see in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage the existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop. 
 
-If you have made yourself familiar with the structure of the workshop and your credentials for SAP Data Intelligence, please continue to the [Deep Dive 1 section](../dd1/README.md).
+If you have made yourself familiar with the structure of the workshop, the Enterprise Procurement Model (EPM), and your credentials for SAP Data Intelligence, please continue to the [Deep Dive 1 section](../dd1/README.md).
