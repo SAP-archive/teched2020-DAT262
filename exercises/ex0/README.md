@@ -22,15 +22,6 @@ For this reason, all parts of this session that require these (local) applicatio
 The ***Exercises*** are then intended to be performed by the participants in SAP Data Intelligence and will leverage the objects in S/4HANA that got created during the Deep Dive sections.
 
 
-## Access to the exercise Data Intelligence environment
-
-All participant should have received the URL of the assigned SAP Data Intelligence tenant and an individual user/password combination, e.g.
-- URL to SAP Data Intelligence: https://vsystem.ingress.dh-xyz.dhaas-live.xyz.xyz.k8s-hana.ondemand.com/login/?redirectUrl=%2Fapp%2Fdatahub-app-launchpad%2F
-- User: TAXX
-- PW: Welcome00
-
-All SAP Data Intelligence environments that are used for this hands-on workshop already have a Connection of type RFC to the backend SAP S/4HANA system set up (see in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage the existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop. 
-
 ## Short introduction to the Enterprise Procurement Model (EPM) in S/4
 
 The business scenario at the core of EPM is that of a web shop run by a retail company called ITelO, a fictitious company that buys and sells computers & accessories. ITelO is a global player with several subsidiaries and locations world-wide selling its products through direct distribution channels. The company has various reseller and standard customers as well as various suppliers. Customers can purchase goods either directly from ITelO or indirectly from a supplier if the goods are not on stock.<br>
@@ -50,12 +41,20 @@ The relevant tables for our scenario are
 Here is how they relate to each other:<br>
 ![](images/epm-001a.JPG)
 
+## Access to the exercise Data Intelligence environment
+
+All participant should have received the URL of the assigned SAP Data Intelligence tenant and an individual user/password combination, e.g.
+- URL to SAP Data Intelligence: https://vsystem.ingress.dh-xyz.dhaas-live.xyz.xyz.k8s-hana.ondemand.com/login/?redirectUrl=%2Fapp%2Fdatahub-app-launchpad%2F
+- User: TAXX
+- PW: Welcome00
+
+All SAP Data Intelligence environments that are used for this hands-on workshop already have a Connection of type RFC to the backend SAP S/4HANA system set up (see in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage the existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop. 
 
 ## Next Step
 
 If you have made yourself familiar with
 - the structure of the workshop,
-- your credentials for accessing SAP Data Intelligence
-- and the Enterprise Procurement Model (EPM) as the data basis for our Deep Dive demos and Exercises
+- the Enterprise Procurement Model (EPM) as the data basis for our Deep Dive demos and Exercises,
+- and your credentials and approach for accessing SAP Data Intelligence
 
 please continue to the [Deep Dive 1 section](../dd1/README.md).
