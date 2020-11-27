@@ -42,4 +42,4 @@ If you have made yourself familiar with
 - your credentials for accessing SAP Data Intelligence
 - and the Enterprise Procurement Model (EPM) as the data basis for our Deep Deve demos and Exercises
 
-<br>please continue to the [Deep Dive 1 section](../dd1/README.md).
+please continue to the [Deep Dive 1 section](../dd1/README.md).
