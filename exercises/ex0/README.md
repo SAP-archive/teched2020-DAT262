@@ -43,7 +43,7 @@ Even though EPM also provides several BO specific CDS Views, which are all linke
 The relevant tables for our scenario are
 - BUSINESS PARTNER **(`SNWD_BPA`)**,
 - SALES ORDER HEADER **(`SNWD_SO`)**,
-- SALES ORDER ITEM **(`SNWD_SO_I`),
+- SALES ORDER ITEM **(`SNWD_SO_I`)**,
 - PRODUCT **(`SNWD_PD`)**,
 - and TEXT **(`SNWD_TEXTS`)**.
 
