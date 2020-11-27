@@ -24,19 +24,21 @@ The ***Exercises*** are then intended to be performed by the participants in SAP
 
 ## Short introduction to the Enterprise Procurement Model (EPM) in S/4
 
+In this workshop we will be using the Enterprise Procurement Model (EPM) as a data basis for our Deep Dive and Exercise scenarios. It is provided in all ABAP systems, hence also in SAP S/4HANA, as a ready-to-go demo application.<br>
+
 The business scenario at the core of EPM is that of a web shop run by a retail company called ITelO, a fictitious company that buys and sells computers & accessories. ITelO is a global player with several subsidiaries and locations world-wide selling its products through direct distribution channels. The company has various reseller and standard customers as well as various suppliers. Customers can purchase goods either directly from ITelO or indirectly from a supplier if the goods are not on stock.<br>
 The main entities supporting the business scenario in EPM are implemented as Business Objects (BO). An example of an EPM BO is the Product BO, which encapsulates the business logic for maintaining and browsing products. The business objects available in EPM support the sales and procurement processes.<br>
 
-In order to support a realistic scenario, there are means to generate mass data which allow the simulation of real-world data volumes for business entities such as purchase orders and master data such as products. The generated data is approved and can be used at customers’ sites. EPM data can be generated in SAP S/4HANA via transaction ***ESPM_DG***.
+In order to support a realistic scenario, there are means to generate mass data which allow the simulation of real-world data volumes for business entities such as purchase orders and master data such as products. The generated data is approved and can be used at customers’ sites. EPM data can be generated in SAP S/4HANA via transaction **ESPM_DG**.
 
-Even though EPM also provides several BO specific CDS Views, which are all linked to each other via associations, we'll be using the underlying tables in our Deep Dive demos and the Exercises. They are starting with the prefix `SNWD_`.
+Even though EPM also provides several BO specific CDS Views, which are all linked to each other via associations, we'll be using the underlying physical tables in our Deep Dive demos and the Exercises. They are starting with the prefix `SNWD_`.
 
 The relevant tables for our scenario are
 - BUSINESS PARTNER **(`SNWD_BPA`)**,
 - SALES ORDER HEADER **(`SNWD_SO`)**,
 - SALES ORDER ITEM **(`SNWD_SO_I`)**,
 - PRODUCT **(`SNWD_PD`)**,
-- and TEXT **(`SNWD_TEXTS`)**.
+- and TEXTS **(`SNWD_TEXTS`)**.
 
 Here is how they relate to each other:<br>
 ![](images/epm-001a.JPG)
