@@ -37,8 +37,8 @@ EPM Text
 
 ## Next Step
 
-If you have made yourself familiar
-- with the structure of the workshop,
+If you have made yourself familiar with
+- the structure of the workshop,
 - your credentials for accessing SAP Data Intelligence
-- and the Enterprise Procurement Model (EPM) as the data basis for our Deep Deve demos and Exercises
+- and the Enterprise Procurement Model (EPM) as the data basis for our Deep Deve demos and Exercises<br>
 please continue to the [Deep Dive 1 section](../dd1/README.md).
