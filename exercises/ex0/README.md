@@ -40,7 +40,14 @@ In order to support a realistic scenario, there are means to generate mass data 
 
 Even though EPM also provides several BO specific CDS Views, which are all linked to each other via associations, we'll be using the underlying tables in our Deep Dive demos and the Exercises. They are starting with the prefix `SNWD_`.
 
-The relevant tables for our scenario are **BUSINESS PARTNER (`SNWD_BPA`)**, **SALES ORDER HEADER (`SNWD_SO`)**, **SALES ORDER ITEM (`SNWD_SO_I`)**, **PRODUCT (`SNWD_PD`)**, and **TEXT (`SNWD_TEXTS`)**. Here is how they relate to each other:
+The relevant tables for our scenario are
+- BUSINESS PARTNER **(`SNWD_BPA`)**,
+- SALES ORDER HEADER **(`SNWD_SO`)**,
+- SALES ORDER ITEM **(`SNWD_SO_I`),
+- PRODUCT **(`SNWD_PD`)**,
+- and TEXT **(`SNWD_TEXTS`)**.
+
+Here is how they relate to each other:
 
 
 ## Next Step
