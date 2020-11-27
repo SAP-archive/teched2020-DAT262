@@ -18,9 +18,9 @@ The requirements to follow the exercises in this repository are:
 
 ## Deep Dive Demos and Hands-On Exercises
 
+<!--
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-I think you should use an
-`<addr>` element here instead.
+-->
 
 - **[Overview and Getting Started](exercises/ex0/)**
 
