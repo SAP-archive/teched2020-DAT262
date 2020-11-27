@@ -22,6 +22,8 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - **[Overview and Getting Started](exercises/ex0/)**
 
+- **[Short introduction to the Enterprise Procurement Model (EPM)](exercises/ex0/)**
+
 - **[Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence](exercises/dd1/)**
     - [Deep Dive 1.1 - Create a Simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#deep-dive-11---create-a-simple-abap-cds-view-using-abap-develoment-tools-adt)
     - [Deep Dive 1.2 - Create a complex ABAP CDS View in ADT (joining multiple tables)](exercises/dd1#deep-dive-11---create-a-simple-abap-cds-view-using-abap-develoment-tools-adt)
