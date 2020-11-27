@@ -47,7 +47,8 @@ The relevant tables for our scenario are
 - PRODUCT **(`SNWD_PD`)**,
 - and TEXT **(`SNWD_TEXTS`)**.
 
-Here is how they relate to each other:
+Here is how they relate to each other:<br>
+![](images/epm-001a.JPG)
 
 
 ## Next Step
