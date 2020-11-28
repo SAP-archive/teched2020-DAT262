@@ -40,7 +40,7 @@ The relevant tables for our scenario are
 - PRODUCT (`SNWD_PD`),
 - and TEXTS (`SNWD_TEXTS`).
 
-Here is how they relate to each other:<br>
+Here is how these tables relate to each other:<br>
 ![](images/epm-001a.JPG)
 
 ## Access to the exercise Data Intelligence environment
@@ -54,9 +54,9 @@ All SAP Data Intelligence environments that are used for this hands-on workshop 
 
 ## Next Step
 
-If you have made yourself familiar with
+After you have now made yourself familiar with
 - the structure of the workshop,
 - the Enterprise Procurement Model (EPM) as the data basis for our Deep Dive demos and Exercises,
-- and your credentials and approach for accessing SAP Data Intelligence
+- and your credentials and the approach for accessing SAP Data Intelligence
 
 please continue to the [Deep Dive 1 section](../dd1/README.md).
