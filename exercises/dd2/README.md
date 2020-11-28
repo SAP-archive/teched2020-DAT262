@@ -15,7 +15,7 @@ After a new ABAP Operator has been created, it can be used immediately in the SA
 
 There are two variants of this operator type available in Data Intelligence:
 1. SAP ABAP Operator: This can be used with any ABAP operator delivered by SAP (in namespace `com.sap`). Examples for out-of-the-box operators are (the already known) ABAP CDS Reader, ODP Reader, SLT Connector, Cluster Table Splitter (for Business Suite systems), and the ABAP Converter. 
-2. Custom ABAP Operator: This can be used with any ABAP operator created by customers (in namespace `customer.<xyz>`).<br>
+2. Custom ABAP Operator: This can be used with any ABAP operator created by customers (in namespace `customer.<xyz>`).<br><br>
 
 ![](images/dd2-001a.JPG)
 
