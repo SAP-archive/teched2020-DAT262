@@ -8,7 +8,7 @@ After a new ABAP Operator has been created, it can be used immediately in the SA
 
 There are two variants of this operator type available in Data Intelligence:
 1. SAP ABAP Operator: This can be used with any ABAP operator delivered by SAP (in namespace `com.sap`). Examples for out-of-the-box operators are (the already known) ABAP CDS Reader, ODP Reader, SLT Connector, Cluster Table Splitter (for Business Suite systems), and the ABAP Converter. 
-2. Custom ABAP Operator: This can be used with any ABAP operator created by customers (in namespace `customer.<xyz>`).
+2. Custom ABAP Operator: This can be used with any ABAP operator created by customers (in namespace `customer.<xyz>`).<br>
 
 ![](images/dd2-001a.JPG)
 
@@ -16,8 +16,8 @@ In order to use the ABAP Subengine, the following prerequisites have to be met:
 1. A supported ABAP system is available (see table below)
 2. The ABAP system can be reached via RFC or WebSocket RFC (HTTPS is still supported but will get deprecated soon)
 3. A user with the necessary authorizations (see SAP Note [2855052](https://launchpad.support.sap.com/#/notes/2855052))
-4. An RFC or Websocket RFC connection has been created in the Connection Manager.
-5. Whitelisting of operators and data objects (tables, views, etc.) in the S/4HANA system (see SAP Note [2831756](https://launchpad.support.sap.com/#/notes/2831756))
+4. An RFC or Websocket RFC connection has been created in the Connection Manager
+5. Whitelisting of operators and data objects (tables, views, etc.) in the S/4HANA system (see SAP Note [2831756](https://launchpad.support.sap.com/#/notes/2831756)).
 
 The ABAP Pipeline Engine is supported starting from the following releases (you can also run this scenario with a SAP Business Suite system, but then it is required to install the (non-modifying) DMIS add-on on that system.)<br>
 ABAP Edition | Minimum version | Recommended Version
@@ -26,7 +26,7 @@ S/4HANA on Premise | OP1909 + Note 2873666 |
 S/4HANA Cloud | CE2002 | 
 Netweaver < 7.52 (ECC, BW, SRM, ...) | Add-On DMIS 2011 SP17 + Note 2857333 or 2857334 | Add-On DMIS 2011 SP18
 Netweaver >= 7.52 (ECC, BW, SRM, ...) | Add-On DMIS 2018 SP02 + Note 2845347 | Add-On DMIS 2018 SP03
-> Note:
+> Note:<br>
 > Please also consult the most up-to-date Availability Matrix.
 
 <br>ABAP Operators are created in the ABAP System by implementing the BAdI: `BADI_DHAPE_ENGINE_OPERATOR`.<br>
