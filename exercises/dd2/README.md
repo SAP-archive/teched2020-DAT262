@@ -58,7 +58,7 @@ Here is a step-by-step guideline for creating a custom ABAP Operator. In the spe
 2. Enter the required parameters and ***Execute***.<br><br>
 ![](images/dd2-003a.JPG)<br>
 
-3. Now assign a package or choose 'Local Object', then ***Save*** (![](images/Save.JPG)<br>).<br><br>
+3. Now assign a package or choose 'Local Object', then ***Save*** (![](images/Save.JPG)).<br><br>
 ![](images/dd2-004a.JPG)<br>
 
 4. You should now see the following screen. Close that windows by clicking ***Exit***.<br><br>
@@ -70,7 +70,7 @@ Here is a step-by-step guideline for creating a custom ABAP Operator. In the spe
 6. Enter the required parameters and ***Execute***.<br><br>
 ![](images/dd2-007a.JPG)<br>
 
-7. Now assign a package or choose 'Local Object', then ***Save*** (![](images/Save.JPG).<br><br>
+7. Now assign a package or choose 'Local Object', then ***Save*** (![](images/Save.JPG)).<br><br>
 ![](images/dd2-008a.JPG)<br>
 
 The code should now look as follows:
