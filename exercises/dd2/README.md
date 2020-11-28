@@ -1,4 +1,4 @@
-# Exercise 1 - Exercise 1 Description
+# Deep Dive 2 - Exercise 1 Description
 
 In this exercise, we will create...
 
