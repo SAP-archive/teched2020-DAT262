@@ -88,7 +88,6 @@ then ![](/exercises/dd1/images/1-008b.JPG))<br><br>
 We have now successfully created the first simple CDS View in SAP S/4HANA. In the next step we'll be implementing a more complex CDS view that joins multiple tables.
 
 
-
 ## Deep Dive 1.2 - Create a complex ABAP CDS View in ADT (joining multiple tables)
 
 In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). Now, the trainer will show the implementation of a CDS View which will join the tables SNWD_SO, SNWD_SO_I, SNWD_PD, and SNWD_TEXTS in order to fetch all Sales Order relevant data, including all positions, products, and product names.<br>
@@ -101,12 +100,18 @@ After completing these steps you will have...
 
 2.	Click here.
 
-## Deep Dive 1.3 - Create a complex ABAP CDS View in ADT (joining multiple tables)
+## Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views
+
+sdfajsfhdjk
+
+## Deep Dive 1.4 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines
+
+fasdfkasölfekasdölkf
 
 ## Summary
 
 You've now ...
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Deep Dive 2 - Calling an ABAP Function Module in SAP Data Intelligence](../dd2/README.md)
 
 
