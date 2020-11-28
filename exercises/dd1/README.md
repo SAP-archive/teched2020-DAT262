@@ -112,6 +112,8 @@ fasdfkasölfekasdölkf
 
 You've now ...
 
-Continue to [Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](exercises/dd2/)
+Continue to [Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](../dd2/README.md)
+
+
 
 
