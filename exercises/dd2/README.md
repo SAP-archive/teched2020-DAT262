@@ -44,7 +44,13 @@ The BAdI implementation consists of a class with **two methods** that must be re
 
 ## Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA
 
-After completing these steps you will have created...
+Like the CDS Views, custom ABAP Operators could also be manually implemented in S/4HANA (Class Builder) or in the ABAP Development Tools (ADT) on Eclipse.<br>
+However, in order to reduce manual activities to a minimum, there is a framework available that supports you in the creation of all artifacts in the S/4HANA ABAP backend that are required for your own ABAP operator. That framework consists of two reports that must be executed in sequence:
+- `DHAPE_CREATE_OPERATOR_CLASS`: Generate an implementation class
+- `DHAPE_CREATE_OPER_BADI_IMPL`: Create and configure a BAdIimplementation
+
+After running these two reports, the generated implementation class can be adapted as needed.<br>
+Here is a step-by-step guideline for creating a custom ABAP Operator. In the specific use case below, the ABAP Operator in S/4HANA should receive a string from a Pipeline ABAP Operator in Data Intelligence, reverses the string, and sends it back to the Pipeline ABAP Operator in Data Intelligence.
 
 1. Click here.
 
@@ -73,7 +79,7 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 ```
 
 2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+
 
 
 ## Summary
