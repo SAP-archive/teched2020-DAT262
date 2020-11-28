@@ -7,8 +7,7 @@ As a matter of fact, it was neither possible to make the ABAP Development Tools 
 >Even though it contains step by step instructions, **this part does not belong to the hands-on exercises!**
 <br>
 
-ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools.<br>
-You can find more information about ADT **[here](https://tools.hana.ondemand.com/#abap)**.<br>
+ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools. You can find more information about ADT **[here](https://tools.hana.ondemand.com/#abap)**.<br>
 <br>
 CDS is an extension of the ABAP Dictionary that allows you to define semantically rich data models in the database and to use these data models in your ABAP programs. CDS is a central part of enabling code push-down in ABAP applications.<br>
 You can find more information about CDS in the **[ABAP keyword documentation](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abencds.htm)** and the **[SAP Community](https://community.sap.com/topics/abap)**.<br>
@@ -17,7 +16,7 @@ After completing the steps in this Deep Dive section we will have created two ne
 
 ## Deep Dive 1.1 - Create a simple ABAP CDS View using ABAP Develoment Tools (ADT)
 
-This sub section you will see how to create a CDS (Core Data Services) View using ABAP Development Tools (ADT). In particular, it is demonstrated how to create a CDS View to access data of the EPM table SNWD_BPA, which contains the Business Partner records.
+In this sub section you can track how to create a CDS (Core Data Services) View using ABAP Development Tools (ADT). In our specific case, it is demonstrated how to create a CDS View to access data of the EPM table SNWD_BPA, which contains the Business Partner record set.
 
 1. Create a CDS View
 In the context menu of your package choose ***New*** and then choose ***Other ABAP Repository Object***.<br><br>
@@ -92,6 +91,9 @@ We have now successfully created the first simple CDS View in SAP S/4HANA. In th
 
 ## Deep Dive 1.2 - Create a complex ABAP CDS View in ADT (joining multiple tables)
 
+In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). Now, the trainer will show the implementation of a CDS View which will join the tables SNWD_SO, SNWD_SO_I, SNWD_PD, and SNWD_TEXTS in order to fetch all Sales Order relevant data, including all positions, products, and product names.<br>
+In a later step, this CDS View will then be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related delta information to the target storage.
+
 After completing these steps you will have...
 
 1.	Enter this code.
@@ -99,7 +101,7 @@ After completing these steps you will have...
 
 2.	Click here.
 
-
+## Deep Dive 1.3 - Create a complex ABAP CDS View in ADT (joining multiple tables)
 
 ## Summary
 
