@@ -61,7 +61,7 @@ Here is a step-by-step guideline for creating a custom ABAP Operator. In the spe
 3. Now assign a package or choose 'Local Object', then ***Save*** (![](images/Save.JPG)).<br><br>
 ![](images/dd2-004a.JPG)<br>
 
-4. You should now see the following screen. Close that windows by clicking ***Exit***.<br><br>
+4. You should now see the following screen. Close that windows by clicking ***Exit*** (or ***Shift+F3***).<br><br>
 ![](images/dd2-005a.JPG)<br>
 
 5. Go back to transaction `SE38` (ABAP Editor). This time, enter `DHAPE_CREATE_OPER_BADI_IMPL` and ***Execute*** (![](images/Execute.JPG) or ***F8***) this report.<br><br>
