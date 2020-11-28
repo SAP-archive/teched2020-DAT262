@@ -16,12 +16,23 @@ In order to use the ABAP Subengine, the following prerequisites have to be met:
 1. A supported ABAP system is available (see availability matrix below)
 2. The ABAP system can be reached via RFC or WebSocket RFC (HTTPS is still supported but will get deprecated soon)
 3. A user with the necessary authorizations (see SAP Note [2855052](https://launchpad.support.sap.com/#/notes/2855052)
-4. An RFC or Websocket RFC connection has been created in the Connection Manager
+4. An RFC or Websocket RFC connection has been created in the Connection Manager.
 
 For SAP S/4HANA systems greater than 1909, you are good to start – no installation required.<br>
 (You can also run this scenario with a SAP Business Suite system, but then it is required to install the (non-modifying) DMIS add-on on that system.)<br>
 
+ABAP Operators are created in the ABAP System by implementing the BAdI: `BADI_DHAPE_ENGINE_OPERATOR`.<br>
+The BAdI implementation consists of a class with **two methods** that must be redefined. It is recommended that the BAdI implementation extends the abstract class
+`cl_dhape_graph_oper_abstract`.
+- GET_INFO: Returns metadata about the operator
+- NEW_PROCESS (with its local class `lcl_process`): Creates a new instance of the operator.
 
+`lcl_process` uses a simple event-based model and can be implemented by redefining one or more of the following methods:
+- ON_START: Called once, before the graph is started
+- ON_RESUME: Called at least once, before the graph is started or resumed
+- STEP: Called frequently (loop)
+- ON_SUSPEND: Called at least once, after the graph is stopped or suspended
+- ON_STOP: Called once, after the graph is stopped
 
 ## Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA
 
