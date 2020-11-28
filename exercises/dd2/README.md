@@ -52,26 +52,28 @@ However, in order to reduce manual activities to a minimum, there is a framework
 After running these two reports, the generated implementation class can be adapted as needed.<br>
 Here is a step-by-step guideline for creating a custom ABAP Operator. In the specific use case below, the ABAP Operator in S/4HANA should receive a string from a Pipeline ABAP Operator in Data Intelligence, reverses the string, and sends it back to the Pipeline ABAP Operator in Data Intelligence.
 
-1. Logon to the SAP GUI of your conneted S/4HANA system and run transaction `SE38` (ABAP Editor), enter `DHAPE_CREATE_OPERATOR_CLASS` and ***Execute*** this report.
-![](images/dd2-002a.JPG)
+1. Logon to the SAP GUI of your conneted S/4HANA system and run transaction `SE38` (ABAP Editor), enter `DHAPE_CREATE_OPERATOR_CLASS` and ***Execute*** this report.<br>
+![](images/dd2-002a.JPG)<br>
 
-2. Enter the required parameters and ***Execute***.
-![](images/dd2-003a.JPG)
+2. Enter the required parameters and ***Execute***.<br>
+![](images/dd2-003a.JPG)<br>
 
-3. Now assign a package or choose 'Local Object', then ***Save***.
-![](images/dd2-004a.JPG)
+3. Now assign a package or choose 'Local Object', then ***Save***.<br>
+![](images/dd2-004a.JPG)<br>
 
-4. You should now see the follow screen. Close that windows by clicking ***Exit***.
-![](images/dd2-005a.JPG)
+4. You should now see the follow screen. Close that windows by clicking ***Exit***.<br>
+![](images/dd2-005a.JPG)<br>
 
-5. Go back to transaction `SE38` (ABAP Editor) and now enter `DHAPE_CREATE_OPER_BADI_IMPL` and ***Execute*** this report.
-![](images/dd2-006a.JPG)
+5. Go back to transaction `SE38` (ABAP Editor) and now enter `DHAPE_CREATE_OPER_BADI_IMPL` and ***Execute*** this report.<br>
+![](images/dd2-006a.JPG)<br>
 
-6. Enter the required parameters and ***Execute***..
-![](images/dd2-007a.JPG)
+6. Enter the required parameters and ***Execute***.<br>
+![](images/dd2-007a.JPG)<br>
 
-6. Now assign a package or choose 'Local Object', then ***Save***.
-![](images/dd2-008a.JPG)
+6. Now assign a package or choose 'Local Object', then ***Save***.<br>
+![](images/dd2-008a.JPG)<br>
+
+akadskhakdsjh
 
 
 
