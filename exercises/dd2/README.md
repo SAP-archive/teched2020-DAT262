@@ -4,13 +4,13 @@ In this Deep Dive, we will demonstrate how to create a custom ABAP operator in S
 
 The basis for the integration with SAP Data Intelligence are the ABAP Pipeline Engine in SAP S/4HANA and the ABAP Subengine in SAP Data Intelligence, both linked with either an RFC or a Websocket RFC connection.
 
-![](images/dd2-001a.JPG)
+After a new ABAP Operator has been created, it can be used immediately in the SAP Data Intelligence Modeler by leveraging its dynamic ABAP Integration operator. These operators in SAP Data Intelligence are actually shells that point to the original implementation in the connected S/4HANA system.
 
-
-After a new ABAP Operator has been created, it can be used immediately in the SAP Data Intelligence Modeler by leveraging its dynamic ABAP Integration operator. These operators in SAP Data Intelligence are actually shells that point to the corresponding function module in S/4HANA.
 There are two variants of this operator available in Data Intelligence:
-a) SAP ABAP Operator: This can be used with any ABAP operator delivered by SAP (in namespace `com.sap`)
-b) Custom ABAP Operator: This can be used with any ABAP operator created by customers
+a) SAP ABAP Operator: This can be used with any ABAP operator delivered by SAP (in namespace `com.sap`). Examples for out-of-the-box operators are (the already known) ABAP CDS Reader, ODP Reader, SLT Connector, Cluster Table Splitter (for Business Suite systems), and the ABAP Converter. 
+b) Custom ABAP Operator: This can be used with any ABAP operator created by customers (in namespace `customer.<xyz>`).
+
+![](images/dd2-001a.JPG)
 
 In order to use the ABAP Subengine, the following prerequisites have to be met:
 1. A supported ABAP system is available (see availability matrix below)
