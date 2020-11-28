@@ -6,7 +6,7 @@ For SAP S/4HANA systems greater than 1909, you are good to start – no installa
 (You can also run this scenario with a SAP Business Suite system, but then it is required to install the (non-modifying) DMIS add-on on that system.)<br><br>
 
 The basis for this integration technology is the ABAP Pipeline Engine in SAP S/4HANA and the ABAP Subengine in SAP Data Intelligence.
-
+![](/exercises/dd1/images/1-001a.JPG)
 
 ## Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA
 
