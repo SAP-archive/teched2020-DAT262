@@ -73,6 +73,9 @@ Here is a step-by-step guideline for creating a custom ABAP Operator. In the spe
 7. Now assign a package or choose 'Local Object', then ***Save*** (![](images/Save.JPG)).<br><br>
 ![](images/dd2-008a.JPG)<br>
 
+8. On the next screen (Enhancement Implementation), click on ***Implementing Class*** on the left side, then double click on the name of your Implementing Class, in this case `ZCL_DHAPE_OPER_REVERSE_STR`.<br><br>
+![](images/dd2-009a.JPG)<br>
+
 The code should now look as follows:
 ```abap
 CLASS lcl_process DEFINITION INHERITING FROM cl_dhape_graph_proc_abstract.
