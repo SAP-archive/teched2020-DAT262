@@ -41,7 +41,7 @@ The relevant tables for our scenario are
 - and TEXTS (`SNWD_TEXTS`).
 
 Here is how these tables relate to each other:<br>
-![](images/epm-001a.JPG)
+![](images/epm-001b.JPG)
 
 ## Access to the exercise Data Intelligence environment
 
