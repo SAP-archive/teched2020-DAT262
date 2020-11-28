@@ -1,8 +1,8 @@
-# Deep Dive 2 - Exercise 1 Description
+# Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence
 
 In this exercise, we will create...
 
-## Exercise 1.1 Sub Exercise 1 Description
+## Deep Dive 2.1 Create a custom ABAP Operator in SAP S/4HANA
 
 After completing these steps you will have created...
 
@@ -16,7 +16,7 @@ response->set_text( |Hello World! | ).
 
 
 
-## Exercise 1.2 Sub Exercise 2 Description
+## Deep Dive 2.2 Integrate the custom ABAP Operator in a SAP Data Intelligence Pipeline
 
 After completing these steps you will have...
 
