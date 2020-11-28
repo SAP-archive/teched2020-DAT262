@@ -2,12 +2,26 @@
 
 In this Deep Dive, we will demonstrate how to create a custom ABAP operator in SAP S/4HANA and trigger its execution from a Pipeline in SAP Data Intelligence. The ABAP operators are developed in the S/4HANA system as normal development objects, hence, they can be transported within the system landscape.<br>
 
+The basis for the integration with SAP Data Intelligence are the ABAP Pipeline Engine in SAP S/4HANA and the ABAP Subengine in SAP Data Intelligence, both linked with either an RFC or a Websocket RFC connection.
+
+![](images/dd2-001a.JPG)
+
+
+After a new ABAP Operator has been created, it can be used immediately in the SAP Data Intelligence Modeler by leveraging its dynamic ABAP Integration operator. These operators in SAP Data Intelligence are actually shells that point to the corresponding function module in S/4HANA.
+There are two variants of this operator available in Data Intelligence:
+a) SAP ABAP Operator: This can be used with any ABAP operator delivered by SAP (in namespace `com.sap`)
+b) Custom ABAP Operator: This can be used with any ABAP operator created by customers
+
+In order to use the ABAP Subengine, the following prerequisites have to be met:
+1. A supported ABAP system is available (see availability matrix below)
+2. The ABAP system can be reached via RFC or WebSocket RFC (HTTPS is still supported but will get deprecated soon)
+3. A user with the necessary authorizations (see SAP Note [2855052](https://launchpad.support.sap.com/#/notes/2855052)
+4. An RFC or Websocket RFC connection has been created in the Connection Manager
+
 For SAP S/4HANA systems greater than 1909, you are good to start – no installation required.<br>
 (You can also run this scenario with a SAP Business Suite system, but then it is required to install the (non-modifying) DMIS add-on on that system.)<br>
 
-The basis for this integration technology is the ABAP Pipeline Engine in SAP S/4HANA and the ABAP Subengine in SAP Data Intelligence.
 
-![](images/dd2-001a.JPG)
 
 ## Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA
 
