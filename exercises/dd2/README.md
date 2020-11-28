@@ -17,7 +17,7 @@ In order to use the ABAP Subengine, the following prerequisites have to be met:
 2. The ABAP system can be reached via RFC or WebSocket RFC (HTTPS is still supported but will get deprecated soon)
 3. A user with the necessary authorizations (see SAP Note [2855052](https://launchpad.support.sap.com/#/notes/2855052))
 4. An RFC or Websocket RFC connection has been created in the Connection Manager
-5. Whitelisting of operators and data objects (tables, views, etc.) in the S/4HANA system (see SAP Note [2831756](https://launchpad.support.sap.com/#/notes/2831756)).
+5. Whitelisting of operators and data objects (tables, views, etc.) in the S/4HANA system (see SAP Note [2831756](https://launchpad.support.sap.com/#/notes/2831756)).<br>
 
 The ABAP Pipeline Engine is supported starting from the following releases (you can also run this scenario with a SAP Business Suite system, but then it is required to install the (non-modifying) DMIS add-on on that system.)<br>
 ABAP Edition | Minimum version | Recommended Version
@@ -47,18 +47,33 @@ The BAdI implementation consists of a class with **two methods** that must be re
 Like the CDS Views, custom ABAP Operators could also be manually implemented in S/4HANA (Class Builder) or in the ABAP Development Tools (ADT) on Eclipse.<br>
 However, in order to reduce manual activities to a minimum, there is a framework available that supports you in the creation of all artifacts in the S/4HANA ABAP backend that are required for your own ABAP operator. That framework consists of two reports that must be executed in sequence:
 - `DHAPE_CREATE_OPERATOR_CLASS`: Generate an implementation class
-- `DHAPE_CREATE_OPER_BADI_IMPL`: Create and configure a BAdIimplementation
+- `DHAPE_CREATE_OPER_BADI_IMPL`: Create and configure a BAdI implementation
 
 After running these two reports, the generated implementation class can be adapted as needed.<br>
 Here is a step-by-step guideline for creating a custom ABAP Operator. In the specific use case below, the ABAP Operator in S/4HANA should receive a string from a Pipeline ABAP Operator in Data Intelligence, reverses the string, and sends it back to the Pipeline ABAP Operator in Data Intelligence.
 
-1. Click here.
+1. Logon to the SAP GUI of your conneted S/4HANA system and run transaction `SE38` (ABAP Editor), enter `DHAPE_CREATE_OPERATOR_CLASS` and ***Execute*** this report.
+![](images/dd2-002a.JPG)
+
+2. Enter the required parameters and ***Execute***.
+![](images/dd2-003a.JPG)
+
+3. Now assign a package or choose 'Local Object', then ***Save***.
+![](images/dd2-004a.JPG)
+
+4. You should now see the follow screen. Close that windows by clicking ***Exit***.
+![](images/dd2-005a.JPG)
+
+5. Go back to transaction `SE38` (ABAP Editor) and now enter `DHAPE_CREATE_OPER_BADI_IMPL` and ***Execute*** this report.
+![](images/dd2-006a.JPG)
+
+6. Enter the required parameters and ***Execute***..
+![](images/dd2-007a.JPG)
+
+6. Now assign a package or choose 'Local Object', then ***Save***.
+![](images/dd2-008a.JPG)
 
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
 
 
 
