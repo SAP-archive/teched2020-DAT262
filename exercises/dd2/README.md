@@ -7,8 +7,8 @@ The basis for the integration with SAP Data Intelligence are the ABAP Pipeline E
 After a new ABAP Operator has been created, it can be used immediately in the SAP Data Intelligence Modeler by leveraging its dynamic ABAP Integration operator. These operators in SAP Data Intelligence are actually shells that point to the original implementation in the connected S/4HANA system.
 
 There are two variants of this operator available in Data Intelligence:
-a. SAP ABAP Operator: This can be used with any ABAP operator delivered by SAP (in namespace `com.sap`). Examples for out-of-the-box operators are (the already known) ABAP CDS Reader, ODP Reader, SLT Connector, Cluster Table Splitter (for Business Suite systems), and the ABAP Converter. 
-b. Custom ABAP Operator: This can be used with any ABAP operator created by customers (in namespace `customer.<xyz>`).
+1. SAP ABAP Operator: This can be used with any ABAP operator delivered by SAP (in namespace `com.sap`). Examples for out-of-the-box operators are (the already known) ABAP CDS Reader, ODP Reader, SLT Connector, Cluster Table Splitter (for Business Suite systems), and the ABAP Converter. 
+2. Custom ABAP Operator: This can be used with any ABAP operator created by customers (in namespace `customer.<xyz>`).
 
 ![](images/dd2-001a.JPG)
 
