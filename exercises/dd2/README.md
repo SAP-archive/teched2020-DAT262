@@ -135,6 +135,7 @@ Overwrite the existing `step( )` method with the following code:<br>
 ```
 <br>
 If `has_data( )`return true, i.e. if the ABAP Operator receives a signal from the corresponding Data Intelligence Pipeline operator, we call the `on_data( )`method, which contains the wanted functionality (reverse an incoming string and send it back). Include the following lines after the `step( )` method:
+
 ```abap
   METHOD on_data.
     DATA lv_data TYPE string.
@@ -149,6 +150,7 @@ If `has_data( )`return true, i.e. if the ABAP Operator receives a signal from th
 Now click the ***Save*** button.
 ![](images/dd2-014b.JPG)<br><br>
 The code of the local class should now look as follows:
+
 ```abap
 CLASS lcl_process DEFINITION INHERITING FROM cl_dhape_graph_proc_abstract.
 
@@ -225,6 +227,7 @@ CLASS lcl_process IMPLEMENTATION.
 
 ENDCLASS.
 ```
+
 <br>
 ***Save*** the local class and activate (![](images/Activate.JPG)) your ABAP Operator implementations.
 
