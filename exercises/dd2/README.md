@@ -134,7 +134,7 @@ Overwrite the existing `step( )` method with the following code:<br>
   ENDMETHOD.
 ```
 <br>
-If `has_data( )`return true, i.e. if the ABAP Operator receives a signal from the corresponding Data Intelligence Pipeline operator, we call the `on_data( )`method, which contains the wanted functionality (reverse an incoming string and send it back). Include the following lines after the `step( )` method:
+If `has_data( )`returns true, i.e. if the ABAP Operator receives a signal from the corresponding Data Intelligence Pipeline operator, we call the `on_data( )`method, which contains the wanted functionality (reverse an incoming string and send it back). Include the following lines after the `step( )` method:
 
 ```abap
   METHOD on_data.
@@ -146,9 +146,11 @@ If `has_data( )`return true, i.e. if the ABAP Operator receives a signal from th
     mo_out->write_copy( lv_data ).
   ENDMETHOD.
 ```
+
 <br>
-Now click the ***Save*** button.
+Now click the ***Save*** button.<br><br>
 ![](images/dd2-014b.JPG)<br><br>
+
 The code of the local class should now look as follows:
 
 ```abap
