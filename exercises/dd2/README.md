@@ -148,9 +148,9 @@ If `has_data( )` returns true, i.e. if the ABAP Operator receives a signal from 
 ```
 
 Now click the ***Save*** button.<br><br>
-![](images/dd2-014b.JPG)<br><br>
+![](images/dd2-014c.JPG)<br><br>
 
-The code of the local class should now look as follows:
+The complete code of the local class should now look as follows:
 
 ```abap
 CLASS lcl_process DEFINITION INHERITING FROM cl_dhape_graph_proc_abstract.
