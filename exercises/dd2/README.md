@@ -83,7 +83,73 @@ Here is a step-by-step guideline for creating a custom ABAP Operator. In the spe
 8. On the next screen (Enhancement Implementation), click on ***Implementing Class*** on the left side, then double click on the name of your Implementing Class, in this case `ZCL_DHAPE_OPER_REVERSE_STR`.<br><br>
 ![](images/dd2-009b.JPG)<br>
 
-The code should now look as follows:
+9. This opens the Class Builder (`SE24`). Double click on the `GET_INFO` method in oder to assign the input and output ports of the ABAP Operator. Parameters are not needed in our use case.<br><br>
+![](images/dd2-010b.JPG)<br>
+
+10. In the method `GET_INFO`, outcomment the three lines which specify the parameters (parameters are not needed in this scenario). The rest can be left as is. Click the ***Save*** button.<br><br>
+![](images/dd2-011b.JPG)<br>
+
+11. Go back and double click on the `NEW_PROCESS` method in order to implement the wanted functionality for our ABAP Operator.<br><br>
+![](images/dd2-012b.JPG)<br>
+
+12. On the next screen, double click on the local class `lcl_process`.<br><br>
+![](images/dd2-013b.JPG)<br>
+
+13. As we are going to implement a new method `on_data`, we have to declare the method in the class definition.<br>
+Enter the following code:<br>
+```abap
+  PRIVATE SECTION.
+  METHODS: on_data.
+```
+![](images/dd2-014b.JPG)<br>
+
+14. We can outcomment the parameter value retrieval (see line 30 in screenshot).<br>
+Overwrite the existing `step( )` method with the following code:<br>
+```abap
+  METHOD if_dhape_graph_process~step.
+    rv_progress = abap_false.
+    CHECK mv_alive = abap_true.
+
+    IF mo_out->is_connected( ) = abap_false.
+      IF mo_in->is_connected( ).
+        mo_in->disconnect( ).
+      ENDIF.
+      rv_progress = abap_true.
+      mv_alive = abap_false.
+    ELSE.
+      IF mo_in->has_data( ).
+        CHECK mo_out->is_blocked( ) <> abap_true.
+        rv_progress = abap_true.
+        on_data( ).
+      ELSEIF mo_in->is_closed( ).
+        mo_out->close( ).
+        rv_progress = abap_true.
+        mv_alive = abap_false.
+      ELSEIF mo_in->is_connected( ) = abap_false.
+        mo_out->disconnect( ).
+        rv_progress = abap_true.
+        mv_alive = abap_false.
+      ENDIF.
+    ENDIF.
+  ENDMETHOD.
+```
+<br>
+If `has_data( )`return true, i.e. if the ABAP Operator receives a signal from the corresponding Data Intelligence Pipeline operator, we call the `on_data( )`method, which contains the wanted functionality (reverse an incoming string and send it back). Include the following lines after the `step( )` method:
+```abap
+  METHOD on_data.
+    DATA lv_data TYPE string.
+    mo_in->read_copy( IMPORTING ea_data = lv_data ).
+
+    SUBMIT SEPM_DG_EPM_STD_CHANNEL USING SELECTION-SET 'SEPM_TECHED_RM' AND RETURN.
+    lv_data = 'Your signal: ' && lv_data && '. --> One additional EPM Sales Order with ten related Sales Order Items created.'.
+
+    mo_out->write_copy( lv_data ).
+  ENDMETHOD.
+```
+<br>
+Now click the ***Save*** button
+![](images/dd2-014b.JPG)<br><br>
+The code of the local class should now look as follows:
 ```abap
 CLASS lcl_process DEFINITION INHERITING FROM cl_dhape_graph_proc_abstract.
 
@@ -91,7 +157,7 @@ CLASS lcl_process DEFINITION INHERITING FROM cl_dhape_graph_proc_abstract.
     METHODS: if_dhape_graph_process~on_start  REDEFINITION.
     METHODS: if_dhape_graph_process~on_resume REDEFINITION.
     METHODS: if_dhape_graph_process~step      REDEFINITION.
-    
+
   PRIVATE SECTION.
   METHODS: on_data.
 
@@ -153,16 +219,19 @@ CLASS lcl_process IMPLEMENTATION.
     DATA lv_data TYPE string.
     mo_in->read_copy( IMPORTING ea_data = lv_data ).
 
-    SUBMIT SEPM_DG_EPM_STD_CHANNEL USING SELECTION-SET 'SEPM_TECHED_RM' AND RETURN.
-    lv_data = 'Your signal: ' && lv_data && '. --> One additional EPM Sales Order with ten related Sales Order Items created.'.
+    lv_data = reverse( lv_data ).
 
     mo_out->write_copy( lv_data ).
   ENDMETHOD.
 
+
 ENDCLASS.
 ```
+<br>
+***Save*** the local class and activate (![](images/Activate.JPG)) your ABAP Operator implementations.
 
-
+15. When you clicked the Activation button, you are prompted for a selection of objects. Check both and confirm (![](images/Confirm_black.JPG)).<br><br>
+![](images/dd2-015b.JPG)<br>
 
 
 
