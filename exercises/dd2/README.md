@@ -140,14 +140,13 @@ If `has_data( )`return true, i.e. if the ABAP Operator receives a signal from th
     DATA lv_data TYPE string.
     mo_in->read_copy( IMPORTING ea_data = lv_data ).
 
-    SUBMIT SEPM_DG_EPM_STD_CHANNEL USING SELECTION-SET 'SEPM_TECHED_RM' AND RETURN.
-    lv_data = 'Your signal: ' && lv_data && '. --> One additional EPM Sales Order with ten related Sales Order Items created.'.
+    lv_data = reverse( lv_data ).
 
     mo_out->write_copy( lv_data ).
   ENDMETHOD.
 ```
 <br>
-Now click the ***Save*** button
+Now click the ***Save*** button.
 ![](images/dd2-014b.JPG)<br><br>
 The code of the local class should now look as follows:
 ```abap
@@ -180,7 +179,7 @@ CLASS lcl_process IMPLEMENTATION.
     "This method is called before the graph is started.
 
     "Read parameters from the config here
-    mv_myparameter = to_upper( if_dhape_graph_process~get_conf_value( '/Config/myparameter' ) ).
+    "mv_myparameter = to_upper( if_dhape_graph_process~get_conf_value( '/Config/myparameter' ) ).
 
     "Do initialization here.
     mo_util     = cl_dhape_util_factory=>new( ).
@@ -223,7 +222,6 @@ CLASS lcl_process IMPLEMENTATION.
 
     mo_out->write_copy( lv_data ).
   ENDMETHOD.
-
 
 ENDCLASS.
 ```
