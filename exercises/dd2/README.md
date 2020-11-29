@@ -96,15 +96,15 @@ Here is a step-by-step guideline for creating a custom ABAP Operator. In the spe
 ![](images/dd2-013b.JPG)<br>
 
 13. As we are going to implement a new method `on_data`, we have to declare the method in the class definition.<br>
-Enter the following code:<br>
+Add the following code snippet:<br>
 ```abap
   PRIVATE SECTION.
   METHODS: on_data.
 ```
 ![](images/dd2-014b.JPG)<br>
 
-14. We can outcomment the parameter value retrieval (see line 30 in screenshot).<br>
-Overwrite the existing `step( )` method with the following code:<br>
+14. We can outcomment the parameter value retrieval (see line 30 in screenshot below).<br>
+Then overwrite the existing `step( )` method with the following code:<br>
 ```abap
   METHOD if_dhape_graph_process~step.
     rv_progress = abap_false.
@@ -133,9 +133,7 @@ Overwrite the existing `step( )` method with the following code:<br>
     ENDIF.
   ENDMETHOD.
 ```
-
-If `has_data( )` returns true, i.e. if the ABAP Operator receives a signal from the corresponding Data Intelligence Pipeline operator, we call the `on_data( )` method, which contains the wanted functionality (reverse an incoming string and send it back). Include the following lines after the `step( )` method:
-
+<br> If `has_data( )` returns true, i.e. if the ABAP Operator receives a signal from the corresponding Data Intelligence Pipeline operator, we call the `on_data( )` method, which contains the wanted functionality (reverse an incoming string and send it back). Include the following lines after the `step( )` method:
 ```abap
   METHOD on_data.
     DATA lv_data TYPE string.
@@ -146,8 +144,7 @@ If `has_data( )` returns true, i.e. if the ABAP Operator receives a signal from 
     mo_out->write_copy( lv_data ).
   ENDMETHOD.
 ```
-
-Now click the ***Save*** button.<br><br>
+<br> Now click the ***Save*** button.<br><br>
 ![](images/dd2-014c.JPG)<br><br>
 
 The complete code of the local class `lcl_process` should now look as follows:
