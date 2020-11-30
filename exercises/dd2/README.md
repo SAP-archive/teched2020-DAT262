@@ -272,11 +272,16 @@ Then ***Save*** the Pipeline.<br><br>
 10.	Change back to the ***Status*** tab of the status section in the Modeler UI. Once the status has turned to ***running***, click one time on the ***Terminal*** node and open the Terminal UI with a click on the corresponding icon.<br><br>
 ![](images/dd2-026b.JPG)<br><br>
 
+11.	In the lower section of the Terminal UI, you can now enter the inputs (after the SDH prompt) that shall be send to the ABAP Operator in S/4HANA. After each input press ***Return***. As a resonse from our custom ABAP Operator, you should now receive the reversed strings in the upper section of the Terminal UI, what proves the functionality and integration success.<br><br>
+![](images/dd2-027b.JPG)<br><br>
+
+11.	Don't forget to stop the Pipeline again if you haven't embedded a ***Graph Terminator*** before.<br><br>
+![](images/dd2-028b.JPG)<br><br>
 
 ## Summary
 
-You've now ...
+We've now successfully implemented a custom ABAP Operator in S/4HANA and integrated it in a Data Intelligence Pipeline.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Please continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
 
