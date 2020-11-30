@@ -16,11 +16,11 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 1. Log on to SAP Data Intelligence and enter the Launchpad application. Then start the ***Modeler*** application.
 - Follow the link to your assigned Data Intelligence instance, e.g. https://vsystem.ingress.xyz.dhaas-live.shoot.live.k8s-hana.ondemand.com/app/datahub-app-launchpad/.
 - In the pop-up window, enter ***"default"*** as the tenant name.
-<br><br>![](/exercises/ex1/images/ex1-001b.JPG)<br><br>
+<br>![](/exercises/ex1/images/ex1-001b.JPG)<br><br>
 - In the next pop-up window, enter you assigned user name (e.g. ***"TA99"***) and your password (initially ***"Welcome01"***).
-<br><br>![](/exercises/ex1/images/ex1-002b.JPG)<br><br>
+<br>![](/exercises/ex1/images/ex1-002b.JPG)<br><br>
 - From the Launchpad, start the ***Modeler*** application by clicking on the corresponding tile.
-<br><br>![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
+<br>![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
 
 2.	Make sure you are in the ***Graphs*** tab of the Modeler UI (see left side). Then click the ***+*** symbol in order to create a new Pipeline.<br>
 <br><br>![](/exercises/ex1/images/ex1-004b.JPG)<br><br>
@@ -35,16 +35,7 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 After completing these steps you will have...
 
 1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
 
-```
 
 2.	Click here.
 <br>![](/exercises/ex1/images/01_02_0010.png)
