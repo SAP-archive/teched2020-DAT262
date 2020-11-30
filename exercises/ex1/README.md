@@ -68,7 +68,7 @@ Click ***OK***.<br><br>
 12.	Once the status of your Pipeline has changed to ***running***, click on the ***Terminal*** operator node one time and then on its ***Open UI*** icon.<br><br>
 ![](/exercises/ex1/images/ex1-016b.JPG)<br><br>
 
-13.	You should now see that EPM Customer master data is displayed, which proofs that the integration with the S/4HANA CDS View is working as expected. By the way: the truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
+13.	You should now see that EPM Customer master data coming in, which proofs that the integration with the S/4HANA CDS View is working as expected. By the way: the truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
 ![](/exercises/ex1/images/ex1-017b.JPG)<br><br>
 
 14.	***Stop*** the Pipeline execution again. The staus changes from ***running*** to ***stopping*** and finally to ***completed***.<br><br>
@@ -79,13 +79,14 @@ As a next step, you will persist the EPM Customer master data in an S3 Object St
 
 ## Exercise 1.2 - Extend the Pipeline to transfer the Customer data into an S3 Object Store with Initial Load and Delta Load modes
 
-After completing the following steps you will have extended the Data Intelligence Pipeline with an additional persistency for the data in S3. And in order to also obtain any deltas that have occurred in the S/4HANA EPM Business Partner table `SNWD_BPA`, the transfer mode will get changed to Delta Load after initially loading the data into a file in S3.
+After completing the following steps you will have extended the Data Intelligence Pipeline with an additional persistency for the data in S3. And in order to also obtain any deltas that have occurred on the S/4HANA EPM Business Partner table `SNWD_BPA`, the transfer mode will get changed to Delta Load after initially loading the data into a file in S3.
 
-1.	Enter this code.
+1. If not already done, open the Pipeline from the previous section (**`teched.XXXX.EPM_Customer_Replication_to_S3`**). Click on the Terminal operator and then the "waste bin" icon in order to delete the Terminal operator. Do the same for the Converter operator. Just keep the the ABAP CDS Reader operator in the Pipeline canvas.<br><br>
+![](/exercises/ex1/images/ex1-019b.JPG)<br><br>
 
-
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+2. Make sure that the ***Operators*** tab is in scope in the Modeler UI (see left side). From the list of operators, drag the ***Wiretap*** operator and drop it in the Pipeline canvas. This operator can wiretap a connection between two operators in a Pipeline and display the traffic to the browser window (or to an external websocket client that connects to this operator). The Wiretap operator also supports throughput of type message, so that no type conversion is required.<br>
+Now connect the **output port of the ABAP CDS Reader** with the **input port of the Wiretap operator** by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
+![](/exercises/ex1/images/ex1-020b.JPG)<br><br>
 
 
 ## Summary
