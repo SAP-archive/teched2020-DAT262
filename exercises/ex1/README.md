@@ -68,7 +68,7 @@ Click ***OK***.<br><br>
 12.	Once the status of your Pipeline has changed to ***running***, click on the ***Terminal*** operator node one time and then on its ***Open UI*** icon.<br><br>
 ![](/exercises/ex1/images/ex1-016b.JPG)<br><br>
 
-13.	You should now see that EPM Customer master data is displayed, which proofs that the integration with the S/4HANA CDS View is working as expected. The truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
+13.	You should now see that EPM Customer master data is displayed, which proofs that the integration with the S/4HANA CDS View is working as expected. By the way: the truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
 ![](/exercises/ex1/images/ex1-017b.JPG)<br><br>
 
 14.	***Stop*** the Pipeline execution again. The staus changes from ***running*** to ***stopping*** and finally to ***completed***.<br><br>
