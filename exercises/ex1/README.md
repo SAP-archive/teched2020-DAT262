@@ -34,6 +34,18 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 5.	In the pop-up window, mark the different versions of the ABAP CDS Reader and read through their documentation. As you can see, the ***ABAP CDS Reader V2*** provides a standard message type output (no conversion from ABAP object required). select this entry and click ***OK***.<br><br>
 ![](/exercises/ex1/images/ex1-008b.JPG)<br><br>
 
+6.	The ABAP CDS Reader operator shell has received the operator's metadata from S/4HANA and has configured the Pipeline node (for example, the operator now has an output port). Now fill in the configuration parameters in the panel:
+- Label: `Buyer - S/4 ABAP CDS`
+- Subscription Type: `New`
+- Subscription Name: `BP0001_XXXX`, where XXXX is your user name
+- ABAP CDS Name: `Z_CDS_BUYER_Delta`, which is the "simple" CDS View that got created in the Deep Dive 1 demo
+- Transfer Mode: Ìnitial Load`.
+- Lease all other parameters as-is.<br><br>
+![](/exercises/ex1/images/ex1-009b.JPG)<br><br>
+
+5.	In the pop-up window, mark the different versions of the ABAP CDS Reader and read through their documentation. As you can see, the ***ABAP CDS Reader V2*** provides a standard message type output (no conversion from ABAP object required). select this entry and click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-008b.JPG)<br><br>
+
 
 
 ## Exercise 1.2 Sub Exercise 2 Description
