@@ -7,7 +7,7 @@ This repository contains the material for the SAP TechEd 2020 session called<br>
 
 ## Overview
 
-This session introduces attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems with its enterprise-wide, holistic Data Management and Data Orchestration capabilities for SAP and non-SAP environments.
+This session introduces the attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems with its enterprise-wide, holistic Data Processing and Orchestration capabilities for SAP and non-SAP environments.
 
 ## Requirements
 
