@@ -31,17 +31,18 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Deep Dive 1.2 - Create a complex ABAP CDS View in ADT (joining multiple tables)](exercises/dd1#deep-dive-12---create-a-complex-abap-cds-view-in-adt-joining-multiple-tables)
     - [Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views](exercises/dd1#deep-dive-13---enable-delta-extraction-in-simple-and-complex-abap-cds-views)
     - [Deep Dive 1.4 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines](exercises/dd1#deep-dive-14---integrate-abap-cds-views-in-sap-data-intelligence-pipelines)
+    
 - **[Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](exercises/dd2/)**
     - [Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA](exercises/dd2#deep-dive-21---create-a-custom-abap-operator-in-sap-s4hana)
     - [Deep Dive 2.2 - Integrate the custom ABAP Operator in a SAP Data Intelligence Pipeline](exercises/dd2#deep-dive-22---integrate-the-custom-abap-operator-in-a-sap-data-intelligence-pipeline)
     
 - **[Exercise 1 - Replicating data from ABAP CDS Views in SAP Data Intelligence](exercises/ex1/)**
-    - [Short introduction to the Enterprise Procurement Model (EPM)](exercises/ex1#exercise-10-sub-exercise-1-description)
     - [Exercise 1.1 - Consume ABAP CDS Views in SAP Data Intelligence](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 1.2 - Model a Pipeline that extracts Customer data from an ABAP CDS View](exercises/ex1#exercise-12-sub-exercise-1-description)
     - [Exercise 1.3 - Extend the Pipeline with Sales Order data from an ABAP CDS View](exercises/ex1#exercise-13-sub-exercise-1-description)
     - [Exercise 1.4 - Persist the results in an S3 Object Store](exercises/ex1#exercise-14-sub-exercise-1-description)
     - [Exercise 1.5 - Implement Delta Replication of Sales Order data in Pipelines](exercises/ex1#exercise-15-sub-exercise-2-description)
+    
 - **[Exercise 2 - Triggering the execution of a function module in a remote S/4HANA system](exercises/ex2/)**
     - [Exercise 2.1 - Making custom ABAP Operators available in SAP Data Intelligence](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders](exercises/ex2#exercise-22-sub-exercise-2-description)
