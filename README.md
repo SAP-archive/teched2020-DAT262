@@ -32,7 +32,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views](exercises/dd1#deep-dive-13---enable-delta-extraction-in-simple-and-complex-abap-cds-views)
     - [Deep Dive 1.4 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines](exercises/dd1#deep-dive-14---integrate-abap-cds-views-in-sap-data-intelligence-pipelines)
 - **[Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](exercises/dd2/)**
-    - [Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA](exercises/dd2#exercise-21-sub-exercise-1-description)
+    - [Deep Dive 2.1 - Create a custom ABAP Operator in SAP S/4HANA](exercises/dd2#deep-dive-21---create-a-custom-abap-operator-in-sap-s4hana)
     - [Deep Dive 2.2 - Integrate the custom ABAP Operator in a SAP Data Intelligence Pipeline](exercises/dd2#exercise-22-sub-exercise-2-description)
     
 - **[Exercise 1 - Replicating data from ABAP CDS Views in SAP Data Intelligence](exercises/ex1/)**
