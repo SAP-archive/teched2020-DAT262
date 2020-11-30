@@ -1,6 +1,6 @@
 # Exercise 1 - Replicating data from ABAP CDS Views in SAP Data Intelligence
 
-In this exercise, we will leverage the ABAP CDS Views that got created during the first Deep Dive demo in the connected S/4HANA system in a Pipeline.<br><br>
+In this exercise, we will leverage in Data Intelligence Pipelines those ABAP CDS Views that got created during the first Deep Dive demo in the connected S/4HANA system.<br><br>
 The use case is
 - to obtain the Business Partner master data in S/4HANA's demo application **Enterprise Procurement Model (EPM)** and make the records available for the corporate Data Analysts in an S3 object store.
 - to also persist the transactional data for EPM Sales Orders in S3.
