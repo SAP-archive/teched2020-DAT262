@@ -158,7 +158,13 @@ In order to fetch any changes in S/4HANA on the Business Partner table `SNWD_BPA
 
 **Very well done!** You have implemented a Pipeline that extracts Initial Load and Delta data fron an ABAP CDS View in S/4HANA and have interlinked it with a non-SAP target storage in S3.
 
+## Exercise 1.3 - Implement a Pipeline for delta transfer of enhanced EPM Sales Order data from S/4HANA to an S3 Object Store
+
 In the next section, we'll also take care for the Sales Order transaction data from EPM and will right away establish a replication (initial load plus following delta processing) transfer mode.
+
+1. In SAP Data Intelligence, open the ***Modeler*** application.
+
+
 
 ## Summary
 
