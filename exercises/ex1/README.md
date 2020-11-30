@@ -84,7 +84,7 @@ After completing the following steps you will have extended the Data Intelligenc
 1. If not already done, open the Pipeline from the previous section (**`teched.XXXX.EPM_Customer_Replication_to_S3`**). Click on the Terminal operator and then the "waste bin" icon in order to delete the Terminal operator. Do the same for the Converter operator. Just keep the the ABAP CDS Reader operator in the Pipeline canvas.<br><br>
 ![](/exercises/ex1/images/ex1-019b.JPG)<br><br>
 
-2. Make sure that the ***Operators*** tab is in scope in the Modeler UI (see left side). From the list of operators, drag the ***Wiretap*** operator and drop it in the Pipeline canvas. This operator can wiretap a connection between two operators in a Pipeline and display the traffic to the browser window (or to an external websocket client that connects to this operator). The Wiretap operator also supports throughput of type message, so that no type conversion is required.<br>
+2. Make sure that the ***Operators*** tab is in scope in the Modeler UI (see left side). From the list of operators, drag the ***Wiretap*** operator and drop it in the Pipeline canvas. This operator can wiretap a connection between two operators in a Pipeline and display the traffic to the browser window (or to an external websocket client that connects to this operator). The Wiretap operator also supports throughput of type *message*, so that no type conversion is required.<br>
 Now connect the **output port of the ABAP CDS Reader** with the **input port of the Wiretap operator** by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
 ![](/exercises/ex1/images/ex1-020b.JPG)<br><br>
 
