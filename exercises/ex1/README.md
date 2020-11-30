@@ -17,16 +17,22 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 - Follow the link to your assigned Data Intelligence instance, e.g. https://vsystem.ingress.xyz.dhaas-live.shoot.live.k8s-hana.ondemand.com/app/datahub-app-launchpad/.
 - In the pop-up window, enter ***"default"*** as the tenant name.<br><br>
 ![](/exercises/ex1/images/ex1-001b.JPG)<br><br>
-- In the next pop-up window, enter you assigned user name (e.g. ***"TA99"***) and your password (initially ***"Welcome01"***).
-<br>![](/exercises/ex1/images/ex1-002b.JPG)<br><br>
-- From the Launchpad, start the ***Modeler*** application by clicking on the corresponding tile.
-<br>![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
+- In the next pop-up window, enter you assigned user name (e.g. ***"TA99"***) and your password (initially ***"Welcome01"***).<br><br>
+![](/exercises/ex1/images/ex1-002b.JPG)<br><br>
+- From the Launchpad, start the ***Modeler*** application by clicking on the corresponding tile.<br><br>
+![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
 
-2.	Make sure you are in the ***Graphs*** tab of the Modeler UI (see left side). Then click the ***+*** symbol in order to create a new Pipeline.<br>
-<br><br>![](/exercises/ex1/images/ex1-004b.JPG)<br><br>
+2.	Make sure you are in the ***Graphs*** tab of the Modeler UI (see left side). Then click the ***+*** symbol in order to create a new Pipeline.<br><br>
+![](/exercises/ex1/images/ex1-004b.JPG)<br><br>
 
-3.	Now a new Pipeline canvas is opened on the right side and the Modeler UI automatically switches to the ***Operators*** tab (see left side). In the list of operators, drag the ABAP CDS Reader and drop it into the Pipeline canvas. Click the ABAP CDS Reader node in the canvas one time and then click the ***configuration*** icon.<br>
-<br><br>![](/exercises/ex1/images/ex1-006b.JPG)<br><br>
+3.	Now a new Pipeline canvas is opened on the right side and the Modeler UI automatically switches to the ***Operators*** tab (see left side). In the list of operators, drag the ABAP CDS Reader and drop it into the Pipeline canvas. Click the ABAP CDS Reader node in the canvas one time and then click the ***configuration*** icon.<br><br>
+![](/exercises/ex1/images/ex1-006b.JPG)<br><br>
+
+4.	In the configuration panel for the ABAP CDS Reader, specify the S/4HANA Connection: Select `S4_RFC_TechEd`. Then click on the ***Version*** selection icon.<br><br>
+![](/exercises/ex1/images/ex1-007b.JPG)<br><br>
+
+5.	In the pop-up window, mark the different versions of the ABAP CDS Reader and read through their documentation. As you can see, the ***ABAP CDS Reader V2*** provides a standard message type output (no conversion from ABAP object required). select this entry and click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-008b.JPG)<br><br>
 
 
 
