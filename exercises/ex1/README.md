@@ -71,7 +71,7 @@ Click ***OK***.<br><br>
 13.	You should now see that EPM Customer master data coming in, which proofs that the integration with the S/4HANA CDS View is working as expected. By the way: the truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
 ![](/exercises/ex1/images/ex1-017b.JPG)<br><br>
 
-14.	***Stop*** the Pipeline execution again. The staus changes from ***running*** to ***stopping*** and finally to ***completed***.<br><br>
+14.	***Stop*** the Pipeline execution again by clicking the marked icons in the menue bar or in the status section. The status of the Pipeline will then change from ***running*** to ***stopping*** and finally to ***completed***.<br><br>
 ![](/exercises/ex1/images/ex1-018b.JPG)<br><br>
 
 **Congratulations!** You have now successfully implemented a Pipeline that consumes an ABAP CDS View from the connected SAP S/4HANA system.
