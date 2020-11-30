@@ -22,10 +22,11 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 - From the Launchpad, start the ***Modeler*** application by clicking on the corresponding tile.
 <br><br>![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
+2.	Make sure you are in the ***Graphs*** tab of the Modeler UI (see left side). Then click the ***+*** symbol in order to create a new Pipeline.<br>
+<br><br>![](/exercises/ex1/images/ex1-004b.JPG)<br><br>
+
+3.	Now a new Pipeline canvas is opened on the right side and the Modeler UI automatically switches to the ***Operators*** tab (see left side). In the list of operators, drag the ABAP CDS Reader and drop it into the Pipeline canvas. Click the ABAP CDS Reader node in the canvas one time and then click the ***configuration*** icon.<br>
+<br><br>![](/exercises/ex1/images/ex1-006b.JPG)<br><br>
 
 
 
