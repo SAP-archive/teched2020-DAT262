@@ -68,7 +68,7 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 12.	Once the status of your Pipeline has changed to ***running***, click on the ***Terminal*** operator node one time and then on its ***Open UI*** icon.<br><br>
 ![](/exercises/ex1/images/ex1-016b.JPG)<br><br>
 
-13.	You should now see that EPM Customer master data coming in, which proofs that the integration with the S/4HANA CDS View is working as expected. By the way: the truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
+13.	You should now see that EPM Customer master data is coming in, which proves that the integration with the S/4HANA CDS View is working as expected. By the way: the truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
 ![](/exercises/ex1/images/ex1-017b.JPG)<br><br>
 
 14.	***Stop*** the Pipeline execution again by clicking the marked icons in the menue bar or in the status section. The status of the Pipeline will then change from ***running*** to ***stopping*** and finally to ***completed***.<br><br>
@@ -106,7 +106,62 @@ Now connect the **output port of the ABAP CDS Reader** with the **input port of 
    - Join batches: **`True`**<br><br>
 ![](/exercises/ex1/images/ex1-024b.JPG)<br><br>
 
+7. Now ***Save*** your Pipeline, verify the validation results and - if okay - run the Pipeline by clicking on the ***Play*** symbol in the menue bar.<br><br>
+![](/exercises/ex1/images/ex1-025b.JPG)<br><br>
 
+8. Once the Pipeline has the status ***running***, click on the ***Wiretap*** operator and then click its ***Open UI*** icon.<br><br>
+![](/exercises/ex1/images/ex1-026b.JPG)<br><br>
+
+9. In the ***Wiretap UI*** you should now see the processed messagen from the ABAP CDS Reader.<br><br>
+![](/exercises/ex1/images/ex1-027b.JPG)<br><br>
+
+10. ***Stop*** the Pipeline.<br><br>
+![](/exercises/ex1/images/ex1-028b.JPG)<br><br>
+
+11. As a verification of the successful load of the data to the file in S3, we can use the ***Metadata Explorer*** as integrated part of SAP Data Intelligence. Please go back to the Launchpad and click on the corresponding tile.<br><br>
+![](/exercises/ex1/images/ex1-029b.JPG)<br><br>
+
+12. In the ***Metadata Explorer*** application main menue, click on ***Browse Connections***.<br><br>
+![](/exercises/ex1/images/ex1-030b.JPG)<br><br>
+
+13. In order to easily find our connection to the target S3 Object Store, you may leverage the search functionality. Enter `TechEd` into the search field and click on the spyclass icon. Click on the **`TechEd2020_S3`** tile.<br><br>
+![](/exercises/ex1/images/ex1-031b.JPG)<br><br>
+
+14. On the next drill-down view, click on the **`DAT262`** directory that you had specified in the ***Write File*** operator, and then drill down to your specific User directory, for example **`TA99`**.<br><br>
+![](/exercises/ex1/images/ex1-032b.JPG)<br><br>
+
+15. If your Pipeline ran successfully, you'll find a file with your specified name (`Customer_Master.csv`) Open the ***More Actions*** menue and select ***View Fact Sheet***.<br><br>
+![](/exercises/ex1/images/ex1-033b.JPG)<br><br>
+
+15. If your Pipeline ran successfully, you'll find a file with your specified name (`Customer_Master.csv`) Open the ***More Actions*** menue and select ***View Fact Sheet***.<br><br>
+![](/exercises/ex1/images/ex1-033b.JPG)<br><br>
+
+16. In the ***Fact Sheet***, which provides some more overview and statistical information about the new file, go to tab ***Data Preview***.<br><br>
+![](/exercises/ex1/images/ex1-034b.JPG)<br><br>
+
+17. Now you can see that the EPM Customer data got loaded into the target file in S3. Success!<br><br>
+![](/exercises/ex1/images/ex1-035b.JPG)<br><br>
+
+In order to fetch any changes in S/4HANA on the Business Partner table `SNWD_BPA`, we can leverage the delta enablement in the ABAP CDS View that we had conducted during the Deep Dive 1 demo by adding the `@Analytics`annotation below:<br>
+```abap
+@Analytics:{
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture.automatic: true
+    }
+}
+```
+<br>
+
+17. Go back to the Modeler application and your Pipeline. Click on the ***ABAP CDS Reader*** operator and then on its ***configuration*** icon. In the configuration panel, change the entry for the ***Transfer mode*** parameter from `Initial Load`--> `Delta Load`.<br><br>
+![](/exercises/ex1/images/ex1-036b.JPG)<br><br>
+
+18. ***Save*** the Pipeline and ***Run*** it again. As long as the Pipeline stays in a ***running*** status, it will fetch any updates on the Business Partner table of the EPM demo application in S/4HANA by leveraging the Change Data Capturing (CDC) functionality in S/4HANA ABAP CDS Views.<br><br>
+![](/exercises/ex1/images/ex1-037b.JPG)<br><br>
+
+Well done! You have implemented a Pipeline that extracts Initial Load and Delta data fron an ABAP CDS View in S/4HANA and have interlinked it with a non-SAP target storage in S3.
+
+In the next section, we'll also take care for the Sales Order transaction data fro EPM and will right away establish a replication (initial load plus following delta processing) transfer mode.
 
 ## Summary
 
