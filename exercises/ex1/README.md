@@ -14,13 +14,13 @@ The use case is
 After completing these steps you will have created a Pipeline that reads EPM Customer data from an ABAP CDS View in S/4HANA and displays it in a Terminal UI.
 
 1. Log on to SAP Data Intelligence and enter the Launchpad application. Then start the ***Modeler*** application.
-- Follow the link to your assigned Data Intelligence instance, e.g. https://vsystem.ingress.xyz.dhaas-live.shoot.live.k8s-hana.ondemand.com/app/datahub-app-launchpad/.
-- In the pop-up window, enter ***"default"*** as the tenant name.<br><br>
-![](/exercises/ex1/images/ex1-001b.JPG)<br><br>
-- In the next pop-up window, enter you assigned user name (e.g. ***"TA99"***) and your password (initially ***"Welcome01"***).<br><br>
-![](/exercises/ex1/images/ex1-002b.JPG)<br><br>
-- From the Launchpad, start the ***Modeler*** application by clicking on the corresponding tile.<br><br>
-![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
+   - Follow the link to your assigned Data Intelligence instance, e.g. https://vsystem.ingress.xyz.dhaas-live.shoot.live.k8s-hana.ondemand.com/app/datahub-app-launchpad/.
+   - In the pop-up window, enter ***"default"*** as the tenant name.<br><br>
+   ![](/exercises/ex1/images/ex1-001b.JPG)<br><br>
+   - In the next pop-up window, enter you assigned user name (e.g. ***"TA99"***) and your password (initially ***"Welcome01"***).<br><br>
+   ![](/exercises/ex1/images/ex1-002b.JPG)<br><br>
+   - From the Launchpad, start the ***Modeler*** application by clicking on the corresponding tile.<br><br>
+   ![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
 
 2.	Make sure you are in the ***Graphs*** tab of the Modeler UI (see left side). Then click the ***+*** symbol in order to create a new Pipeline.<br><br>
 ![](/exercises/ex1/images/ex1-004b.JPG)<br><br>
@@ -84,9 +84,12 @@ After completing the following steps you will have extended the Data Intelligenc
 1. If not already done, open the Pipeline from the previous section (**`teched.XXXX.EPM_Customer_Replication_to_S3`**). Click on the Terminal operator and then the "waste bin" icon in order to delete the Terminal operator. Do the same for the Converter operator. Just keep the the ABAP CDS Reader operator in the Pipeline canvas.<br><br>
 ![](/exercises/ex1/images/ex1-019b.JPG)<br><br>
 
-2. Make sure that the ***Operators*** tab is in scope in the Modeler UI (see left side). From the list of operators, drag the ***Wiretap*** operator and drop it in the Pipeline canvas. This operator can wiretap a connection between two operators in a Pipeline and display the traffic to the browser window (or to an external websocket client that connects to this operator). The Wiretap operator also supports throughput of type *message*, so that no type conversion is required.<br>
+2. Make sure that the ***Operators*** tab is in scope in the Modeler UI (see left side). From the list of operators, drag the ***Wiretap*** operator and drop it in the Pipeline canvas. Similar to a Terminal operator, this operator can wiretap a connection between two operators in a Pipeline and display the traffic to the browser window (or to an external websocket client that connects to this operator). But the Wiretap operator also supports throughput of type *message* (amongst others), so that no type conversion is needed between the ABAP CDS Reader and the Wiretap operator.<br>
 Now connect the **output port of the ABAP CDS Reader** with the **input port of the Wiretap operator** by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
 ![](/exercises/ex1/images/ex1-020b.JPG)<br><br>
+
+3. If not already done, open the Pipeline from the previous section (**`teched.XXXX.EPM_Customer_Replication_to_S3`**). Click on the Terminal operator and then the "waste bin" icon in order to delete the Terminal operator. Do the same for the Converter operator. Just keep the the ABAP CDS Reader operator in the Pipeline canvas.<br><br>
+![](/exercises/ex1/images/ex1-019b.JPG)<br><br>
 
 
 ## Summary
