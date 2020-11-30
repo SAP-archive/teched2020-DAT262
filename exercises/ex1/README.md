@@ -65,13 +65,13 @@ Click ***OK***.<br><br>
 11.	After you have saved the Pipeline, it will get validated by SAP Data Intelligence. Check the validation results. If okay, you can now execute the Pipeline by clicking the ***Play*** icon in the menue bar. Then change to the ***Status*** tab in the Modeler UI status section on the lower right side.<br><br>
 ![](/exercises/ex1/images/ex1-015b.JPG)<br><br>
 
-12.	Once the status of your Pipeline has changed to ***running***, click on the ***Terminal*** operator node one tim and then on its ***Open UI*** icon.<br><br>
+12.	Once the status of your Pipeline has changed to ***running***, click on the ***Terminal*** operator node one time and then on its ***Open UI*** icon.<br><br>
 ![](/exercises/ex1/images/ex1-016b.JPG)<br><br>
 
 13.	You should now see that EPM Customer master data is displayed, which proofs that the integration with the S/4HANA CDS View is working as expected. The truncation of payload content can be determined by the ***Max size (bytes)*** parameter in the Terminal operator configuration.<br><br>
 ![](/exercises/ex1/images/ex1-017b.JPG)<br><br>
 
-14.	***Stop*** the Pipeline execution again. The staus changes from ***running*** to ***stopping*** and finally to ***completed***<br><br>
+14.	***Stop*** the Pipeline execution again. The staus changes from ***running*** to ***stopping*** and finally to ***completed***.<br><br>
 ![](/exercises/ex1/images/ex1-018b.JPG)<br><br>
 
 **Congratulations!** You have now successfully implemented a Pipeline that consumes an ABAP CDS View from the connected SAP S/4HANA system.
