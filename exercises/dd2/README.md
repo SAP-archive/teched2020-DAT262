@@ -280,8 +280,8 @@ Then ***Save*** the Pipeline.<br><br>
 
 ## Summary
 
-We've now successfully implemented a custom ABAP Operator in S/4HANA and integrated it in a Data Intelligence Pipeline.
+We've now successfully implemented a custom ABAP Operator in S/4HANA and consumed it from a Data Intelligence Pipeline.
 
-Please continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Please continue to - [Exercise 1 - Replicating data from ABAP CDS Views in SAP Data Intelligence](../ex1/README.md)
 
 
