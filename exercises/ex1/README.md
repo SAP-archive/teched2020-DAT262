@@ -133,9 +133,6 @@ Now connect the **output port of the ABAP CDS Reader** with the **input port of 
 15. If your Pipeline ran successfully, you'll find a file with your specified name (`Customer_Master.csv`) Open the ***More Actions*** menue and select ***View Fact Sheet***.<br><br>
 ![](/exercises/ex1/images/ex1-033b.JPG)<br><br>
 
-15. If your Pipeline ran successfully, you'll find a file with your specified name (`Customer_Master.csv`) Open the ***More Actions*** menue and select ***View Fact Sheet***.<br><br>
-![](/exercises/ex1/images/ex1-033b.JPG)<br><br>
-
 16. In the ***Fact Sheet***, which provides some more overview and statistical information about the new file, go to tab ***Data Preview***.<br><br>
 ![](/exercises/ex1/images/ex1-034b.JPG)<br><br>
 
