@@ -112,7 +112,7 @@ Now connect the **output port of the ABAP CDS Reader** with the **input port of 
 8. Once the Pipeline has the status ***running***, click on the ***Wiretap*** operator and then click its ***Open UI*** icon.<br><br>
 ![](/exercises/ex1/images/ex1-026b.JPG)<br><br>
 
-9. In the ***Wiretap UI*** you should now see the processed messagen from the ABAP CDS Reader.<br><br>
+9. In the ***Wiretap UI*** you should now see the processed messages coming from the ABAP CDS Reader.<br><br>
 ![](/exercises/ex1/images/ex1-027b.JPG)<br><br>
 
 10. ***Stop*** the Pipeline.<br><br>
