@@ -153,12 +153,12 @@ In order to fetch any changes in S/4HANA on the Business Partner table `SNWD_BPA
 17. Go back to the Modeler application and your Pipeline. Click on the ***ABAP CDS Reader*** operator and then on its ***configuration*** icon. In the configuration panel, change the entry for the ***Transfer mode*** parameter from `Initial Load`--> `Delta Load`.<br><br>
 ![](/exercises/ex1/images/ex1-036b.JPG)<br><br>
 
-18. ***Save*** the Pipeline and ***Run*** it again. As long as the Pipeline stays in a ***running*** status, it will fetch any updates on the Business Partner table of the EPM demo application in S/4HANA by leveraging the Change Data Capturing (CDC) functionality in S/4HANA ABAP CDS Views.<br><br>
+18. ***Save*** the Pipeline and ***Run*** it again. As long as the Pipeline stays in a ***running*** status, it will fetch any updates on the Business Partner table of the EPM demo application in S/4HANA by leveraging the Change Data Capturing (CDC) functionality in S/4HANA ABAP CDS Views. Your target persistency in S3 is instantly and automatically kept updated.<br><br>
 ![](/exercises/ex1/images/ex1-037b.JPG)<br><br>
 
-Well done! You have implemented a Pipeline that extracts Initial Load and Delta data fron an ABAP CDS View in S/4HANA and have interlinked it with a non-SAP target storage in S3.
+**Very well done!** You have implemented a Pipeline that extracts Initial Load and Delta data fron an ABAP CDS View in S/4HANA and have interlinked it with a non-SAP target storage in S3.
 
-In the next section, we'll also take care for the Sales Order transaction data fro EPM and will right away establish a replication (initial load plus following delta processing) transfer mode.
+In the next section, we'll also take care for the Sales Order transaction data from EPM and will right away establish a replication (initial load plus following delta processing) transfer mode.
 
 ## Summary
 
