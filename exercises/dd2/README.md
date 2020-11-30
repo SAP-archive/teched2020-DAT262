@@ -230,7 +230,7 @@ ENDCLASS.
 15. When you clicked the Activation button, you are prompted for a selection of objects. Check both and confirm (![](images/Confirm_black.JPG)).<br><br>
 ![](images/dd2-015b.JPG)<br><br>
 
-The ABAP Operator implementation is now finished. The operator can immediately been used in SAP Data Intelligence Pipeline. The next section describes how this is done.<br><br>
+The ABAP Operator implementation is now finished. The operator can immediately be used in SAP Data Intelligence Pipeline. The next section describes how this is done.<br><br>
 
 ## Deep Dive 2.2 - Integrate the custom ABAP Operator in a SAP Data Intelligence Pipeline
 
