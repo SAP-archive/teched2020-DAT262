@@ -35,13 +35,13 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 ![](/exercises/ex1/images/ex1-008b.JPG)<br><br>
 
 6.	The ABAP CDS Reader operator shell has received the operator's metadata from S/4HANA and has configured the Pipeline node (for example, the operator now has an output port). Now fill in the configuration parameters in the panel:
-   - Label: `Buyer - S/4 ABAP CDS`
-   - Subscription Type: `New`
-   - Subscription Name: `BP001_XXXX`, where XXXX is your user name, for example "BP001_TA99"
-   - ABAP CDS Name: `Z_CDS_BUYER_Delta`, which is the "simple" CDS View that got created in the Deep Dive 1 demo
-   - Transfer Mode: `Initial Load`
-   - Leave all other parameters as-is.<br><br>
-   ![](/exercises/ex1/images/ex1-009b.JPG)<br><br>
+      - Label: `Buyer - S/4 ABAP CDS`
+      - Subscription Type: `New`
+      - Subscription Name: `BP001_XXXX`, where XXXX is your user name, for example "BP001_TA99"
+      - ABAP CDS Name: `Z_CDS_BUYER_Delta`, which is the "simple" CDS View that got created in the Deep Dive 1 demo
+      - Transfer Mode: `Initial Load`
+      - Leave all other parameters as-is.<br><br>
+![](/exercises/ex1/images/ex1-009b.JPG)<br><br>
 
 7.	From the operator list on the left side, drag the ***Terminal*** operator into the Pipeline canvas. Then connect the output port of the ABAP CDS Reader with the input port of the Terminal operator by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
 ![](/exercises/ex1/images/ex1-010b.JPG)<br><br>
