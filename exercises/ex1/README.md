@@ -74,12 +74,12 @@ Click ***OK***.<br><br>
 14.	***Stop*** the Pipeline execution again. The staus changes from ***running*** to ***stopping*** and finally to ***completed***<br><br>
 ![](/exercises/ex1/images/ex1-018b.JPG)<br><br>
 
-**Congratulations**, you have now successfully implemented a Pipeline that consumes an ABAP CDS View from the connected SAP S/4HANA system.
-As a next step, you will persist the EPM Customer master data in an S3 Object Store.
+**Congratulations!** You have now successfully implemented a Pipeline that consumes an ABAP CDS View from the connected SAP S/4HANA system.
+As a next step, you will persist the EPM Customer master data in an S3 Object Store and switch from the Initial Load to a Delta Load transfer mode.
 
-## Exercise 1.2 Sub Exercise 2 Description
+## Exercise 1.2 - Extend the Pipeline to transfer the Customer data into an S3 Object Store with Initial Load and Delta Load
 
-After completing these steps you will have...
+After completing these steps you will have extended the Data Intelligence Pipeline with an additional data persistency in S3. And in order to also obtain any deltas that have occurred in the EPM Business Partner table `SNWD_BPA`, the transfer mode will get changed to Delta Load after initially loading the data into a file in S3.
 
 1.	Enter this code.
 
