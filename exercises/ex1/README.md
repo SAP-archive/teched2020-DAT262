@@ -74,7 +74,8 @@ Click ***OK***.<br><br>
 14.	***Stop*** the Pipeline execution again. The staus changes from ***running*** to ***stopping*** and finally to ***completed***<br><br>
 ![](/exercises/ex1/images/ex1-018b.JPG)<br><br>
 
-
+**Congratulations**, you have now successfully implemented a Pipeline that consumes an ABAP CDS View from the connected SAP S/4HANA system.
+As a next step, you will persist the EPM Customer master data in an S3 Object Store.
 
 ## Exercise 1.2 Sub Exercise 2 Description
 
