@@ -53,7 +53,7 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 ![](/exercises/ex1/images/ex1-012b.JPG)<br><br>
 
 10.	***Save*** your Pipeline.
-      - click on the Disk symbol in the menue bar.<br><br>
+      - Click on the Disk symbol in the menue bar.<br><br>
       ![](/exercises/ex1/images/ex1-013b.JPG)<br><br>
       - Because you save the Pipeline for the first time, you are prompted for some inputs.<br>
       As Name, enter **`teched.XXXX.EPM_Customer_Replication_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_Customer_Replication_to_S3".<br>
@@ -88,8 +88,23 @@ After completing the following steps you will have extended the Data Intelligenc
 Now connect the **output port of the ABAP CDS Reader** with the **input port of the Wiretap operator** by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
 ![](/exercises/ex1/images/ex1-020b.JPG)<br><br>
 
-3. If not already done, open the Pipeline from the previous section (**`teched.XXXX.EPM_Customer_Replication_to_S3`**). Click on the Terminal operator and then the "waste bin" icon in order to delete the Terminal operator. Do the same for the Converter operator. Just keep the the ABAP CDS Reader operator in the Pipeline canvas.<br><br>
-![](/exercises/ex1/images/ex1-019b.JPG)<br><br>
+3. From the list of operators, drag the ***Write File*** operator and drop it in the Pipeline canvas. Then connect the **output port of the Wiretap operator** with the **input port of the Write File operator** by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
+![](/exercises/ex1/images/ex1-021b.JPG)<br><br>
+
+4. The message format from the Wiretap operator output must be transformed to a file format. For this reason you are prompted to choose an appropriate converter operator. On the pop-up window, select the first option (transfer the content). Click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-022b.JPG)<br><br>
+
+5. Click on the ***Write File*** operator and click its ***configuration*** icon.<br><br>
+![](/exercises/ex1/images/ex1-023b.JPG)<br><br>
+
+6. Enter the needed configuration parameters for the ***Write File*** operator. These are:
+   - Label: **`Customer Master to S3`**
+   - Connection: Choose type ***Connection Management*** and then the connection ID **`TechEd2020_S3`**
+   - Path mode: **`Static (from configuration)`**
+   - Path: **`/DAT262/XXXX/Customer_Master.csv`**, where XXXX is your User name, for example "/DAT262/TA99/Customer_Master.csv"
+   - Mode: **`Append`**
+   - Join batches: **`True`**<br><br>
+![](/exercises/ex1/images/ex1-024b.JPG)<br><br>
 
 
 ## Summary
