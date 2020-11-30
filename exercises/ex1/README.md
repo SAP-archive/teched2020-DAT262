@@ -107,6 +107,7 @@ Now connect the **output port of the ABAP CDS Reader** with the **input port of 
 ![](/exercises/ex1/images/ex1-024b.JPG)<br><br>
 
 
+
 ## Summary
 
 You've now ...
