@@ -1,7 +1,7 @@
 # Exercise 1 - Replicating data from ABAP CDS Views in SAP Data Intelligence
 
 In this exercise, we will leverage the ABAP CDS Views that got created during the first Deep Dive demo in the connected S/4HANA system in a Pipeline.<br><br>
-The use case is to obtain the Business Partner master data in S/4HANA's demo application **Enterprise Procurement Model (EPM)** and make the records available for the corporate Data Analysts in an S3 object store. We also want to persist the transactional data for Sales Orders in S3. In both cases, any change of these data sources in the S/4HANA system has to be instantly replicated to the related files in S3 in append mode.
+The use case is to obtain the Business Partner master data in S/4HANA's demo application **Enterprise Procurement Model (EPM)** and make the records available for the corporate Data Analysts in an S3 object store. We also want to persist the transactional data for Sales Orders in S3. In both cases, any single change of these data sources in the S/4HANA system has to be instantly and automatically replicated to the related files in S3 in append mode.
 
 (As a reminder: You can recap the relationship between the relevant EPM table entities that used in this exercise [here](../ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-s4))<br>
 
