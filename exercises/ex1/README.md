@@ -8,7 +8,7 @@ The use case is
 
 (As a reminder: You can recap the relationship between the relevant EPM table entities that used in this exercise [here](../ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-s4))<br>
 
-## Exercise 1.1 Sub Exercise 1 Description
+## Exercise 1.1 - Consume ABAP CDS Views in SAP Data Intelligence
 
 After completing these steps you will have created...
 
