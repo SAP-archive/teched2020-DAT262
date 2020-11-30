@@ -7,13 +7,16 @@ The use case is
 - In both cases, any single change of these data sources in the S/4HANA system has to be instantly and automatically replicated to the related files in S3 in append mode.
 - Additionally, the Sales Order data have to be enriched with Customer master data. For the initial load and then on every change committed to the EPM Sales Order data in S/4HANA.
 
-(As a reminder: You can recap the relationship between the relevant EPM table entities that used in this exercise [here](../ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-s4))<br>
+(As a reminder: You can recap the relationship between the relevant EPM table entities that are used in this exercise [here](../ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-s4))<br>
 
-## Exercise 1.1 - Consume ABAP CDS Views in SAP Data Intelligence
+## Exercise 1.1 - Consume the EPM Business Partner ABAP CDS Views in SAP Data Intelligence
 
-After completing these steps you will have created...
+After completing these steps you will have created a Pipeline that reads EPM Customer data from an ABAP CDS View in S/4HANA and displays it in a Terminal UI.
 
-1. Click here.
+1. Log on to SAP Data Intelligence and enter the Launchpad application.
+- Follow the link to your assigned Data Intelligence instance, e.g. https://vsystem.ingress.xyz.dhaas-live.shoot.live.k8s-hana.ondemand.com/app/datahub-app-launchpad/.
+- In the pop-up window, enter ***"default"*** as the tenant name.
+- In the next pop-up wi
 <br>![](/exercises/ex1/images/01_01_0010.png)
 
 2.	Insert this line of code.
