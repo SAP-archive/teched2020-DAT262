@@ -7,7 +7,10 @@ This repository contains the material for the SAP TechEd 2020 session called<br>
 
 ## Overview
 
-This session introduces the attendees to the options that SAP Data Intelligence offers to integrate S/4HANA systems with its enterprise-wide, holistic Data Processing and Orchestration capabilities for SAP and non-SAP environments.
+SAP Data Intelligence is SAP's leading product for data integration, management, intelligent processing and orchestration across different data environments.
+One important aspect is the replication, consumption, and exchange of data coming from SAP S/4HANA.<br>
+This hands-on session will focus on connectivity and system interoperability to S/4HANA systems and provides an insight on how to use the corresponding out-of-the-box operators in SAP Data Intelligence to seamlessly integrate with the above SAP Business applications and beyond.
+
 
 ## Requirements
 
