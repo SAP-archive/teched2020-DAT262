@@ -207,10 +207,10 @@ In the next section, we'll also take care for the Sales Order transaction data f
 12.	***Save*** your Pipeline.
       - Click on the Disk symbol in the menue bar.
       - Because you save the Sales Order Pipeline for the first time, you are prompted for some inputs.<br>
-      As Name, enter **`teched.XXXX.EPM_SalesOrder_Replication_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_SalesOrder_Replication_to_S3".<br>
-      As Description, please enter **`XXXX - Replicate S/4HANA EPM Customer Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate S/4HANA EPM Sales  Order Data to S3". (The description will show up in the Pipeline status information later on.)<br>
-      As Catergory, enter **`dat262`**, which is the name under which you can find your Pipeline in the ***Graphs*** tab.<br>
-      Click ***OK***.<br><br>
+      - As Name, enter **`teched.XXXX.EPM_SalesOrder_Replication_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_SalesOrder_Replication_to_S3".<br>
+      - As Description, please enter **`XXXX - Replicate S/4HANA EPM Customer Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate S/4HANA EPM Sales  Order Data to S3". (The description will show up in the Pipeline status information later on.)<br>
+      - As Catergory, enter **`dat262`**, which is the name under which you can find your Pipeline in the ***Graphs*** tab.<br>
+      - Click ***OK***.<br><br>
       ![](/exercises/ex1/images/ex1-044b.JPG)<br><br>
 
 13.	After you have saved the Pipeline, it will get validated by SAP Data Intelligence. Check the validation results. If okay, you can now execute the Pipeline by clicking the ***Play*** icon in the menue bar. Then change to the ***Status*** tab in the Modeler UI status section on the lower right side.<br><br>
@@ -255,7 +255,17 @@ As a next step, you will enrich the Sales Order data with some Customer Details 
 In this last part of the S/4HANA ABAP CDS View intergration exercise, you will establish a Pipeline that replicated the Sales Order data from the delta-enabled ABA CDS View in S/4HANA and joins it with some of the details that you have replicated from the Customer master data, i.e. company name and legal form.
 
 1. In SAP Data Intelligence, open the ***Modeler*** application. Make sure the scope of the Modeler UI is on tab ***Graphs*** (see left side). if not still open from the previous exercise part, search for your Sales Order Pipeline by entering your user name into the search field on top of the list of Pipelines. Click on Pipeline with the label `XXXX - Replicate S/4HANA EPM Sales  Order Data to S3`, where XXXX is your user name, for example "TA99 - Replicate S/4HANA EPM Sales  Order Data to S3". The Pipeline will get opened then or will get the focus on the UI if it was alraedy opened. If you cannot see the complete label of the Pipeline, just hover with your mouse over the pipeline item in the list.<br><br>
-![](/exercises/ex1/images/ex1-004b.JPG)<br><br>
+![](/exercises/ex1/images/ex1-052b.JPG)<br><br>
+
+2. Click on the pull-down menue of the ***Save*** icon (disk symbol) and choose ***Save As***.<br><br>
+![](/exercises/ex1/images/ex1-053b.JPG)<br><br>
+
+3. You are prompted for some inputs. Please enter the following values.
+    - As Name, enter **`teched.XXXX.EPM_SalesOrder_Replication_Enrich_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_SalesOrder_Replication_Enrich_to_S3".<br>
+    - As Description, please enter **`XXXX - Replicate and Enrich S/4HANA EPM Sales Order Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate and Enrich S/4HANA EPM Sales Order Data to S3". (The description will show up in the Pipeline status information later on.)<br>
+    - As Catergory, enter **`dat262`**, which is the name under which you can find your Pipeline in the ***Graphs*** tab.<br>
+   Then click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-054b.JPG)<br><br>
 
 
 
