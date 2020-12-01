@@ -242,6 +242,10 @@ In the next section, we'll also take care for the Sales Order transaction data f
 22. Now you can see that the EPM Customer data got loaded into the target file in S3. Success!<br><br>
 ![](/exercises/ex1/images/ex1-050b.JPG)<br><br>
 
+**Congratulations!** You have created the Sales Order extraction from a delta-enabled, more complex ABAP CDS View into the S3 Object Store. Because you have chosen the transfer mode ***"Replication"*** in the CDS Reader operator configuration, the Pipeline has conducted the Initial Load waits for changes in the S/HANA EPM Sales Order object as long as it is running.
+
+As a next step, you will enrich the Sales Order Data with Customer Details (Name and Legal Form) during the Replication process.
+
 
 ## Exercise 1.4 - Extend the Pipeline for joining Sales Order with Customer data for each change in Sales Orders and persist results in S3
 
