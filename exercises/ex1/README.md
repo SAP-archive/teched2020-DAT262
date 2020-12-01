@@ -239,10 +239,10 @@ In the next section, we'll also take care for the Sales Order transaction data f
 21. In the ***Fact Sheet***, which provides some more overview and statistical information about the new file, go to tab ***Data Preview***.<br><br>
 ![](/exercises/ex1/images/ex1-049b.JPG)<br><br>
 
-22. Now you can see that the EPM Customer data got loaded into the target file in S3. Success!<br><br>
+22. Now you can see that the EPM Customer data got loaded into the target file in S3. Success! While the Pipeline is running, this file would get automatically updated with each change in the S/4HANA data sources (the tables `SNWD_SO`, `SNWD_SO_I`, `SNWD_PD`, `SNWD_TEXTS` joined through the ABAP CDS View `Z_CDS_SO_SOI_Delta`)<br><br>
 ![](/exercises/ex1/images/ex1-050b.JPG)<br><br>
 
-**Congratulations!** You have created the Sales Order extraction from a delta-enabled, more complex ABAP CDS View into the S3 Object Store. Because you have chosen the transfer mode ***"Replication"*** in the CDS Reader operator configuration, the Pipeline has conducted the Initial Load waits for changes in the S/HANA EPM Sales Order object as long as it is running.
+**Congratulations!** You have created the Sales Order extraction from a delta-enabled, more complex ABAP CDS View into the S3 Object Store. Because you have chosen the transfer mode ***"Replication"*** in the CDS Reader operator configuration, the Pipeline has conducted the Initial Load and then waits for any changes (inserts, updates, deletions) in the S/HANA EPM Sales Order object as long as it is running.
 
 As a next step, you will enrich the Sales Order Data with Customer Details (Name and Legal Form) during the Replication process.
 
