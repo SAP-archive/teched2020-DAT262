@@ -264,10 +264,20 @@ In this last part of the S/4HANA ABAP CDS View intergration exercise, you will e
     - As Name, enter **`teched.XXXX.EPM_SalesOrder_Replication_Enrich_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_SalesOrder_Replication_Enrich_to_S3".<br>
     - As Description, please enter **`XXXX - Replicate and Enrich S/4HANA EPM Sales Order Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate and Enrich S/4HANA EPM Sales Order Data to S3". (The description will show up in the Pipeline status information later on.)<br>
     - As Catergory, enter **`dat262`**, which is the name under which you can find your Pipeline in the ***Graphs*** tab.<br>
-   Then click ***OK***.<br><br>
+    - Then click ***OK***.<br><br>
 ![](/exercises/ex1/images/ex1-054b.JPG)<br><br>
 
+4. A new Pipeline has been created as a copy of your original Sales Order replication Pipeline. You will be using the File Operator outputs (i.e. the file path and name) as a trigger for the join processes with the Customer master data.<br><br>
 
+5. Open the configuration of the File Writer operator and enter the new target path/file name **`/DAT262/TA99/Sales_Order_Staging.csv`**. Change Mode to **`Overwrite`**. Then save the Pipeline.<br><br>
+![](/exercises/ex1/images/ex1-055b.JPG)<br><br>
+
+6. Click on the ***Operators*** tab on the left side in order to get the list of operators. Find the ***Graph Terminator*** operator and drag it from the operator list into the canvas. Then connect the upper output port ("file") of the File Writer with the input port of the Graph Terminator operator.<br><br>
+The Graph Terminanor allows us to run the Pipeline once, and when the new file got generated, the File Writer will send a termination signal to the Graph Terminator, which then stops the Pipeline. We do this in order to creat the new output file as an input for the next steps.<br><br>
+![](/exercises/ex1/images/ex1-056b.JPG)<br><br>
+
+7. ***Save*** and ***Run*** the Pipeline. Wait until the Pipeline status turns from ***pending*** to ***processing*** and finally to ***completed***.<br><br>
+![](/exercises/ex1/images/ex1-055b.JPG)<br><br>
 
 ## Summary
 
