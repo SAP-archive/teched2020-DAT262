@@ -205,7 +205,7 @@ In the next section, we'll also take care for the Sales Order transaction data f
 ![](/exercises/ex1/images/ex1-043b.JPG)<br><br>
 
 12.	***Save*** your Pipeline.
-      - Click on the Disk symbol in the menue bar.<br><br>
+      - Click on the Disk symbol in the menue bar.
       - Because you save the Sales Order Pipeline for the first time, you are prompted for some inputs.<br>
       As Name, enter **`teched.XXXX.EPM_SalesOrder_Replication_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_SalesOrder_Replication_to_S3".<br>
       As Description, please enter **`XXXX - Replicate S/4HANA EPM Customer Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate S/4HANA EPM Sales  Order Data to S3". (The description will show up in the Pipeline status information later on.)<br>
