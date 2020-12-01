@@ -207,28 +207,40 @@ In the next section, we'll also take care for the Sales Order transaction data f
 12.	***Save*** your Pipeline.
       - Click on the Disk symbol in the menue bar.<br><br>
       - Because you save the Sales Order Pipeline for the first time, you are prompted for some inputs.<br>
-      As Name, enter **`teched.XXXX.EPM_Customer_Replication_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_Customer_Replication_to_S3".<br>
-      As Description, please enter **`XXXX - Replicate S/4HANA EPM Customer Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate S/4HANA EPM Customer         Data to S3". (The description will show up in the Pipeline status information later on.)<br>
+      As Name, enter **`teched.XXXX.EPM_SalesOrder_Replication_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_SalesOrder_Replication_to_S3".<br>
+      As Description, please enter **`XXXX - Replicate S/4HANA EPM Customer Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate S/4HANA EPM Sales  Order Data to S3". (The description will show up in the Pipeline status information later on.)<br>
       As Catergory, enter **`dat262`**, which is the name under which you can find your Pipeline in the ***Graphs*** tab.<br>
       Click ***OK***.<br><br>
-      ![](/exercises/ex1/images/ex1-014b.JPG)<br><br>
+      ![](/exercises/ex1/images/ex1-044b.JPG)<br><br>
 
-11.	After you have saved the Pipeline, it will get validated by SAP Data Intelligence. Check the validation results. If okay, you can now execute the Pipeline by clicking the ***Play*** icon in the menue bar. Then change to the ***Status*** tab in the Modeler UI status section on the lower right side.<br><br>
-![](/exercises/ex1/images/ex1-015b.JPG)<br><br>
+13.	After you have saved the Pipeline, it will get validated by SAP Data Intelligence. Check the validation results. If okay, you can now execute the Pipeline by clicking the ***Play*** icon in the menue bar. Then change to the ***Status*** tab in the Modeler UI status section on the lower right side.<br><br>
+![](/exercises/ex1/images/ex1-045b.JPG)<br><br>
 
-12.	Once the status of your Pipeline has changed to ***running***, click on the ***Terminal*** operator node one time and then on its ***Open UI*** icon.<br><br>
-![](/exercises/ex1/images/ex1-016b.JPG)<br><br>
+14.	Once the status of your Pipeline has changed to ***running***, click on the ***Wiretap*** operator node one time and then on its ***Open UI*** icon.<br><br>
+![](/exercises/ex1/images/ex1-046b.JPG)<br><br>
 
+15. In the ***Wiretap UI*** you should now see the processed Sales Order messages coming from the ABAP CDS Reader. This proves that the integration with the S/4HANA CDS View is working as expected.<br><br>
+![](/exercises/ex1/images/ex1-047b.JPG)<br><br>
 
+16. For validating the correct creation of the file in S3, please leverage the Data Intelligence Metadata Explorer again. Go back to the Launchpad and start the Metadata Explorer application, if not already launched from the previous exercise.<br><br>
 
-12. Now ***Save*** your Pipeline, verify the validation results and - if okay - run the Pipeline by clicking on the ***Play*** symbol in the menue bar.<br><br>
-![](/exercises/ex1/images/ex1-025b.JPG)<br><br>
+17. In the ***Metadata Explorer*** application main menue, click on ***Browse Connections***.<br><br>
+![](/exercises/ex1/images/ex1-030b.JPG)<br><br>
 
-13. Once the Pipeline has the status ***running***, click on the ***Wiretap*** operator and then click its ***Open UI*** icon.<br><br>
-![](/exercises/ex1/images/ex1-026b.JPG)<br><br>
+18. In order to easily find our connection to the target S3 Object Store, you may leverage the search functionality. Enter `TechEd` into the search field and click on the spyclass icon. Click on the **`TechEd2020_S3`** tile.<br><br>
+![](/exercises/ex1/images/ex1-031b.JPG)<br><br>
 
-14. In the ***Wiretap UI*** you should now see the processed Sales Order messages coming from the ABAP CDS Reader.<br><br>
-![](/exercises/ex1/images/ex1-027b.JPG)<br><br>
+19. On the next drill-down view, click on the **`DAT262`** directory that you had specified in the ***Write File*** operator, and then drill down to your specific User directory, for example **`TA99`**.<br><br>
+![](/exercises/ex1/images/ex1-032b.JPG)<br><br>
+
+20. If your Pipeline ran successfully, you'll find a file with your specified name (`Sales_Order.csv`) Open the ***More Actions*** menue and select ***View Fact Sheet***.<br><br>
+![](/exercises/ex1/images/ex1-048b.JPG)<br><br>
+
+21. In the ***Fact Sheet***, which provides some more overview and statistical information about the new file, go to tab ***Data Preview***.<br><br>
+![](/exercises/ex1/images/ex1-049b.JPG)<br><br>
+
+22. Now you can see that the EPM Customer data got loaded into the target file in S3. Success!<br><br>
+![](/exercises/ex1/images/ex1-050b.JPG)<br><br>
 
 
 ## Exercise 1.4 - Extend the Pipeline for joining Sales Order with Customer data for each change in Sales Orders and persist results in S3
