@@ -165,6 +165,11 @@ In the next section, we'll also take care for the Sales Order transaction data f
 1. In SAP Data Intelligence, open the ***Modeler*** application.
 
 
+## Exercise 1.4 - Extend the Pipeline for joining Sales Order with Customer data for each change in Sales Orders and persist results in S3
+
+
+
+
 
 ## Summary
 
