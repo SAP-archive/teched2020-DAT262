@@ -43,7 +43,7 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
       - Leave all other parameters as-is.<br><br>
    ![](/exercises/ex1/images/ex1-009b.JPG)<br><br>
 
-7.	From the operator list on the left side, drag the ***Terminal*** operator into the Pipeline canvas. Then connect the output port of the ABAP CDS Reader with the input port of the Terminal operator by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
+7.	From the operator list on the left side, drag the ***Terminal*** operator and drop it into the Pipeline canvas. Then connect the output port of the ABAP CDS Reader with the input port of the Terminal operator by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
 ![](/exercises/ex1/images/ex1-010b.JPG)<br><br>
 
 8.	The Terminal displays string type data. Because the output of the ABAP CDS Reader is a message, its body/payload needs to be converted into a string. After you have connected the operator ports you are, hence, prompted for a conversion approach. Select the first of the two options (only the body will be processed) and click ***OK***.<br><br>
@@ -84,7 +84,7 @@ After completing the following steps you will have extended the Data Intelligenc
 1. If not already done, open the Pipeline from the previous section (**`teched.XXXX.EPM_Customer_Replication_to_S3`**, where XXXX is your user name). Click on the Terminal operator and then the "waste bin" icon in order to delete the Terminal operator. Do the same for the Converter operator. Just keep the the ABAP CDS Reader operator in the Pipeline canvas.<br><br>
 ![](/exercises/ex1/images/ex1-019b.JPG)<br><br>
 
-2. Make sure that the ***Operators*** tab is in scope in the Modeler UI (see left side). From the list of operators, drag the ***Wiretap*** operator and drop it in the Pipeline canvas. Similar to a Terminal operator, this operator can wiretap a connection between two operators in a Pipeline and display the traffic to the browser window (or to an external websocket client that connects to this operator). But the Wiretap operator also supports throughput of type *message* (amongst others), so that no type conversion is needed between the ABAP CDS Reader and the Wiretap operator.<br>
+2. Make sure that the ***Operators*** tab is in scope in the Modeler UI (see left side). From the list of operators, drag the ***Wiretap*** operator and drop it into the Pipeline canvas. Similar to a Terminal operator, this operator can wiretap a connection between two operators in a Pipeline and display the traffic to the browser window (or to an external websocket client that connects to this operator). But the Wiretap operator also supports throughput of type *message* (amongst others), so that no type conversion is needed between the ABAP CDS Reader and the Wiretap operator.<br>
 Now connect the **output port of the ABAP CDS Reader** with the **input port of the Wiretap operator** by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
 ![](/exercises/ex1/images/ex1-020b.JPG)<br><br>
 
@@ -162,7 +162,73 @@ In order to fetch any changes in S/4HANA on the Business Partner table `SNWD_BPA
 
 In the next section, we'll also take care for the Sales Order transaction data from EPM and will right away establish a replication (initial load plus following delta processing) transfer mode.
 
-1. In SAP Data Intelligence, open the ***Modeler*** application.
+1. In SAP Data Intelligence, open the ***Modeler*** application. Make sure the scope of the Modeler UI is on tab ***Graphs*** (see left side). Then click the ***+*** button to create a new Pipeline.<br><br>
+![](/exercises/ex1/images/ex1-004b.JPG)<br><br>
+
+2. Now a new Pipeline canvas is opened on the right side and the Modeler UI automatically switches the scope to the ***Operators*** tab (see left side). In the list of operators, drag the ABAP CDS Reader and drop it into the Pipeline canvas. Click the ABAP CDS Reader node in the canvas one time and then click the ***configuration*** icon.<br><br>
+![](/exercises/ex1/images/ex1-006b.JPG)<br><br>
+
+3.	In the configuration panel for the ABAP CDS Reader, specify the S/4HANA Connection: Select `S4_RFC_TechEd`. Then click on the ***Version*** selection icon.<br><br>
+![](/exercises/ex1/images/ex1-007b.JPG)<br><br>
+
+4.	In the pop-up window, select the option ***ABAP CDS Reader V2*** and click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-008b.JPG)<br><br>
+
+6.	The ABAP CDS Reader operator shell has received the operator's metadata from S/4HANA and has configured the Pipeline node (for example, the operator now has an output port). Now fill in the configuration parameters in the panel:
+      - Label: `Sales Order - S/4 ABAP CDS`
+      - Subscription Type: `New`
+      - Subscription Name: `SO001_XXXX`, where XXXX is your user name, for example "BP002_TA99"
+      - ABAP CDS Name: `Z_CDS_SO_SOI_Delta`, which is the "more complex" CDS View that got created in the Deep Dive 1 demo
+      - Transfer Mode: `Replication`
+      - Leave all other parameters as-is.<br><br>
+   ![](/exercises/ex1/images/ex1-038b.JPG)<br><br>
+   
+7.	From the operator list on the left side, drag the ***Wiretab*** operator and drop it into the Pipeline canvas. Then connect the output port of the ABAP CDS Reader with the input port of the Wiretab operator by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
+![](/exercises/ex1/images/ex1-039b.JPG)<br><br>
+
+8. From the list of operators, drag the ***Write File*** operator and drop it in the Pipeline canvas. Then connect the **output port of the Wiretap operator** with the **input port of the Write File operator** by pulling the mouse pointer from one port to the other while the left mouse button is pressed.<br><br>
+![](/exercises/ex1/images/ex1-040b.JPG)<br><br>
+
+9. The message format from the Wiretap operator output must be transformed to a file format. For this reason you are prompted to choose an appropriate converter operator. On the pop-up window, select the first option (transfer the content). Click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-041b.JPG)<br><br>
+
+10. Click on the ***Write File*** operator and click its ***configuration*** icon.<br><br>
+![](/exercises/ex1/images/ex1-042b.JPG)<br><br>
+
+11. Enter the needed configuration parameters for the ***Write File*** operator. These are:
+   - Label: **`Sales Order to S3`**
+   - Connection: Choose type ***Connection Management*** and then the connection ID **`TechEd2020_S3`**
+   - Path mode: **`Static (from configuration)`**
+   - Path: **`/DAT262/XXXX/Sales_Order.csv`**, where XXXX is your User name, for example "/DAT262/TA99/Sales_Order.csv"
+   - Mode: **`Append`**
+   - Join batches: **`True`**<br><br>
+![](/exercises/ex1/images/ex1-043b.JPG)<br><br>
+
+12.	***Save*** your Pipeline.
+      - Click on the Disk symbol in the menue bar.<br><br>
+      - Because you save the Sales Order Pipeline for the first time, you are prompted for some inputs.<br>
+      As Name, enter **`teched.XXXX.EPM_Customer_Replication_to_S3`**, where **XXXX** is your user name, for example "teched.TA99.EPM_Customer_Replication_to_S3".<br>
+      As Description, please enter **`XXXX - Replicate S/4HANA EPM Customer Data to S3`**,where **XXXX** is your user name, for example "TA99 - Replicate S/4HANA EPM Customer         Data to S3". (The description will show up in the Pipeline status information later on.)<br>
+      As Catergory, enter **`dat262`**, which is the name under which you can find your Pipeline in the ***Graphs*** tab.<br>
+      Click ***OK***.<br><br>
+      ![](/exercises/ex1/images/ex1-014b.JPG)<br><br>
+
+11.	After you have saved the Pipeline, it will get validated by SAP Data Intelligence. Check the validation results. If okay, you can now execute the Pipeline by clicking the ***Play*** icon in the menue bar. Then change to the ***Status*** tab in the Modeler UI status section on the lower right side.<br><br>
+![](/exercises/ex1/images/ex1-015b.JPG)<br><br>
+
+12.	Once the status of your Pipeline has changed to ***running***, click on the ***Terminal*** operator node one time and then on its ***Open UI*** icon.<br><br>
+![](/exercises/ex1/images/ex1-016b.JPG)<br><br>
+
+
+
+12. Now ***Save*** your Pipeline, verify the validation results and - if okay - run the Pipeline by clicking on the ***Play*** symbol in the menue bar.<br><br>
+![](/exercises/ex1/images/ex1-025b.JPG)<br><br>
+
+13. Once the Pipeline has the status ***running***, click on the ***Wiretap*** operator and then click its ***Open UI*** icon.<br><br>
+![](/exercises/ex1/images/ex1-026b.JPG)<br><br>
+
+14. In the ***Wiretap UI*** you should now see the processed Sales Order messages coming from the ABAP CDS Reader.<br><br>
+![](/exercises/ex1/images/ex1-027b.JPG)<br><br>
 
 
 ## Exercise 1.4 - Extend the Pipeline for joining Sales Order with Customer data for each change in Sales Orders and persist results in S3
