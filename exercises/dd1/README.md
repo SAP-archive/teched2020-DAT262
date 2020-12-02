@@ -102,7 +102,7 @@ Let's continue with the simple ABAP CDS View that we have implemented in the pre
 1. In ADT's Project Explorer, navigate to ***Core Data Services --> Data Definitions*** and double-click on the ABAP CDS View `Z_CDS_EPM_BUPA`.<br><br>
 ![](/exercises/dd1/images/dd1-010a.JPG)<br><br>
 
-2. Under the existing list of annotations, enter the following lines:<br>
+2. Under the existing list of annotations, enter the following lines:
 ```abap
 @Analytics:{
     dataExtraction: {
@@ -111,8 +111,7 @@ Let's continue with the simple ABAP CDS View that we have implemented in the pre
     }
 }
 ```
-
-   ![](/exercises/dd1/images/dd1-011a.JPG)<br><br>
+![](/exercises/dd1/images/dd1-011a.JPG)<br><br>
 
 3. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
 
