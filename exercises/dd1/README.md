@@ -95,9 +95,27 @@ We have now successfully created the first simple CDS View in SAP S/4HANA. In th
 
 ## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views (projections)
 
-Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do is adding the `@Analytics` annotation to the view that sets the enabled flag and defines the change data capturing approach.<br>
+Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do is adding the `@Analytics` annotation to the view that sets the enabled flag and the change data capturing approach.<br>
 
-In this simple case, the framework can derive the relation between the fields of the CDS view and key fields of the underlying table itself. Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this information, the scheduled job selects the data record from the CDS view and pushes it into the ODQ.
+In this simple case, the framework can derive the relation between the fields of the CDS view and key fields of the underlying table itself. Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this information, the scheduled job selects the data record from the CDS view and pushes it into the ODQ.<br>
+
+Let's continue with the simple ABAP CDS View that we have implemented in the previous section and introduce the CDC delta for **`Z_CDS_EPM_BUPA`**.
+
+1. In ADT's Project Explorer, navigate to ***Core Data Services --> Data Definitions*** and double-click on the ABAP CDS View `Z_CDS_EPM_BUPA`.<br><br>
+![](/exercises/dd1/images/dd1-010a.JPG)<br><br>
+
+2. Under the existing list of annotations, enter the following lines:<br><br>
+```abap
+@Analytics:{
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture.automatic: true
+    }
+}
+```
+
+3. In ADT's Project Explorer, navigate to ***Core Data Services --> Data Definitions*** and double-click on the ABAP CDS View `Z_CDS_EPM_BUPA`.<br><br>
+![](/exercises/dd1/images/dd1-010a.JPG)<br><br>
 
 
 
