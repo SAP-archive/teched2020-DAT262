@@ -20,7 +20,7 @@ Those who are interesed in more information about Change Data Capture for ABAP C
 
 After having completed the steps in this Deep Dive section we will have created two new delta-enabled custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views later to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.<br><br>
 
-## Deep Dive 1.1 - Create a simple ABAP CDS View (projections) in ADT
+## Deep Dive 1.1 - Create a simple ABAP CDS View (projection) in ADT
 
 In this sub section you can track how to create a CDS (Core Data Services) View using ABAP Development Tools (ADT). In our specific case, it is demonstrated how to create a CDS View to access data of the EPM table SNWD_BPA, which contains the Business Partner record set.
 
