@@ -123,7 +123,7 @@ In this simple case, the framework can derive the relation between the fields of
 
 In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). We will go through the implementation of a CDS View which will join the EPM tables SNWD_SO, SNWD_SO_I, SNWD_PD, and SNWD_TEXTS in order to fetch all Sales Order relevant data, including its positions, products, and product names.<br><br>
 
-As a reminder: The entity relationsships of the tables can be found [here](
+(As a reminder: The entity relationsships of the tables can be found [here](../ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana).)<br><br>
 
 In a later step, also this CDS View will be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related delta information to the target storage.
 
