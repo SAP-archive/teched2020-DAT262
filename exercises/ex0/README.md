@@ -22,7 +22,7 @@ For this reason, all parts of this session that require these (local) applicatio
 The ***Exercises*** - in opposite - are then intended to be performed by the participants in SAP Data Intelligence and will leverage those objects in S/4HANA that got created during the Deep Dive sections.
 
 
-## Short introduction to the Enterprise Procurement Model (EPM) in S/4
+## Short introduction to the Enterprise Procurement Model (EPM) in SAP S/4HANA
 
 In this workshop we will be using the Enterprise Procurement Model (EPM) as a data basis for our Deep Dive and Exercise scenarios. It is provided in all ABAP systems, hence also in SAP S/4HANA, as a ready-to-go demo application.<br>
 
