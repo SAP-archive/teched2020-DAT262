@@ -20,7 +20,7 @@ Those who are interesed in more information about Change Data Capture for ABAP C
 
 After having completed the steps in this Deep Dive section we will have created two new delta-enabled custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views later to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.<br><br>
 
-## Deep Dive 1.1 - Create a simple ABAP CDS View (projection) in ADT
+## Deep Dive 1.1 - Create a simple ABAP CDS View in ADT
 
 In this sub section you can track how to create a CDS (Core Data Services) View using ABAP Development Tools (ADT). In our specific case, it is demonstrated how to create a CDS View to access data of the EPM table SNWD_BPA, which contains the Business Partner record set.
 
@@ -93,7 +93,7 @@ then ![](/exercises/dd1/images/1-008b.JPG))<br><br>
 We have now successfully created the first simple CDS View in SAP S/4HANA. In the next step we'll be implementing a more complex CDS view that joins multiple tables.
 
 
-## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views (projections)
+## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views
 
 Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do is adding the `@Analytics` annotation to the view that sets the enabled flag and the change data capturing approach.<br>
 
