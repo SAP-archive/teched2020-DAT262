@@ -170,7 +170,7 @@ If you haven't provided that value before, you can easily search for and add you
    left outer join snwd_pd as prod on item.product_guid = prod.node_key
    left outer join snwd_texts as text on prod.name_guid = text.parent_key and text.language = 'E'
    ```
-   ...<br>
+   ...<br><br>
    ![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
 
 9.	Add the wanted fields from the other tables in the join condition.<br><br>
@@ -213,7 +213,7 @@ If you haven't provided that value before, you can easily search for and add you
 
 10. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
 
-11. Verify the results in the ***Data Preview*** by choosing ***F8***. Our CDS View data preview should look like this:<br><br>
+11. Verify the results in the ***Data Preview*** by pressing ***F8***. Our CDS View data preview should look like this:<br><br>
 ![](/exercises/dd1/images/dd1-016a.JPG)<br><br>
 
 
