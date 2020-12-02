@@ -95,22 +95,19 @@ In a later step, this CDS View will then be enabled for Change Data Capturing (C
 
 After completing these steps you will have...
 
-1.	Enter this code.
-
-
-2.	Click here.
+...to be completed
 
 ## Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views
 
-sdfajsfhdjk
+to be completed
 
 ## Deep Dive 1.4 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines
 
-fasdfkasölfekasdölkf
+to be completed
 
 ## Summary
 
-You've now ...
+to be completed
 
 Continue to [Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](../dd2/README.md)
 
