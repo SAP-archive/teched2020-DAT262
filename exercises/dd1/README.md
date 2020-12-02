@@ -111,8 +111,8 @@ Let's continue with the simple ABAP CDS View that we have implemented in the pre
     }
 }
 ```
-<br>
-![](/exercises/dd1/images/dd1-011a.JPG)<br><br>
+
+   ![](/exercises/dd1/images/dd1-011a.JPG)<br><br>
 
 3. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
 
