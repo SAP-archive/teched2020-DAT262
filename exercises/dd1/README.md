@@ -159,9 +159,9 @@ If you haven't provided that value before, you can easily search for and add you
 ![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
 
 8. For joining the EPM Sales Order Header table (`SNWD_SO`) with other related EPM tables (Sales Order Item: `SNWD_SO_I`, Product:`SNWD_PD`, Text (e.g. product names):`SNWD_TEXTS`), we can follow two different approaches.<br>
-   - JOINS, according to classical SQL concepts and always fully executing this join condition whenever the CDS View is triggered.
+   - **JOINS**, according to classical SQL concepts and always fully executing this join condition whenever the CDS View is triggered.
      An example would be<br>```select from SNWD_SO as so left outer join SNWD_SO_I as item on so.node_key = item.parent_key```.
-   - ASSOCIATIONS, which are a CDS View specific kind of joins. They can obtain data from the involved tables on Join conditions but the data is only fetched if required. For example, your CDS view has 4 Associations configured and user is fetching data for only 2 tables, the ASSOICATION on other 2 tables will not be triggered. This may save workload and may increase the query performance.<br> An example for a similar join condition with associations would be<br>```select from SNWD_SO as so association [0..1] to SNWD_SO_I as item	on so.node_key = item.parent_key```
+   - **ASSOCIATIONS**, which are a CDS View specific kind of joins. They can obtain data from the involved tables on Join conditions but the data is only fetched if required. For example, your CDS view has 4 Associations configured and user is fetching data for only 2 tables, the ASSOICATION on other 2 tables will not be triggered. This may save workload and may increase the query performance.<br> An example for a similar join condition with associations would be<br>```select from SNWD_SO as so association [0..1] to SNWD_SO_I as item	on so.node_key = item.parent_key```
    
    In our specific case, we always need to fetch data from all involved tables. Hence, we choose the classical JOIN for this example and include the following lines:<br>
    ...
@@ -170,7 +170,7 @@ If you haven't provided that value before, you can easily search for and add you
    left outer join snwd_pd as prod on item.product_guid = prod.node_key
    left outer join snwd_texts as text on prod.name_guid = text.parent_key and text.language = 'E'
    ```
-   ...
+   ...<br>
    ![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
 
 9.	Add the wanted fields from the other tables in the join condition.<br><br>
@@ -212,6 +212,9 @@ If you haven't provided that value before, you can easily search for and add you
      ```
 
 10. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
+
+11. Verify the results in the ***Data Preview*** by choosing ***F8***. Our CDS View data preview should look like this:<br><br>
+![](/exercises/dd1/images/dd1-016a.JPG)<br><br>
 
 
 
