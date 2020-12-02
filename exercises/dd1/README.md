@@ -7,7 +7,7 @@ As a matter of fact, it was neither possible to make the ABAP Development Tools 
 >Even though it contains step by step instructions, **this part does not belong to the hands-on exercises!**
 <br>
 
-ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools. You can find more information about ADT **[here](https://tools.hana.ondemand.com/#abap)**.<br>
+**ABAP Development Tools (ADT)**, formerly known as "ABAP in Eclipse", is the integrated ABAP development environment built on top of the Eclipse platform. Its main objective is to support developers in today’s increasingly complex development environments by offering state-of the art ABAP development tools. You can find more information about ADT **[here](https://tools.hana.ondemand.com/#abap)**.<br>
 <br>
 CDS is an extension of the ABAP Dictionary that allows you to define semantically rich data models in the database and to use these data models in your ABAP programs. CDS is a central part of enabling code push-down in ABAP applications.<br>
 You can find more information about CDS in the **[ABAP keyword documentation](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abencds.htm)** and the **[SAP Community](https://community.sap.com/topics/abap)**.<br>
@@ -20,7 +20,7 @@ Those who are interesed in more information about Change Data Capture for ABAP C
 
 After having completed the steps in this Deep Dive section we will have created two new delta-enabled custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views later to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.<br><br>
 
-## Deep Dive 1.1 - Create a simple ABAP CDS View (projections) in ABAP Develoment Tools (ADT)
+## Deep Dive 1.1 - Create a simple ABAP CDS View (projections) in ADT
 
 In this sub section you can track how to create a CDS (Core Data Services) View using ABAP Development Tools (ADT). In our specific case, it is demonstrated how to create a CDS View to access data of the EPM table SNWD_BPA, which contains the Business Partner record set.
 
@@ -93,13 +93,16 @@ then ![](/exercises/dd1/images/1-008b.JPG))<br><br>
 We have now successfully created the first simple CDS View in SAP S/4HANA. In the next step we'll be implementing a more complex CDS view that joins multiple tables.
 
 
-## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views (projection)
+## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views (projections)
 
 Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do is adding the `@Analytics` annotation to the view that sets the enabled flag and defines the change data capturing approach.<br>
-Those who are interested in learning more about the `@Analytics` annotation can refer to 
+
+In this simple case, the framework can derive the relation between the fields of the CDS view and key fields of the underlying table itself. Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this information, the scheduled job selects the data record from the CDS view and pushes it into the ODQ.
 
 
-## Deep Dive 1.3 - Create a complex ABAP CDS View in ADT (joining multiple tables)
+
+
+## Deep Dive 1.3 - Create a more complex ABAP CDS View in ADT (joining multiple tables)
 
 In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). Now, the trainer will show the implementation of a CDS View which will join the tables SNWD_SO, SNWD_SO_I, SNWD_PD, and SNWD_TEXTS in order to fetch all Sales Order relevant data, including all positions, products, and product names.<br>
 In a later step, also this CDS View will be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related delta information to the target storage.
