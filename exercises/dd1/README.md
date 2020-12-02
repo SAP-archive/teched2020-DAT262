@@ -47,7 +47,7 @@ In the context menu of your package choose ***New*** and then choose ***Other AB
 In this editor, enter value for the SQL View name in the annotation **`@AbapCatalog.sqlViewName`**, e.g. **`Z_SQL_EPM_BUPA`**.<br>
 The SQL view name is the internal/technical name of the view which will be created in the database.<br>
 **`Z_CDS_EPM_BUPA`** is the name of the CDS view which provides enhanced view-building capabilities in ABAP. 
-You should always use the CDS view name in your ABAP applications.<br>
+You should always use the CDS view name in your ABAP applications.<br><br>
 The data source plus its fields have automatically been added to the view definition because of the reference to the data source object we gave in step 3.
 If you haven't provided that value before, you can easily search for and add your data source using the keyboard shortcut ***CTRL+SPACE***.<br><br>
 ![](/exercises/dd1/images/1-006a.JPG)
@@ -131,7 +131,7 @@ In a later step, also this CDS View will be enabled for Change Data Capturing (C
 In the context menu of your package choose ***New*** and then choose ***Other ABAP Repository Object***.<br><br>
 ![](/exercises/dd1/images/1-001a.JPG)
 
-2.	Select ***Data Definition***, then choose ***Next***.<br><br>
+2. Select ***Data Definition***, then choose ***Next***.<br><br>
 ![](/exercises/dd1/images/1-002a.JPG)
 
 3. Enter the following values, then choose Next.
@@ -140,20 +140,41 @@ In the context menu of your package choose ***New*** and then choose ***Other AB
 - Referenced Object: **SNWD_SO**<br><br>
 ![](/exercises/dd1/images/dd1-012a.JPG)
 
-4.	Accept the default transport request (local) by simply choosing ***Next*** again.<br><br>
+4. Accept the default transport request (local) by simply choosing ***Next*** again.<br><br>
 ![](/exercises/dd1/images/1-004a.JPG)
 
-5.	Select the entry ***Define View***, then choose ***Finish***.<br><br>
+5. Select the entry ***Define View***, then choose ***Finish***.<br><br>
 ![](/exercises/dd1/images/1-005a.JPG)
 
-6.	The new view appears in an editor, with an error showing up because of the still missing SQL View name.<br>
+6. The new view appears in an editor, with an error showing up because of the still missing SQL View name.<br>
 In this editor, enter value for the SQL View name in the annotation **`@AbapCatalog.sqlViewName`**, e.g. **`Z_SQL_EPM_SO`**.<br>
 The SQL view name is the internal/technical name of the view which will be created in the database. 
 **`Z_CDS_EPM_SO`** is the name of the CDS view which provides enhanced view-building capabilities in ABAP. 
-You should always use the CDS view name in your ABAP applications.<br>
+You should always use the CDS view name in your ABAP applications.<br><br>
 The pre-defined data source plus its fields have automatically been added to the view definition because of the reference to the data source object we gave in step 3.
 If you haven't provided that value before, you can easily search for and add your data source using the keyboard shortcut ***CTRL+SPACE***.<br><br>
 ![](/exercises/dd1/images/dd1-013a.JPG)
+
+7.	Delete the not needed fields in the SELECT statement, add the annotation ```@ClientHandling.type: #CLIENT_DEPENDENT``` and beautify the view a bit.<br><br>
+![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
+
+8. For joining the EPM Sales Order Header table (`SNWD_SO`) with other related EPM tables (Sales Order Item: `SNWD_SO_I`, Product:`SNWD_PD`, Text (e.g. product names):`SNWD_TEXTS`), we can follow two different approaches.<br>
+   - JOINS, according to classical SQL concepts and always fully executing this join condition whenever the CDS View is triggered.
+     An example would be<br>```select from SNWD_SO as so left outer join SNWD_SO_I as item on so.node_key = item.parent_key```.
+   - ASSOCIATIONS, which are a CDS View specific kind of joins. They can obtain data from the involved tables on Join conditions but the data is only fetched if required. For example, your CDS view has 4 Associations configured and user is fetching data for only 2 tables, the ASSOICATION on other 2 tables will not be triggered. This may save workload and may increase the query performance.<br> An example for a similar join condition with associations would be<br>```select from SNWD_SO as so association [0..1] to SNWD_SO_I as item	on so.node_key = item.parent_key```
+   
+   In our specific case, we always need to fetch data from all involved tables. Hence, we choose the classical JOIN for this example and include the following lines:<br>
+   ...
+   ```abap
+   left outer join snwd_so_i as item on so.node_key = item.parent_key
+   left outer join snwd_pd as prod on item.product_guid = prod.node_key
+   left outer join snwd_texts as text on prod.name_guid = text.parent_key and text.language = 'E'
+   ```
+   ...
+   ![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
+
+7.	Delete the not needed fields in the SELECT statement, add the annotation ```@ClientHandling.type: #CLIENT_DEPENDENT``` and beautify the view.<br><br>
+![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
 
 ## Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views
 
