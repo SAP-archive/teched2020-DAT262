@@ -173,8 +173,8 @@ If you haven't provided that value before, you can easily search for and add you
    ...
    ![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
 
-7.	Delete the not needed fields in the SELECT statement, add the annotation ```@ClientHandling.type: #CLIENT_DEPENDENT``` and beautify the view.<br><br>
-![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
+7.	Add the wanted fields from the tables in the join condition.<br><br>
+![](/exercises/dd1/images/dd1-015a.JPG)<br><br>
 
 ## Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views
 
