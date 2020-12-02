@@ -44,12 +44,12 @@ In the context menu of your package choose ***New*** and then choose ***Other AB
 ![](/exercises/dd1/images/1-005a.JPG)
 
 6.	The new view appears in an editor, with an error showing up because of the still missing SQL View name.<br>
-In this editor, enter value for the SQL View name in the annotation ```@AbapCatalog.sqlViewName```, e.g. ```Z_SQL_EPM_BUPA```.<br>
-The SQL view name is the internal/technical name of the view which will be created in the database. 
-```Z_SQL_EPM_BUPA``` is the name of the CDS view which provides enhanced view-building capabilities in ABAP. 
+In this editor, enter value for the SQL View name in the annotation **`@AbapCatalog.sqlViewName`**, e.g. **`Z_SQL_EPM_BUPA`**.<br>
+The SQL view name is the internal/technical name of the view which will be created in the database.<br>
+**`Z_CDS_EPM_BUPA`** is the name of the CDS view which provides enhanced view-building capabilities in ABAP. 
 You should always use the CDS view name in your ABAP applications.<br><br>
 The data source plus its fields have automatically been added to the view definition because of the reference to the data source object we gave in step 3.
-If you haven't provided that value before, you can easily search for and add your data source using the keyboard shortcut **CTRL+SPACE**.<br><br>
+If you haven't provided that value before, you can easily search for and add your data source using the keyboard shortcut ***CTRL+SPACE***.<br><br>
 ![](/exercises/dd1/images/1-006a.JPG)
 
 7.	Delete the not needed fields in the SELECT statement, add the annotation ```@ClientHandling.type: #CLIENT_DEPENDENT``` and beautify the view.<br><br>
@@ -121,13 +121,39 @@ In this simple case, the framework can derive the relation between the fields of
 
 ## Deep Dive 1.3 - Create a more complex ABAP CDS View in ADT (joining multiple tables)
 
-In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). We will go through the implementation of a CDS View which will join the EPM tables SNWD_SO, SNWD_SO_I, SNWD_PD, and SNWD_TEXTS in order to fetch all Sales Order relevant data, including its positions, products, and product names.<br><br>
+In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). We will go through the implementation of a CDS View which will join the EPM tables `SNWD_SO`, `SNWD_SO_I`, `SNWD_PD`, and `SNWD_TEXTS` in order to fetch all Sales Order relevant data, including its positions, products, and product names.<br>
 
 (As a reminder: The entity relationsships of the tables can be found [here](../ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana).)<br><br>
 
-In a later step, also this CDS View will be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related delta information to the target storage.
+In a later step, also this CDS View will be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related deltas to the target storage.<br><br>
 
-...to be completed
+1. Create a CDS View
+In the context menu of your package choose ***New*** and then choose ***Other ABAP Repository Object***.<br><br>
+![](/exercises/dd1/images/1-001a.JPG)
+
+2.	Select ***Data Definition***, then choose ***Next***.<br><br>
+![](/exercises/dd1/images/1-002a.JPG)
+
+3. Enter the following values, then choose Next.
+- Name, e.g. ```Z_CDS_EPM_SO```
+- Description: **CDS View for EPM Sales Order object extraction**
+- Referenced Object: **SNWD_SO**<br><br>
+![](/exercises/dd1/images/dd1-012a.JPG)
+
+4.	Accept the default transport request (local) by simply choosing ***Next*** again.<br><br>
+![](/exercises/dd1/images/1-004a.JPG)
+
+5.	Select the entry ***Define View***, then choose ***Finish***.<br><br>
+![](/exercises/dd1/images/1-005a.JPG)
+
+6.	The new view appears in an editor, with an error showing up because of the still missing SQL View name.<br>
+In this editor, enter value for the SQL View name in the annotation **`@AbapCatalog.sqlViewName`**, e.g. **`Z_SQL_EPM_SO`**.<br>
+The SQL view name is the internal/technical name of the view which will be created in the database. 
+**`Z_CDS_EPM_SO`** is the name of the CDS view which provides enhanced view-building capabilities in ABAP. 
+You should always use the CDS view name in your ABAP applications.<br><br>
+The pre-defined data source plus its fields have automatically been added to the view definition because of the reference to the data source object we gave in step 3.
+If you haven't provided that value before, you can easily search for and add your data source using the keyboard shortcut ***CTRL+SPACE***.<br><br>
+![](/exercises/dd1/images/dd1-013a.JPG)
 
 ## Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views
 
