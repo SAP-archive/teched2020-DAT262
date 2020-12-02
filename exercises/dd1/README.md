@@ -97,7 +97,7 @@ We have now successfully created the first simple CDS View in SAP S/4HANA. In th
 
 Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do is adding the `@Analytics` annotation to the view that sets the enabled flag and the change data capturing approach.<br>
 
-Let's continue with the simple ABAP CDS View that we have implemented in the previous section and introduce the CDC delta for **`Z_CDS_EPM_BUPA`**.<br>
+Let's continue with the simple ABAP CDS View that we have implemented in the previous section and introduce the CDC delta for **`Z_CDS_EPM_BUPA`**.<br><br>
 
 1. In ADT's Project Explorer, navigate to ***Core Data Services --> Data Definitions*** and double-click on the ABAP CDS View `Z_CDS_EPM_BUPA`.<br><br>
 ![](/exercises/dd1/images/dd1-010a.JPG)<br><br>
