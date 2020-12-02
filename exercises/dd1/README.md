@@ -217,15 +217,24 @@ If you haven't provided that value before, you can easily search for and add you
 ![](/exercises/dd1/images/dd1-016a.JPG)<br><br>
 
 
-
-## Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views
-
-...to be completed
-
 ## Deep Dive 1.4 - Delta-enablement for complex ABAP CDS Views (joining multiple tables)
 
-...to be completed
-The Change Data Capture recording mechanism uses database triggers to record any changes to the tables that belong to an ABAP CDS view. To do this, the key fields of all underlying tables need to be mapped to the fields of the CDS view.
+The main task for exposing a CDS view with CDC delta method is to provide the mapping information between the fields of a CDS view and the key fields of the underlying tables. The mapping is necessary to enable a comprehensive logging for each of the underlying tables and subsequently a consistent selection/(re-)construction of records to be provided for extraction. This means the framework needs to know which tables to log, i.e. monitor for record changes.
+
+Given one record changes in possibly only one of the underlying tables, the framework needs to determine which record/s are affected by this change in all other underlying tables and need to provide a consistent set of delta records to the ODQ.
+
+All key fields of the main table and all foreign key fields used by all on-conditions of the involved join(s) need to be exposed as elements in the CDS views.
+
+The first step is to identify the tables participating in the join and its roles in the join. Currently only Left-outer-to-One joins are supported by the CDC framework. These are the common CDS views with one or more joins based on one main table. Columns from other (outer) tables are added as left outer to one join, e.g. join from an item to a header table.
+
+Given there are no restrictions applied to the CDS view, the number of records of the CDS view constitute the number of records of the main table. All records from the main table are visible in the CDS view. Deletions of a record with regards to this CDS view only happen, if the record in the main table is deleted.
+
+Secondly the developer needs to provide the mapping between the key fields of the underlying tables and their exposure as elements in the CDS view. Please check the following figure in which you see the representation of all underlying key fields surfacing in the CDS view.
+
+![](/exercises/dd1/images/dd1-017a.JPG)<br><br>
+Source: [CDS based data extraction – Part II Delta Handling (blog by Simon Kranig)](https://blogs.sap.com/2019/12/16/cds-based-data-extraction-part-ii-delta-handling/).
+
+
 
 ## Deep Dive 1.5 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines
 
