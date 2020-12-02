@@ -173,8 +173,47 @@ If you haven't provided that value before, you can easily search for and add you
    ...
    ![](/exercises/dd1/images/dd1-014a.JPG)<br><br>
 
-7.	Add the wanted fields from the tables in the join condition.<br><br>
-![](/exercises/dd1/images/dd1-015a.JPG)<br><br>
+9.	Add the wanted fields from the other tables in the join condition.<br><br>
+   ![](/exercises/dd1/images/dd1-015a.JPG)<br><br>
+   The ABAP CDS View may now look as follows:
+     ```abap
+     @AbapCatalog.sqlViewName: 'Z_SQL_EPM_SO'
+     @AbapCatalog.compiler.compareFilter: true
+     @AbapCatalog.preserveKey: true
+     @ClientHandling.type: #CLIENT_DEPENDENT
+     @AccessControl.authorizationCheck: #CHECK
+     @EndUserText.label: 'CDS View for EPM Sales Order object extraction'
+     
+     define view Z_CDS_EPM_SO as select from snwd_so as so
+         left outer join snwd_so_i as item on so.node_key = item.parent_key
+         left outer join snwd_pd as prod on item.product_guid = prod.node_key
+         left outer join snwd_texts as text on prod.name_guid = text.parent_key and text.language = 'E'
+     {
+         key item.node_key       as ItemGuid,
+         so.node_key             as SalesOrderGuid,
+         so.so_id                as SalesOrderId,
+         so.created_at           as CreatedAt,
+         so.changed_at           as ChangedAt,
+         so.buyer_guid           as BuyerGuid,
+         so.currency_code        as CurrencyCode,
+         so.gross_amount         as GrossAmount,
+         so.net_amount           as NetAmount,
+         so.tax_amount           as TaxAmount,
+         item.so_item_pos        as ItemPosition,
+         prod.product_id         as ProductID,
+         text.text               as ProductName,   
+         prod.category           as ProductCategory,
+         item.gross_amount       as ItemGrossAmount,
+         item.net_amount         as ItemNetAmount,
+         item.tax_amount         as ItemTaxAmount,
+         prod.node_key           as ProductGuid,
+         text.node_key           as TextGuid
+     }
+     ```
+
+10. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
+
+
 
 ## Deep Dive 1.3 - Enable Delta Extraction in simple and complex ABAP CDS Views
 
