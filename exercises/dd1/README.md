@@ -18,7 +18,7 @@ Starting with SAP S/4HANA Cloud 1905 and SAP S/4HANA 1909 FPS01 (on-premise), Ch
 
 Those who are interesed in more information about Change Data Capture for ABAP CDS Views may like the related part of the **[Data Intelligence - ABAP Integration Guide](https://help.sap.com/viewer/3a65df0ce7cd40d3a61225b7d3c86703/Cloud/en-US/55b2a17f987744cba62903e97dd99aae.html)** or the blog **[CDS based data extraction – Part II Delta Handling](https://blogs.sap.com/2019/12/16/cds-based-data-extraction-part-ii-delta-handling/)**.<br><br>
 
-After having completed the steps in this Deep Dive section we will have created two new delta-enabled custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views later to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.<br>
+After having completed the steps in this Deep Dive section we will have created two new delta-enabled custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views later to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.<br><br>
 
 ## Deep Dive 1.1 - Create a simple ABAP CDS View in ABAP Develoment Tools (ADT)
 
@@ -30,7 +30,6 @@ In the context menu of your package choose ***New*** and then choose ***Other AB
 
 2.	Select ***Data Definition***, then choose ***Next***.<br><br>
 ![](/exercises/dd1/images/1-002a.JPG)
-
 
 3. Enter the following values, then choose Next.
 - Name, e.g. ```Z_CDS_EPM_BUPA```
@@ -94,7 +93,7 @@ then ![](/exercises/dd1/images/1-008b.JPG))<br><br>
 We have now successfully created the first simple CDS View in SAP S/4HANA. In the next step we'll be implementing a more complex CDS view that joins multiple tables.
 
 
-## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views
+## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views (projection)
 
 Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do is adding the `@Analytics` annotation to the view that sets the enabled flag and defines the change data capturing approach.<br>
 Those who are interested in learning more about the `@Analytics` annotation can refer to 
@@ -114,6 +113,7 @@ In a later step, also this CDS View will be enabled for Change Data Capturing (C
 ## Deep Dive 1.4 - Delta-enablement for complex ABAP CDS Views (joining multiple tables)
 
 ...to be completed
+The Change Data Capture recording mechanism uses database triggers to record any changes to the tables that belong to an ABAP CDS view. To do this, the key fields of all underlying tables need to be mapped to the fields of the CDS view.
 
 ## Deep Dive 1.5 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines
 
