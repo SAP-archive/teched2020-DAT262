@@ -12,7 +12,13 @@ ABAP Development Tools (ADT), formerly known as "ABAP in Eclipse", is the integr
 CDS is an extension of the ABAP Dictionary that allows you to define semantically rich data models in the database and to use these data models in your ABAP programs. CDS is a central part of enabling code push-down in ABAP applications.<br>
 You can find more information about CDS in the **[ABAP keyword documentation](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abencds.htm)** and the **[SAP Community](https://community.sap.com/topics/abap)**.<br>
 <br>
-After completing the steps in this Deep Dive section we will have created two new custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views later to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.
+Starting with SAP S/4HANA Cloud 1905 and SAP S/4HANA 1909 FPS01 (on-premise), Change Data Capturing (CDC) is supported for ABAP CDS Views. For a CDS view using this delta method, changes in tables belonging to this view are recorded by the Change Data Capture mechanism. From a technology point of view this delta method makes use of real-time database triggers on table level based on SLT technology. INSERT, UPDATE and DELETE operations can be recorded by the framework.<br>
+- In case of an INSERT or UPDATE operation a scheduled job is selecting the records based on these key combinations from the CDS view and pushes them as complete records into the Operational Delta Queue (ODQ).
+- In case of a DELETE operation the job generates an empty record with just the key field(s) filled, sets the deletion indicator and hands them over to ODQ.
+
+Those who are interesed in more information about CDC for ABAP CDS Views may like the related part of the **[Data Intelligence - ABAP Integration Guide](https://help.sap.com/viewer/3a65df0ce7cd40d3a61225b7d3c86703/Cloud/en-US/55b2a17f987744cba62903e97dd99aae.html)** or the blog **[CDS based data extraction – Part II Delta Handling](https://blogs.sap.com/2019/12/16/cds-based-data-extraction-part-ii-delta-handling/)**.<br><br>
+
+After having completed the steps in this Deep Dive section we will have created two new delta-enabled custom ABAP CDS Views on our SAP S/4HANA system. Our goal is to leverage these CDS Views later to access the Customer and Sales Order data of the Enterprise Procurement Model (our demo dataset) from Pipelines in SAP Data Intelligence.
 
 ## Deep Dive 1.1 - Create a simple ABAP CDS View in ABAP Develoment Tools (ADT)
 
@@ -90,7 +96,8 @@ We have now successfully created the first simple CDS View in SAP S/4HANA. In th
 
 ## Deep Dive 1.2 - Delta-enablement for simple ABAP CDS Views
 
-...to be continued.
+Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do is adding the `@Analytics` annotation to the view that sets the enabled flag and defines the change data capturing approach.<br>
+Those who are interested in learning more about the `@Analytics` annotation can refer to 
 
 
 ## Deep Dive 1.3 - Create a complex ABAP CDS View in ADT (joining multiple tables)
