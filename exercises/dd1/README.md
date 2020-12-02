@@ -99,7 +99,7 @@ Delta-enablement for simple ABAP CDS Views is pretty easy! The only step to do i
 
 Let's continue with the simple ABAP CDS View that we have implemented in the previous section and introduce the CDC delta for **`Z_CDS_EPM_BUPA`**.<br><br>
 
-1. In ADT's Project Explorer, navigate to ***Core Data Services --> Data Definitions*** and double-click on the ABAP CDS View `Z_CDS_EPM_BUPA`.<br><br>
+1. In ADT's Project Explorer, we navigate to our package and then to ***Core Data Services --> Data Definitions*** and double-click on the ABAP CDS View `Z_CDS_EPM_BUPA`.<br><br>
 ![](/exercises/dd1/images/dd1-010a.JPG)<br><br>
 
 2. Under the existing list of annotations, enter the following lines:
@@ -121,7 +121,10 @@ In this simple case, the framework can derive the relation between the fields of
 
 ## Deep Dive 1.3 - Create a more complex ABAP CDS View in ADT (joining multiple tables)
 
-In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). Now, the trainer will show the implementation of a CDS View which will join the tables SNWD_SO, SNWD_SO_I, SNWD_PD, and SNWD_TEXTS in order to fetch all Sales Order relevant data, including all positions, products, and product names.<br>
+In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). We will go through the implementation of a CDS View which will join the EPM tables SNWD_SO, SNWD_SO_I, SNWD_PD, and SNWD_TEXTS in order to fetch all Sales Order relevant data, including its positions, products, and product names.<br><br>
+
+As a reminder: The entity relationsships of the tables can be found [here](
+
 In a later step, also this CDS View will be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related delta information to the target storage.
 
 ...to be completed
