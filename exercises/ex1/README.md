@@ -364,18 +364,14 @@ A new copy of the operator is being included in the Pipeline canvas.<br><br>
 28. As you can see, the two columns with the company name and the legal form of the Customer master data table have been added to the Sales Order data.<br><br>
 ![](/exercises/ex1/images/ex1-083b.JPG)<br><br>
 
-29. As long as the Pipeline is running, you would now receive any updates in S/4HANA on the EPM Sales Order data, enriched with the lookups of the EPM Customer master data. The file in S3 would look as displayed below. in column "C20", you get the ***update*** indicator "U". Columns "C21" and "C22" contain the enriched field contents.<br><br>
+29. Changes on data of the EPM demo application could now be generated with the S/4HANA transaction **`SEPM_DG`**. As long as the Pipeline is running, you would now receive any updates in S/4HANA on the EPM Sales Order data, enriched with the lookups of the EPM Customer master data. The file in S3 would look as displayed below. In column "C20", you get the ***update*** indicator "U". Columns "C21" and "C22" contain the enriched field contents.<br><br>
 ![](/exercises/ex1/images/ex1-084b.JPG)<br><br>
-
-As a matter of fact, you don't have access to the SAP GUI of the connected SAP S/4HANA system in order to run the EPM data generation transaction **`SEPM_DG`**.
-
-
-
-
 
 ## Summary
 
-You've now ...
+**Congrats!** You have now implemented a Pipeline that receives the Initial Loads and the Change Data Capture (CDC) information from different S/4HANA ABAP CDS Views.<br>
+As a matter of fact, in this virtual workshop at TechEd, we can't provide access to the SAP GUI of the connected SAP S/4HANA system in order to run the EPM data generation transaction **`SEPM_DG`**.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+In the next exercise we will mitigate this problem and allow you to execute a variant of the ABAP Report, leveraging the ABAP Function Module calls from SAP Data Intelligence.
+Please continue to [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
