@@ -53,35 +53,35 @@ If you haven't provided that value before, you can easily search for and add you
 ![](/exercises/dd1/images/1-006a.JPG)
 
 7.	Delete the not needed fields in the SELECT statement, add the annotation ```@ClientHandling.type: #CLIENT_DEPENDENT``` and beautify the view.<br><br>
-![](/exercises/dd1/images/1-007a.JPG)<br><br>
+   ![](/exercises/dd1/images/1-007a.JPG)<br><br>
    The code may now look as follows:
-   ```abap
-   @AbapCatalog.sqlViewName: 'Z_SQL_EPM_BUPA'
-   @AbapCatalog.compiler.compareFilter: true
-   @AbapCatalog.preserveKey: true
-   @ClientHandling.type: #CLIENT_DEPENDENT
-   @AccessControl.authorizationCheck: #CHECK
-   @EndUserText.label: 'CDS View for EPM Business Partner Extraction'
-   
-   define view Z_CDS_EPM_BUPA
-       as select from SNWD_BPA
-       
-   {
-       key node_key as NodeKey,
-           bp_role as BpRole,
-           email_address as EmailAddress,
-           phone_number as PhoneNumber,
-           fax_number as FaxNumber,
-           web_address as WebAddress,
-           address_guid as AddressGuid,
-           bp_id as BpId,
-           company_name as CompanyName,
-           legal_form as LegalForm,
-           created_at as CreatedAt,
-           changed_at as ChangedAt,
-           currency_code as CurrencyCode
-   }
-   ```
+     ```abap
+     @AbapCatalog.sqlViewName: 'Z_SQL_EPM_BUPA'
+     @AbapCatalog.compiler.compareFilter: true
+     @AbapCatalog.preserveKey: true
+     @ClientHandling.type: #CLIENT_DEPENDENT
+     @AccessControl.authorizationCheck: #CHECK
+     @EndUserText.label: 'CDS View for EPM Business Partner Extraction'
+     
+     define view Z_CDS_EPM_BUPA
+         as select from SNWD_BPA
+         
+     {
+         key node_key as NodeKey,
+             bp_role as BpRole,
+             email_address as EmailAddress,
+             phone_number as PhoneNumber,
+             fax_number as FaxNumber,
+             web_address as WebAddress,
+             address_guid as AddressGuid,
+             bp_id as BpId,
+             company_name as CompanyName,
+             legal_form as LegalForm,
+             created_at as CreatedAt,
+             changed_at as ChangedAt,
+             currency_code as CurrencyCode
+     }
+     ```
 
 8.	***Save (CTRL+S or disk symbol in menue bar)*** and ***Activate (CTRL+F3 or magic wand symbol in menue bar)*** the CDS View.<br>
 (first ![](/exercises/dd1/images/1-008a.JPG) 
