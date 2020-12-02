@@ -114,7 +114,7 @@ Let's continue with the simple ABAP CDS View that we have implemented in the pre
 <br>
 ![](/exercises/dd1/images/dd1-011a.JPG)<br><br>
 
-3. ***Save (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG))*** and ***Activate (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG))*** the CDS View.<br><br>
+3. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
 
 In this simple case, the framework can derive the relation between the fields of the CDS view and key fields of the underlying table itself. Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this information, the scheduled job selects the data record from the CDS view and pushes it into the ODQ.<br><br>
 
