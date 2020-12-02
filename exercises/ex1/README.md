@@ -348,14 +348,14 @@ A new copy of the operator is being included in the Pipeline canvas.<br><br>
 
 26. Open the configuration panel of the ***Structured File Producer*** operator and enter the following parameters:<br>
     - **Storage Type**: `S3`
-    - **S3 Configuration**: After clicking on the pencil icon, select `Configuration Manager`and as connection ID `TechEd2020_S3`<br><br>
+    - **S3 Configuration**: After clicking on the pencil icon, select `Configuration Manager`and as connection ID `TechEd2020_S3`
     - **S3 file name:** `/DAT262/TA99/Enriched_Sales_Order.csv`
     - **Format:** `CSV`
     - Leave the **CSV Properties** as-is
     - Increase **Batch size:** to `10000`
     - **Write Part Files** should be `False`<br><br>
     - ***Save*** the Pipeline
-    - ***Run*** the Pipeline
+    - ***Run*** the Pipeline<br><br>
 ![](/exercises/ex1/images/ex1-081b.JPG)<br><br>
 
 27. When the Pipeline is in status ***running***, you can take a look into your folder in the S3 bucket, again using the ***Data Intelligence Metadata Explorer*** application. You should see the file that was specified in the *Structured File Producer* operator ("Enriched_Sales_Order.csv"). Click the ***Glasses*** icon on that tile in order to see the ***Data Preview*** of the ***Fact Sheet***.<br><br>
