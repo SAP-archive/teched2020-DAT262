@@ -322,8 +322,54 @@ A new copy of the operator is being included in the Pipeline canvas.<br><br>
 17. Re-arrange the position of input tables on the canvas as per your convenience and then connect the **"C5" field of Join_Input1** with the **"C0" field of Join_Input2**. This will map the Customer GUID fields of the two tables.<br><br>
 ![](/exercises/ex1/images/ex1-070b.JPG)<br><br>
 
-18. Proceed to tab ***Columns*** in order to select the output fields.<br><br>
-![](/exercises/ex1/images/ex1-070b.JPG)<br><br>
+18. Proceed to tab ***Columns*** in order to select the output fields. Click on the ***Auto map by name*** icon (see red box), which enter all fields of the two input nodes to the list of output fields. Then mark the buttom occurrences of the output fields "C0" to "C7" (of Join_Input2!) and delete these.<br><br>
+![](/exercises/ex1/images/ex1-073b.JPG)<br><br>
+
+19. Now mark the buttom occurrences of the output fields "C10" to "C18" (of Join_Input2!) and delete these.<br><br>
+![](/exercises/ex1/images/ex1-074b.JPG)<br><br>
+
+20. Click on the ***pencil*** icon in the line of field "C8" in order to edit the entry. Rename **`C8`** to **`Customer_Name`**. Click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-075b.JPG)<br><br>
+
+21. Click on the ***pencil*** icon in the line of field "C9" in order to edit the entry. Rename that field from **`C9`** to **`LEGAL_FORM`**. Click ***OK***.<br><br>
+![](/exercises/ex1/images/ex1-076b.JPG)<br><br>
+
+22. Navigate back.<br><br>
+![](/exercises/ex1/images/ex1-077b.JPG)<br><br>
+
+23. Click with the right mouse button on the output port of the ***Join*** operation. Then click on ***Create Data target***.<br><br>
+![](/exercises/ex1/images/ex1-078b.JPG)<br><br>
+
+24. A new output node has been created, which will now be available on the Data Transfer operator. Navigate further back.<br><br>
+![](/exercises/ex1/images/ex1-079b.JPG)<br><br>
+
+25. Back on the Pipeline canvas, drag the ***Structured File Producer*** operator from the list of operators into the Pipeline canvas. Then connect the ***output port of the Data Transform*** with the ***input port of the Structured File Producer***.<br><br>
+![](/exercises/ex1/images/ex1-080b.JPG)<br><br>
+
+26. Open the configuration panel of the ***Structured File Producer*** operator and enter the following parameters:<br>
+    - **Storage Type**: `S3`
+    - **S3 Configuration**: After clicking on the pencil icon, select `Configuration Manager`and as connection ID `TechEd2020_S3`<br><br>
+    - **S3 file name:** `/DAT262/TA99/Enriched_Sales_Order.csv`
+    - **Format:** `CSV`
+    - Leave the **CSV Properties** as-is
+    - Increase **Batch size:** to `10000`
+    - **Write Part Files** should be `False`<br><br>
+    - ***Save*** the Pipeline
+    - ***Run*** the Pipeline
+![](/exercises/ex1/images/ex1-081b.JPG)<br><br>
+
+27. When the Pipeline is in status ***running***, you can take a look into your folder in the S3 bucket, again using the ***Data Intelligence Metadata Explorer*** application. You should see the file that was specified in the *Structured File Producer* operator ("Enriched_Sales_Order.csv"). Click the ***Glasses*** icon on that tile in order to see the ***Data Preview*** of the ***Fact Sheet***.<br><br>
+![](/exercises/ex1/images/ex1-082b.JPG)<br><br>
+
+28. As you can see, the two columns with the company name and the legal form of the Customer master data table have been added to the Sales Order data.<br><br>
+![](/exercises/ex1/images/ex1-083b.JPG)<br><br>
+
+29. As long as the Pipeline is running, you would now receive any updates in S/4HANA on the EPM Sales Order data, enriched with the lookups of the EPM Customer master data. The file in S3 would look as displayed below. in column "C20", you get the ***update*** indicator "U". Columns "C21" and "C22" contain the enriched field contents.<br><br>
+![](/exercises/ex1/images/ex1-084b.JPG)<br><br>
+
+As a matter of fact, you don't have access to the SAP GUI of the connected SAP S/4HANA system in order to run the EPM data generation transaction **`SEPM_DG`**.
+
+
 
 
 
