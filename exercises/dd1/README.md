@@ -276,10 +276,17 @@ For mapping the key fields of all underlying tables to the fields of the CDS vie
 
 3. Verify the results in the ***Data Preview*** by pressing ***F8***. The ABAP CDS View should still provide the same data as before delta-enabling.<br><br>
 
+We have now enabled our Sales Order object CDS View for Change Data Capture and are able to obtain any delta from one of the involved tables.<br>
+
+In the next session, we test the Initial Load and Delta Load capabilities with a small, exemplary Data Intelligence Pipeline implementation.
+
 
 ## Deep Dive 1.5 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines
 
-...to be continued
+For the integration of ABAP CDS Views in S/4HANA, SAP Data Intelligence provides standard operators that can easily be configured according to your use cases.
+In principal, you can leverage the following approach:
+
+1. 
 
 ## Summary
 
