@@ -370,8 +370,9 @@ A new copy of the operator is being included in the Pipeline canvas.<br><br>
 ## Summary
 
 **Congrats!** You have now implemented a Pipeline that receives the Initial Loads and the Change Data Capture (CDC) information from different S/4HANA ABAP CDS Views.<br>
+
 As a matter of fact, in this virtual workshop at TechEd, we can't provide access to the SAP GUI of the connected SAP S/4HANA system in order to run the EPM data generation transaction **`SEPM_DG`**.
 
-In the next exercise we will mitigate this problem and allow you to execute a variant of the ABAP Report, leveraging the ABAP Function Module calls from SAP Data Intelligence.
-Please continue to [Exercise 2 - Triggering the execution of a function module in a remote S/4HANA system](../ex2/README.md)
+In the next exercise we will mitigate this problem and allow you to execute a variant of this ABAP Report, leveraging the ABAP Function Module calls from SAP Data Intelligence.
+Please continue to [Exercise 2 - Triggering the execution of a function module in a remote S/4HANA system](../ex2/README.md).
 
