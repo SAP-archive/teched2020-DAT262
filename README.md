@@ -27,15 +27,14 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 -->
 
 The main use cases behind this workshop are
-- to obtain the Business Partner master data in S/4HANA's demo application **Enterprise Procurement Model (EPM)** and make the records available for the corporate Data Analysts in an S3 object store.
-- to also persist the transactional data for EPM Sales Orders in S3.
+- Extract the Business Partner master data in S/4HANA's demo application **Enterprise Procurement Model (EPM)** and make the records available for the corporate Data Analysts in an S3 object store.
+- Also persist the transactional data in S3, i.e for EPM Sales Order objects which are built from joins over multiple EPM tables.
 - In both cases, any single change of these data sources in the S/4HANA system has to be instantly and automatically replicated to the related files in S3.
 - Additionally, the Sales Order data have to be enriched with Customer master data, for the initial load and then on every change committed to the EPM Sales Order data in S/4HANA.
-- In order to create test changes on the EPM Sales Order data without having access to the SAP GUI in the S/4HANA system, (a variant of) the EPM Data Generator reports needs to be executed as an ABAP Function Modul call from a Data Intelligence Pipeline.
+- In order to create test changes on the EPM Sales Order data without having access to the SAP GUI in the S/4HANA system, (a variant of) the EPM Data Generator reports needs to be executed as an ABAP Function Modul call from a Data Intelligence Pipeline.<br>
 
 
-
-
+The Deep Dive live demos and the hands-on Exercise contents reflect the above scenarios and provide a step-by-step approach for their realization:<br>
 
 - **[Overview and Getting Started](exercises/ex0/)**
 
