@@ -237,7 +237,7 @@ The ABAP Operator implementation is now finished. The operator can immediately b
 SAP Data Intelligence provides multiple Operator shells for the integration with ABAP Operators in SAP S/4HANA. On the one hand, there are the Operator shells that point to pre-defined ABAP Operators in ABAP systems, such as ABAP CDS Reader, ODP Reader, SLT Connector, Cluster Table Splitter (for Business Suite systems), or the ABAP Converter. On the other hand, you can also trigger custom ABAP Operators by using the "Custom ABAP Operator" shell.<br>
 Technically, the approaches for calling function modules in S/4HANA are the same in both cases. The only difference is the namespace under which these ABAP Operators are maintained and selected. While the pre-built Operators belong to the namespace `com.sap.`, custom ABAP Operators are assigned to `customer`.
 
-The implementation of ABAP Operators is done via Pipelines in the SAP Data Inteligence Modeler.
+The integration of ABAP Operators is done via Pipelines in the SAP Data Inteligence Modeler.
 
 1.	Logon to SAP Data Intelligence to access the Launchpad application and click on the ***Modeler*** tile.<br><br>
 ![](images/dd2-016b.JPG)<br><br>
