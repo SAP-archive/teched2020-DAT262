@@ -9,7 +9,6 @@ This repository contains the material for the SAP TechEd 2020 session called<br>
 
 SAP Data Intelligence is SAP's leading product for data integration, management, intelligent processing and orchestration across different data environments.
 One important aspect is the replication, consumption, and exchange of data coming from SAP S/4HANA.<br>
-
 The ABAP integration capabilities in SAP Data Intelligence open seamless access to all the functionality and data available in the connected S/4HANA systems.<br>
 
 This hands-on session will focus on connectivity and system interoperability to S/4HANA systems and provides an insight on how to use the corresponding out-of-the-box operators in SAP Data Intelligence to seamlessly integrate with the above SAP Business applications and beyond.
