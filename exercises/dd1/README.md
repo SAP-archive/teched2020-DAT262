@@ -173,7 +173,7 @@ If you haven't provided that value before, you can easily search for and add you
    ...<br><br>
    ![](/exercises/dd1/images/dd1-014b.JPG)<br><br>
 
-9.	Add the wanted fields from the other tables in the join condition.<br><br>
+9.	Add the wanted fields from the other tables in the join condition (and don't forget to make all key fields of all involved tables elements of the ABAP CDS View).<br><br>
    ![](/exercises/dd1/images/dd1-015a.JPG)<br><br>
    The ABAP CDS View may now look as follows:
      ```abap
