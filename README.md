@@ -35,7 +35,7 @@ The main use cases behind this workshop are
 
 
 The Deep Dive live demos and the hands-on Exercise contents reflect the above scenarios and provide a consecutive approach for their realization. But other than during the on-site TechEd events in the past years, it was not feasible to provide the Eclipse based ABAP Development Tools (ADT) and the SAP GUI to our participants in the this year's virtual version of the TechEd.<br><br>
-Since it is a goal of this workshop to show and get the hands on the complete end-to-end implementation processes of ABAP integration with SAP Data Intelligence, all parts of this session that require these (local) applications will be presented as **live Deep Dive demos, conducted in ADT and in SAP S/4HANA by the trainer**, the **Exercises - in opposite - are then performed by the participants** in SAP Data Intelligence and will leverage those artifacts in S/4HANA that got created during the Deep Dive demos.
+Since it is a goal of this workshop to show and get the hands on the complete end-to-end implementation processes of ABAP integration with SAP Data Intelligence, all parts of this session that require these (local) applications will be presented as **live Deep Dive demos, conducted in ADT and in SAP S/4HANA by the trainer**, the **Exercises - in opposite - are then performed by the participants** in SAP Data Intelligence and will leverage those artifacts in S/4HANA that got created during the Deep Dive demos.<br><br>
 
 - **[Overview and Getting Started](exercises/ex0/)**
 
