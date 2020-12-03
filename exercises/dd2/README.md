@@ -31,10 +31,10 @@ ABAP Edition | Minimum version | Recommended Version
 ------------ | --------------- | -------------------
 S/4HANA on Premise | OP1909 + Note 2873666 |
 S/4HANA Cloud | CE2002 | 
-Netweaver < 7.52 (ECC, BW, SRM, ...) | Add-On DMIS 2011 SP17 + Note 2857333 or 2857334 | Add-On DMIS 2011 SP18
-Netweaver >= 7.52 (ECC, BW, SRM, ...) | Add-On DMIS 2018 SP02 + Note 2845347 | Add-On DMIS 2018 SP03
+Netweaver < 7.52 (ECC, BW, SRM, ...) | Add-On DMIS 2011 SP17 + Note 2857333 or 2857334 | Add-On DMIS 2011 SP19
+Netweaver >= 7.52 (ECC, BW, SRM, ...) | Add-On DMIS 2018 SP02 + Note 2845347 | Add-On DMIS 2018 SP04
 > **Note:**
-> Please also consult the most up-to-date Availability Matrix.
+> Please always also consult the most up-to-date Availability Matrix.
 
 <br>ABAP Operators are created in the ABAP System by implementing the BAdI: `BADI_DHAPE_ENGINE_OPERATOR`.<br>
 The BAdI implementation consists of a class with **two methods** that must be redefined. It is recommended that the BAdI implementation extends the abstract class
