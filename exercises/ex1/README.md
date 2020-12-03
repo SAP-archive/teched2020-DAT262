@@ -364,7 +364,7 @@ A new copy of the operator is being included in the Pipeline canvas.<br><br>
 28. As you can see, the two columns with the company name and the legal form of the Customer master data table have been added to the Sales Order data.<br><br>
 ![](/exercises/ex1/images/ex1-083b.JPG)<br><br>
 
-29. Changes on data of the EPM demo application could now be generated with the S/4HANA transaction **`SEPM_DG`**. As long as the Pipeline is running, you would now receive any updates in S/4HANA on the EPM Sales Order data, enriched with the lookups of the EPM Customer master data. The file in S3 would look as displayed below. In column "C20", you get the ***update*** indicator "U". Columns "C21" and "C22" contain the enriched field contents.<br><br>
+29. As long as the Pipeline is running, you would now receive any updates in S/4HANA on the EPM Sales Order data, enriched with the lookups of the EPM Customer master data. The file in S3 would look as displayed below. In column "C20", you get the ***update*** indicator "U". Columns "C21" and "C22" contain the enriched field contents.<br><br>
 ![](/exercises/ex1/images/ex1-084b.JPG)<br><br>
 
 ## Summary
