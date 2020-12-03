@@ -34,6 +34,9 @@ The main use cases behind this workshop are
 - In order to create test changes on the EPM Sales Order data without having access to the SAP GUI in the S/4HANA system, (a variant of) the EPM Data Generator reports needs to be executed as an ABAP Function Modul call from a Data Intelligence Pipeline.
 
 
+
+
+
 - **[Overview and Getting Started](exercises/ex0/)**
 
 - **[Short introduction to the Enterprise Procurement Model (EPM) in ABAP systems](exercises/ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana)**
