@@ -239,7 +239,7 @@ In the next section, we'll also take care for the Sales Order transaction data f
 21. In the ***Fact Sheet***, which provides some more overview and statistical information about the new file, go to tab ***Data Preview***.<br><br>
 ![](/exercises/ex1/images/ex1-049b.JPG)<br><br>
 
-22. Now you can see that the EPM Customer data got loaded into the target file in S3. Success! While the Pipeline is running, this file would get automatically updated with each change in the S/4HANA data sources (the tables `SNWD_SO`, `SNWD_SO_I`, `SNWD_PD`, `SNWD_TEXTS` joined through the ABAP CDS View `Z_CDS_SO_SOI_Delta`).<br><br>
+22. Success! Now you can see that the EPM Customer data got loaded into the target file in S3. While the Pipeline is running, this file would get automatically updated with each change in the S/4HANA data sources (the tables `SNWD_SO`, `SNWD_SO_I`, `SNWD_PD`, `SNWD_TEXTS` joined through the ABAP CDS View `Z_CDS_SO_SOI_Delta`).<br><br>
 ![](/exercises/ex1/images/ex1-050b.JPG)<br><br>
 
 21. However, in order to go on with the exercise, please stop the Pipeline for now. We will validate the delta processing in Exercise 2.<br><br>
