@@ -115,17 +115,17 @@ Let's continue with the simple ABAP CDS View that we have implemented in the pre
 
 3. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
 
-In this simple case, the framework can derive the relation between the fields of the CDS view and key fields of the underlying table itself. Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this information, the scheduled job selects the data record from the CDS view and pushes it into the ODQ.<br><br>
+That's it!. In this simple case, the framework can derive the relation between the fields of the ABAP CDS View and key fields of the underlying table itself. Whenever a record is inserted, updated or deleted in the underlying table, a record with the respective table key is stored in a generated logging table. Based on this information, the scheduled job selects the data record from the ABAP CDS View and pushes it into the Operational Delta Queue (ODQ).<br><br>
 
 
 
 ## Deep Dive 1.3 - Create a more complex ABAP CDS View in ADT (joining multiple tables)
 
-In this part of the Deep Dive you can learn how to create a more complex CDS View, again using the ABAP Development Tools (ADT). We will go through the implementation of a CDS View which will join the EPM tables `SNWD_SO`, `SNWD_SO_I`, `SNWD_PD`, and `SNWD_TEXTS` in order to fetch all Sales Order relevant data, including its positions, products, and product names.<br>
+In this part of the Deep Dive you can learn how to create a more complex ABAP CDS View, again using the ABAP Development Tools (ADT). We will go through the implementation of an ABAP CDS View which will join the EPM tables `SNWD_SO`, `SNWD_SO_I`, `SNWD_PD`, and `SNWD_TEXTS` in order to fetch all Sales Order relevant data, including its positions, products, and product names.<br>
 
 (As a reminder: The entity relationsships of the tables can be found [here](../ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana).)<br><br>
 
-In a later step, also this CDS View will be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related deltas to the target storage.<br><br>
+In a later step, also this ABAP CDS View will be enabled for Change Data Capturing (CDC) for an event based processing of Sales Order related deltas to the target storage in S3.<br><br>
 
 1. Create a CDS View
 In the context menu of your package choose ***New*** and then choose ***Other ABAP Repository Object***.<br><br>
