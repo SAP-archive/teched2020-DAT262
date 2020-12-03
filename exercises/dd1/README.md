@@ -229,11 +229,52 @@ The first step is to identify the tables participating in the join and its roles
 
 Given there are no restrictions applied to the CDS view, the number of records of the CDS view constitute the number of records of the main table. All records from the main table are visible in the CDS view. Deletions of a record with regards to this CDS view only happen, if the record in the main table is deleted.
 
-Secondly the developer needs to provide the mapping between the key fields of the underlying tables and their exposure as elements in the CDS view. Please check the following figure in which you see the representation of all underlying key fields surfacing in the CDS view.
+Secondly the developer needs to provide the mapping between the key fields of the underlying tables and their exposure as elements in the CDS view. Please check the following figure in which you see the representation of all underlying key fields surfacing in the CDS view.<br>
 
 ![](/exercises/dd1/images/dd1-017a.JPG)<br><br>
-Source: [CDS based data extraction – Part II Delta Handling (blog by Simon Kranig)](https://blogs.sap.com/2019/12/16/cds-based-data-extraction-part-ii-delta-handling/).
+***Source:*** [CDS based data extraction – Part II Delta Handling](https://blogs.sap.com/2019/12/16/cds-based-data-extraction-part-ii-delta-handling/) (an excellent blog by Simon Kranig).<br><br>
 
+In case of our EPM tables, we only need to consider one key field per table, which is the field `node_key` in all cases.
+For mapping the key fields of all underlying tables to the fields of the CDS view, we use the annotation `Analytics.dataExtraction.delta.changeDataCapture.mapping`. This implies the requirement to make the key fields of all tables in the join condition elements of the ABAP CDS View.<br><br>
+
+1. Include the following code under the list of existing annotations:
+   ```abap
+   @Analytics:{
+       dataCategory: #FACT,
+       dataExtraction: {
+           enabled: true,
+           delta.changeDataCapture: {
+               mapping:
+               [{table: 'SNWD_SO',
+                 role: #MAIN,
+                 viewElement: ['SalesOrderGuid'],
+                 tableElement: ['node_key']
+                },
+                {table: 'SNWD_SO_I',
+                 role: #LEFT_OUTER_TO_ONE_JOIN,
+                 viewElement: ['ItemGuid'],
+                 tableElement: ['node_key']
+                },
+                {table: 'SNWD_PD',
+                 role: #LEFT_OUTER_TO_ONE_JOIN,
+                 viewElement: ['ProductGuid'],
+                 tableElement: ['node_key']
+                },
+                {table: 'SNWD_TEXTS',
+                 role: #LEFT_OUTER_TO_ONE_JOIN,
+                 viewElement: ['TextGuid'],
+                 tableElement: ['node_key']
+                }
+               ]
+          }
+       }
+   }
+   ```
+   ![](/exercises/dd1/images/dd1-018a.JPG)<br><br>
+
+2. ***Save*** (CTRL+S or ![](/exercises/dd1/images/1-008a.JPG)) and ***Activate*** (CTRL+F3 or ![](/exercises/dd1/images/1-008b.JPG)) the CDS View.<br><br>
+
+3. Verify the results in the ***Data Preview*** by pressing ***F8***. The ABAP CDS View should still provide the same data as before delta-enabling.<br><br>
 
 
 ## Deep Dive 1.5 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines
