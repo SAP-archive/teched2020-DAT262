@@ -1,8 +1,8 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Triggering the execution of a function module in a remote S/4HANA system
 
-In this exercise, we will create...
+In this exercise, we will trigger the execution of an ABAP Function Module in a remote S/4HANA system.
 
-## Exercise 2.1 Sub Exercise 1 Description
+## Exercise 2.1 - Making custom ABAP Operators available in SAP Data Intelligence
 
 After completing these steps you will have created...
 
@@ -16,7 +16,7 @@ response->set_text( |Hello ABAP World! | ).
 
 
 
-## Exercise 2.2 Sub Exercise 2 Description
+## Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders
 
 After completing these steps you will have...
 
