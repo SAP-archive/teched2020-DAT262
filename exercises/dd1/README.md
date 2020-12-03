@@ -293,17 +293,17 @@ In principal, you can leverage the following approach:
 ![](images/dd1-020b.JPG)<br><br>
 
 3.	A new Pipeline canvas opens and the design focus automatically changes to the ***Operators*** tab (see left side). Drag the ***ABAP CDS Reader*** icon from the Operator list and drop it onto the canvas. Then do one click on the ***ABAP CDS Reader*** node in the canvas and open the configuration panel by clicking on the related symbol.<br><br>
-![](images/dd2-021b.JPG)<br><br>
+![](images/dd1-021b.JPG)<br><br>
 
 4.	In the configuration panel of the ***ABAP CDS Reader***, enter the following parameters:
-      - ABAP Connection: **`S4_RFC_TechEd`**
-      - Version: select ABAP CDS Reader V2 or enter **`com.sap.abap.cds.reader.v2`**
-      - Subscription Type: **`NEW`**
-      - Subscription Name: e.g. **`TechEd_SoExtractCDS001`**
-      - ABAP CDS Name: **`Z_CDS_EPM_SO`** (the name that we have given to the CDS View in ADT)
-      - Transfer Mode: **`Replication`** (we want to run the Initial Load and then automatically going into delta mode)
-      - Records per roundtrip: leave as-is<br><br>
-      ![](images/dd2-022b.JPG)<br><br>
+    - ABAP Connection: **`S4_RFC_TechEd`**
+    - Version: select ABAP CDS Reader V2 or enter **`com.sap.abap.cds.reader.v2`**
+    - Subscription Type: **`NEW`**
+    - Subscription Name: e.g. **`TechEd_SoExtractCDS001`**
+    - ABAP CDS Name: **`Z_CDS_EPM_SO`** (the name that we have given to the CDS View in ADT)
+    - Transfer Mode: **`Replication`** (we want to run the Initial Load and then automatically going into delta mode)
+    - Records per roundtrip: leave as-is<br><br>
+    ![](images/dd1-022b.JPG)<br><br>
 
 5.	Drag the ***Terminal*** operator icon from the Operator list and drop it onto the canvas. Then connect the ***output port of the ABA CDS Reader operator*** with the ***input port of the Terminal operator***. When prompted to choose a converter from message to string data type, choose the first option (only message body gets forwarded).<br><br>
 ![](images/dd1-023b.JPG)<br><br>
