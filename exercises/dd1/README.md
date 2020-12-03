@@ -283,16 +283,50 @@ In the next session, we test the Initial Load and Delta Load capabilities with a
 
 ## Deep Dive 1.5 - Integrate ABAP CDS Views in SAP Data Intelligence Pipelines
 
-For the integration of ABAP CDS Views in S/4HANA, SAP Data Intelligence provides standard operators that can easily be configured according to your use cases.
+For the integration of ABAP CDS Views in S/4HANA, SAP Data Intelligence provides standard ABAP operator shells that can easily be configured according to your use cases.
 In principal, you can leverage the following approach:
 
-1. 
+1.	Logon to SAP Data Intelligence to access the Launchpad application and click on the ***Modeler*** tile.<br><br>
+![](images/dd1-019b.JPG)<br><br>
+
+2.	In the DI Modeler, make sure the ***Graphs*** tab is in scope of the Modeler UI (see left side) and click the ***+*** symbol in order to create a new Pipeline.<br><br>
+![](images/dd1-020b.JPG)<br><br>
+
+3.	A new Pipeline canvas opens and the design focus automatically changes to the ***Operators*** tab (see left side). Drag the ***ABAP CDS Reader*** icon from the Operator list and drop it onto the canvas. Then do one click on the ***ABAP CDS Reader*** node in the canvas and open the configuration panel by clicking on the related symbol.<br><br>
+![](images/dd2-021b.JPG)<br><br>
+
+4.	In the configuration panel of the ***ABAP CDS Reader***, enter the following parameters:
+   - ABAP Connection: **`S4_RFC_TechEd`**
+   - Version: select ABAP CDS Reader V2 or enter **`com.sap.abap.cds.reader.v2`**
+   - Subscription Type: **`NEW`**
+   - Subscription Name: e.g. **`TechEd_SoExtractCDS001`**
+   - ABAP CDS Name: **`Z_CDS_EPM_SO`** (the name that we have given to the CDS View in ADT)
+   - Transfer Mode: **`Replication`** (we want to run the Initial Load and then automatically going into delta mode)
+   - Records per roundtrip: leave as-is<br><br>
+   ![](images/dd2-022b.JPG)<br><br>
+
+5.	Drag the ***Terminal*** operator icon from the Operator list and drop it onto the canvas. Then connect the ***output port of the ABA CDS Reader operator*** with the ***input port of the Terminal operator***. When prompted to choose a converter from message to string data type, choose the first option (only message body gets forwarded).<br><br>
+![](images/dd1-023b.JPG)<br><br>
+
+6.	***Save*** and ***Run*** the Pipeline. When the Pipeline status has changed from *pending* to *running*, open the Terminal UI (right mouse click on the Terminal node in the canvas.<br><br>
+![](images/dd1-024b.JPG)<br><br>
+
+7.	In the Terminal UI, we can now see the EPM Sales Order data of the Initial Load, according to our join condition that we have specified in the ABAP CDS View.<br><br>
+![](images/dd1-025b.JPG)<br><br>
+
+8.	In order to verify if the delta-enablement in the ABAP CDS View was successful, we create some Sales Order objects in S/4HANA using the transaction **`SEPM_DG`**. We expect that there will be new entries in the Pipeline Terminal UI in SAP Data Intelligence as well.<br><br>
+![](images/dd1-026b.JPG)<br><br>
+
+8.	Success! In the Terminal UI in SAP Data Intelligence, the new batch of records has instantly arrived. The new records are flagged with "U", hence are updates.<br><br>
+![](images/dd1-026b.JPG)<br><br>
+
+
 
 ## Summary
 
-to be completed
-
-Continue to [Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](../dd2/README.md)
+We will leverage the ABAP CDS Views in the following Exercises for a more comprehensive use case.<br>
+But before we do so, we still should take a closer look at SAP Data Intelligence's capabilities with regard to the integration of Function Module calls to S/4HANA.<br>
+We now continue to [Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](../dd2/README.md)
 
 
 
