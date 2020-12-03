@@ -52,7 +52,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders](exercises/ex2#exercise-22-sub-exercise-2-description)
 
 Here is a graphical overview about the topics and processes that we will focus on during this hands-on workshop and how they relate to each other.<br><br>
-![](images/workshop_overview.JPG)<br><br>
+![](workshop_overview.JPG)<br><br>
 
 ## How to obtain support
 
