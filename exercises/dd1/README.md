@@ -325,7 +325,7 @@ In principal, you can leverage the following approach:
 ## Summary
 
 We will leverage the ABAP CDS Views in the following Exercises for a more comprehensive use case.<br>
-But before we do so, we still should take a closer look at SAP Data Intelligence's capabilities with regard to the integration of Function Module calls to S/4HANA.<br>
+But before we do so, we still should take a closer look at SAP Data Intelligence's capabilities with regard to the integration of Function Module calls to S/4HANA.<br><br>
 We now continue to [Deep Dive 2 - Calling an ABAP function module in SAP S/4HANA from SAP Data Intelligence](../dd2/README.md)
 
 
