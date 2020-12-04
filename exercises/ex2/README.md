@@ -59,14 +59,14 @@ After completing these steps you will have created a Pipeline that triggers the 
 With this Pipeline setup, we can - from the Terminal UI - trigger the ABAP Operator call and the reception of confirmation message at the same time.<br><br>
 ![](/exercises/ex2/images/ex2-008b.JPG)<br><br>
 
-8. ***Save*** the Pipeline and enter the following parameters prompted in the pop-up windows:<br><br>
+8. ***Save*** the Pipeline and enter the following parameters prompted in the pop-up windows:<br>
    - Name: `teched.XXXX.EPM_FM_Call_SO_Generator`, where XXXX is your user name, for example "teched.TA99.EPM_FM_Call_SO_Generator"
    - Description: `XXXX - Generate EPM SO data via ABAP FM call`, where XXXX is your user name, for example "TA99 - Generate EPM SO data via ABAP FM call"
    - Category: `dat262'.
 ![](/exercises/ex2/images/ex2-009b.JPG)<br><br>
 
 9.	In the pop-up windows, select the **"Creation of EPM Sales Order"** option. Then click ***OK***.<br><br>
-![](/exercises/ex2/images/ex2-009b.JPG)<br><br>
+![](/exercises/ex2/images/ex2-010b.JPG)<br><br>
 
 
 
