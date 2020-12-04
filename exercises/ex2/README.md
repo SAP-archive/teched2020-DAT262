@@ -22,10 +22,10 @@ FYI, the following lines in the Local Class `lcl_process`, which instantiated by
 <br>
 You are asked to leverage this Custom ABAP Operator in this exercise with the goals to
 - experience how the execution of ABAP Function Modules in a remote S/4HANA system can be triggered from SAP Data Intelligence Pipeline and
-- finally have an approach to change data on the Enterprise Procurement Model in S/4HANA in order to verify the delta capabilities of the ABAP CDS Views and your Pipeline implementations.<br>
+- finally have an approach to change data on the Enterprise Procurement Model in S/4HANA in order to verify the delta capabilities of the ABAP CDS Views and your Pipeline implementations.<br><br>
 
 >**Important Note**<br>
->Please consider that we are working on the same central data basis (the EPM tables in S/4HANA) which is used by all workshop participants. Hence, Sales Order records that you create by using the Custom ABAP Operator will become change data for all session participants
+>Please consider that we are working on the same central data basis (the EPM tables in S/4HANA) which is used by all workshop participants. Hence, Sales Order records that you create by using the Custom ABAP Operator will become change data for all session participants.
 
 ## Exercise 2.1 - Making custom ABAP Operators available in SAP Data Intelligence
 
