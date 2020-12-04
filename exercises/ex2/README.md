@@ -77,7 +77,7 @@ In the next section, you can leverage this remote data generation option to veri
 
 ## Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders
 
-You can now test the delta processing capabilities of the ABAP CDS View based data extraction. For so doing, you may use the Pipeline for Sales Orders replications and enrichment
+You can now test the delta processing capabilities of the ABAP CDS View based data extraction. For so doing, you may use the Pipeline for Sales Orders replications and enrichment that you have built in [Exercise 1.4 - Extend the Pipeline for joining Sales Order with Customer data for each change in Sales Orders and persist results in S3]()
 
 
 ...currently being reworked.
