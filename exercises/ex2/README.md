@@ -5,7 +5,7 @@
 So far, we have missed to proof whether or not our ABAP CDS Views and the consuming Data Intelligence Pipelines are really providing delta information. This would require access to the S/4HANA system in order to conduct changes on the data basis, hence on the Business Partner table or on the Sales Order object.
 
 The Enterprise Procurement Model (EPM) demo application comes with a report that allows you to generate EPM Sales Order data. This report **`SEPM_DG_EPM_STD_CHANNEL`** can be started with the transaction **`SEPM_DG`** in S/4HANA.<br><br>
-Here is an example how the Report looks like in the SAP GUI:<br><br>
+Here is an example of how the Report looks like in the SAP GUI:<br><br>
 ![](/exercises/ex2/images/ex2-000b.JPG)<br><br>
 
 As a matter of fact, we couldn't provide an SAP GUI based access to the connected S/4HANA system. For still being able to trigger changes on EPM data in that system, we have created a variant of the above report **`SEPM_DG_EPM_STD_CHANNEL`** and a Custom ABAP Operator **`customer.teched.socreate`** which executes this report variant.<br><br>
