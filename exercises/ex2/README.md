@@ -49,10 +49,10 @@ After completing these steps you will have created a Pipeline that calls a Funct
 
 ## Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders
 
-...to be continued.
+...currently being reworked.
 
 
 
 ## Summary
 
-...to be continued.
+...currently being reworked.
