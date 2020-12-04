@@ -5,9 +5,8 @@ So far, we have missed to proof whether or not our ABAP CDS Views and the consum
 The Enterprise Procurement Model (EPM) demo application comes with a report that allows you to generate EPM Sales Order data. This report **`SEPM_DG_EPM_STD_CHANNEL`** can be started with the transaction **`SEPM_DG`** in S/4HANA.<br><br>
 ![](/exercises/ex2/images/ex2-000b.JPG)<br><br>
 
-As a matter of fact, we couldn't provide an SAP GUI based access to the connected S/4HANA system.
-
-For still being able to trigger changes on EPM data in that system, we have 
+As a matter of fact, we couldn't provide an SAP GUI based access to the connected S/4HANA system. For still being able to trigger changes on EPM data in that system, we have created a variant of the above report **`SEPM_DG_EPM_STD_CHANNEL`** and a Custom ABAP Operator **`customer.teched.socreate`** which executes this report variant.<br>
+FYI, the following line in the Local Class `lcl_process` of the Operator Class `ZCL_DHAPE_OPER_CREATE_SO` which is instantiated by its `NEW_PROCES( )` method implemets this functionality:
 
 ```abap
   METHOD on_data.
@@ -15,7 +14,7 @@ For still being able to trigger changes on EPM data in that system, we have
     mo_in->read_copy( IMPORTING ea_data = lv_data ).
 
     SUBMIT SEPM_DG_EPM_STD_CHANNEL USING SELECTION-SET 'SEPM_TECHED_SO' AND RETURN.
-    lv_data = 'Your entry: ' && lv_data && '. --> One additional EPM Sales Order with five related Sales Order Items created.'.
+    lv_data = ' --> One additional EPM Sales Order with five related Sales Order Items created.'.
 
     mo_out->write_copy( lv_data ).
   ENDMETHOD.
