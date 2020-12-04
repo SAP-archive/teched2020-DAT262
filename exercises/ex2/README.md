@@ -99,7 +99,7 @@ You can now test the delta processing capabilities of the ABAP CDS View based da
 7. In the Browser switch back to the ***Wiretap UI*** of your Replication and Enrichment Pipeline. You should now see that a message with new records came in, which all have the "U" indicator for Updates. This verifies the delta-enablement of the ABAP CDS View and the immediate integration with Data Intelligence.<br><br>
 ![](/exercises/ex2/images/ex2-018b.JPG)<br><br>
 
-8. Now throws one last inspecting glance at the files on S3. Here, you can again use the data browser feature in the Data Intelligence ***Metadata Explorer***. Open the application via the Launchpad.<br><br>
+8. Now please throw one last inspecting glance at the files on S3. Here, you can again use the data browser feature in the Data Intelligence ***Metadata Explorer***. Open the application via the Launchpad.<br><br>
 ![](/exercises/ex2/images/ex2-019b.JPG)<br><br>
 
 9. In the Metadata Explorer main screen, click on ***Browse Connections***.<br><br>
