@@ -48,10 +48,10 @@ After completing these steps you will have created a Pipeline that triggers the 
 ![](/exercises/ex2/images/ex2-005b.JPG)<br><br>
 
 4. In the configuration panel for the ***Custom ABAP Operator***, specify the S/4HANA Connection: Select `S4_RFC_TechEd`. Then click on the ***ABAP Operator*** selection icon.<br><br>
-![](/exercises/ex2/images/ex1-006b.JPG)<br><br>
+![](/exercises/ex2/images/ex2-006b.JPG)<br><br>
 
 5. In the pop-up windows, select the **"Creation of EPM Sales Order"** option. Then click ***OK***.<br><br>
-![](/exercises/ex2/images/ex1-007b.JPG)<br><br>
+![](/exercises/ex2/images/ex2-007b.JPG)<br><br>
 
 7. From the list of Operators, drag the ***Terminal*** operator into the Pipeline canvas. Connect **the output port of the Custom ABAP Operator with the input port of the Terminal operator**. Then connect the **output port of the Terminal operator with the input port of the Custom ABAP Operator**.<br>
 With this Pipeline setup, we can - from the Terminal UI - trigger the ABAP Operator call and the reception of confirmation message at the same time.<br><br>
@@ -60,10 +60,10 @@ With this Pipeline setup, we can - from the Terminal UI - trigger the ABAP Opera
    - Name: `teched.XXXX.EPM_FM_Call_SO_Generator`, where XXXX is your user name, for example "teched.TA99.EPM_FM_Call_SO_Generator"
    - Description: `XXXX - Generate EPM SO data via ABAP FM call`, where XXXX is your user name, for example "TA99 - Generate EPM SO data via ABAP FM call"
    - Category: `dat262'.
-![](/exercises/ex2/images/ex1-008b.JPG)<br><br>
+![](/exercises/ex2/images/ex2-008b.JPG)<br><br>
 
 9.	In the pop-up windows, select the **"Creation of EPM Sales Order"** option. Then click ***OK***.<br><br>
-![](/exercises/ex2/images/ex1-009b.JPG)<br><br>
+![](/exercises/ex2/images/ex2-009b.JPG)<br><br>
 
 
 
