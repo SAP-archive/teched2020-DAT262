@@ -6,7 +6,7 @@ The Enterprise Procurement Model (EPM) demo application comes with a report that
 ![](/exercises/ex2/images/ex2-000b.JPG)<br><br>
 
 As a matter of fact, we couldn't provide an SAP GUI based access to the connected S/4HANA system. For still being able to trigger changes on EPM data in that system, we have created a variant of the above report **`SEPM_DG_EPM_STD_CHANNEL`** and a Custom ABAP Operator **`customer.teched.socreate`** which executes this report variant.<br>
-FYI, the following line in the Local Class `lcl_process` of the Operator Class `ZCL_DHAPE_OPER_CREATE_SO` which is instantiated by its `NEW_PROCES( )` method implemets this functionality:
+FYI, the following lines in the Local Class `lcl_process`, instantiated by the `NEW_PROCES( )` method of the Operator Class `ZCL_DHAPE_OPER_CREATE_SO` implements this functionality:
 
 ```abap
   METHOD on_data.
