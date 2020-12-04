@@ -5,8 +5,8 @@ So far, we have missed to proof whether or not our ABAP CDS Views and the consum
 The Enterprise Procurement Model (EPM) demo application comes with a report that allows you to generate EPM Sales Order data. This report **`SEPM_DG_EPM_STD_CHANNEL`** can be started with the transaction **`SEPM_DG`** in S/4HANA.<br><br>
 ![](/exercises/ex2/images/ex2-000b.JPG)<br><br>
 
-As a matter of fact, we couldn't provide an SAP GUI based access to the connected S/4HANA system. For still being able to trigger changes on EPM data in that system, we have created a variant of the above report **`SEPM_DG_EPM_STD_CHANNEL`** and a Custom ABAP Operator **`customer.teched.socreate`** which executes this report variant.<br>
-FYI, the following lines in the Local Class `lcl_process`, instantiated by the `NEW_PROCES( )` method of the Operator Class `ZCL_DHAPE_OPER_CREATE_SO` implements this functionality:
+As a matter of fact, we couldn't provide an SAP GUI based access to the connected S/4HANA system. For still being able to trigger changes on EPM data in that system, we have created a variant of the above report **`SEPM_DG_EPM_STD_CHANNEL`** and a Custom ABAP Operator **`customer.teched.socreate`** which executes this report variant.<br><br>
+FYI, the following lines in the Local Class `lcl_process`, which instantiated by the `NEW_PROCES( )` method of the Operator Class `ZCL_DHAPE_OPER_CREATE_SO`, implements this functionality:
 
 ```abap
   METHOD on_data.
@@ -19,12 +19,17 @@ FYI, the following lines in the Local Class `lcl_process`, instantiated by the `
     mo_out->write_copy( lv_data ).
   ENDMETHOD.
 ```
+<br>
+You are asked to leverage this Custom ABAP Operator in this exercise with the goals to
+- experience how the execution of ABAP Function Modules in a remote S/4HANA system can be triggered from SAP Data Intelligence Pipeline and
+- finally have an approach to change data on the Enterprise Procurement Model in S/4HANA in order to verify the delta capabilities of the ABAP CDS Views and your Pipeline implementations.<br>
 
-In this exercise, we will trigger the execution of an ABAP Function Module in a remote S/4HANA system.
+>**Important Note**<br>
+>Please consider that we are working on the same central data basis (the EPM tables in S/4HANA) which is used by all workshop participants. Hence, Sales Order records that you create by using the Custom ABAP Operator will become change data for all session participants
 
 ## Exercise 2.1 - Making custom ABAP Operators available in SAP Data Intelligence
 
-After completing these steps you will have created a Pipeline that calls a Function Module in the connected S/4HANA and return a confirmation text.
+After completing these steps you will have created a Pipeline that triggers the execution of a Function Module in the connected S/4HANA for EPM data generation.
 
 1. Log on to SAP Data Intelligence and enter the Launchpad application. Then start the ***Modeler*** application.
    - Follow the link to your assigned Data Intelligence instance, e.g. https://vsystem.ingress.xyz.dhaas-live.shoot.live.k8s-hana.ondemand.com/app/datahub-app-launchpad/.
