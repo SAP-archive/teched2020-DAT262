@@ -65,9 +65,14 @@ With this Pipeline setup, we can - from the Terminal UI - trigger the ABAP Opera
    - Category: `dat262'.
 ![](/exercises/ex2/images/ex2-009b.JPG)<br><br>
 
-9.	In the pop-up windows, select the **"Creation of EPM Sales Order"** option. Then click ***OK***.<br><br>
+9.	***Run*** your Pipeline. After the Pipeline status has changed from ***pending*** to ***running***, right-click on the ***Terminal*** operator and click on ***Open UI***.<br><br>
 ![](/exercises/ex2/images/ex2-010b.JPG)<br><br>
 
+10.	In the Terminal UI, put the ***cursor to the prompt line ('SDH >')*** on the lower section of the UI and press ***RETURN***. In the upper part of the UI, you can then see the confirmation from the S/4HANA ABAP Operator than one Sales Order Header record and five related Sales Order Items have been generated.<br><br>
+![](/exercises/ex2/images/ex2-011b.JPG)<br><br>
+
+***Congratilations***, you have successfully implemented a Data Intelligence Pipeline that triggers the execution of a function module in S/4HANA and allows direct interaction!
+In the next section, you can leverage this remote data generation option to verify the delta capabilities of our previously built Pipelines for ABAP CDS View based data replication.<br><br>
 
 
 ## Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders
