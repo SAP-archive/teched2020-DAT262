@@ -177,7 +177,7 @@ In the next section, we'll also take care for the Sales Order transaction data f
 6.	The ABAP CDS Reader operator shell has received the operator's metadata from S/4HANA and has configured the Pipeline node (for example, the operator now has an output port). Now fill in the configuration parameters in the panel:
       - Label: `Sales Order - S/4 ABAP CDS`
       - Subscription Type: `New`
-      - Subscription Name: `SO001_XXXX`, where XXXX is your user name, for example "BP002_TA99"
+      - Subscription Name: `SO001_XXXX`, where XXXX is your user name, for example "SO001_TA99"
       - ABAP CDS Name: `Z_CDS_SO_SOI_Delta`, which is the "more complex" CDS View that got created in the Deep Dive 1 demo
       - Transfer Mode: `Replication`
       - Leave all other parameters as-is.<br><br>
