@@ -45,7 +45,11 @@ Here is how these tables relate to each other:<br>
 
 ## Access to the exercise Data Intelligence environment
 
-All participant should have received the URL of the assigned SAP Data Intelligence tenant and an individual user/password combination, e.g.
+All participants are requested to register for a user name on the workshop specific SAP Data Intelligence tenant. For so doing, please follow the link to the [Data Intelligence User Registration Tool](https://register.cfapps.eu10.hana.ondemand.com/).<br>
+In the **Workshop** selection list, choose the hands-on session you have registered for:
+S/4 
+
+should have registered  the URL of the assigned SAP Data Intelligence tenant and an individual user/password combination, e.g.
 - URL to SAP Data Intelligence: https://vsystem.ingress.dh-xyz.dhaas-live.xyz.xyz.k8s-hana.ondemand.com/login/?redirectUrl=%2Fapp%2Fdatahub-app-launchpad%2F
 - User: TAXX
 - PW: Welcome00
