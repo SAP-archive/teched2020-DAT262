@@ -328,10 +328,10 @@ A new copy of the operator is being included in the Pipeline canvas.<br><br>
 19. Now mark the buttom occurrences of the output fields "C10" to "C18" (of Join_Input2!) and delete these.<br><br>
 ![](/exercises/ex1/images/ex1-074b.JPG)<br><br>
 
-20. Click on the ***pencil*** icon in the line of field "C8" in order to edit the entry. Rename **`C8`** to **`Customer_Name`**. Click ***OK***.<br><br>
+20. Click on the ***pencil*** icon in the line of field "C8" in order to edit the entry. Rename **`C8`** to **`CUSTOMER_NAME`**. Click on the white space in the the form, then ***OK***.<br><br>
 ![](/exercises/ex1/images/ex1-075b.JPG)<br><br>
 
-21. Click on the ***pencil*** icon in the line of field "C9" in order to edit the entry. Rename that field from **`C9`** to **`LEGAL_FORM`**. Click ***OK***.<br><br>
+21. Click on the ***pencil*** icon in the line of field "C9" in order to edit the entry. Rename that field from **`C9`** to **`LEGAL_FORM`**. Click on the white space in the the form, then ***OK***. (Renaming the fields was necessary in order to avoid double names).<br><br>
 ![](/exercises/ex1/images/ex1-076b.JPG)<br><br>
 
 22. Navigate back.<br><br>
