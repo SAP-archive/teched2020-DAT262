@@ -43,7 +43,7 @@ The relevant tables for our scenario are
 Here is how these tables relate to each other:<br>
 ![](images/epm-001b.JPG)<br><br>
 
-## Access to the exercise Data Intelligence environment
+## Access to the exercises' Data Intelligence environment
 
 All participants are requested to register for a **individual user name and password** on the workshop specific **SAP Data Intelligence tenant**.<br>
 For so doing, please follow the link to the **[Data Intelligence User Registration Tool](https://register.cfapps.eu10.hana.ondemand.com/)**.<br>
