@@ -94,7 +94,7 @@ Now connect the **output port of the ABAP CDS Reader** with the **input port of 
 4. The message format from the Wiretap operator output must be transformed to a file format. For this reason you are prompted to choose an appropriate converter operator. On the pop-up window, select the first option (transfer the content). Click ***OK***.<br><br>
 ![](/exercises/ex1/images/ex1-022b.JPG)<br><br>
 
-5. Click on the ***Write File*** operator and click its ***configuration*** icon.<br><br>
+5. Click on the ***Write File*** operator and click its ***configuration*** icon. (As a reminder: You can always take a look into the online documentation of each standard Pipeline operator, by clicking on the "Show Documentation" icon ![](/exercises/ex1/images/Show_Documentation.JPG) on the upper right side of the Modeler UI above the configuration panel).<br><br>
 ![](/exercises/ex1/images/ex1-023b.JPG)<br><br>
 
 6. Enter the needed configuration parameters for the ***Write File*** operator. These are:
