@@ -62,9 +62,10 @@ In the **Workshop** selection list, choose the hands-on session you are register
 ![](images/DI_User_Registration_Tool.JPG)
 
 
-After you have successfully obtained your credentials for the SAP Data Intelligence system, you can log on using the following URL:
-- **https://vsystem.ingress.dh-6srbrjhsl.dh-canary.shoot.live.k8s-hana.ondemand.com/login/?tenant=dat262**<br>
-- The tenant name is ***default***. User credential as received from the user registration service described above.<br>
+After you have successfully obtained your credentials for the SAP Data Intelligence system, you can log on as follows:
+- in a Chrome or Firefox Browser, open the link to: **https://vsystem.ingress.dh-6srbrjhsl.dh-canary.shoot.live.k8s-hana.ondemand.com/login/?tenant=dat262**
+- the tenant name is ***default***. User credential as received from the user registration service described above
+- the logon process is also introduced step-by-step in the exercise sections.
 
 The SAP Data Intelligence environment that is assigned to this hands-on workshop already contains a Connection of type RFC to the backend SAP S/4HANA system set up (see also in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage this existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop. 
 
@@ -75,4 +76,4 @@ After you have now made yourself familiar with
 - the Enterprise Procurement Model (EPM) as the data basis for our Deep Dive demos and Exercises,
 - and your credentials and the approach for accessing SAP Data Intelligence
 
-please continue to [Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence](../dd1/README.md).
+please continue to **[Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence](../dd1/README.md)**.
