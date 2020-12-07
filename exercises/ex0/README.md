@@ -49,8 +49,8 @@ All participants are requested to register for a **individual user name and pass
 For so doing, please follow the link to the **[Data Intelligence User Registration Tool](https://register.cfapps.eu10.hana.ondemand.com/)**.<br>
 
 In the **Workshop** selection list, choose the hands-on session you are registered for:
-- ***DAT262_1*** - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On for the session on **Tuesday, December 8th 2020, from 08:50pm to 10:50pm UTC**
-- ***DAT262_2*** - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On for the session on **Wednesday, December 9th 2020, from 08:50am to 10:50am UTC**
+- "**DAT262_1** - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On" for the session on **Tuesday, December 8th 2020, from 08:50pm to 10:50pm UTC**
+- "**DAT262_2*** - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On" for the session on **Wednesday, December 9th 2020, from 08:50am to 10:50am UTC**
 <br>
 
 >***Important Note***
@@ -58,6 +58,7 @@ In the **Workshop** selection list, choose the hands-on session you are register
 >- ***DAT262_1***: On Tuesday, December 8th 2020, from 10:00am UTC to 11:00pm UTC
 >- ***DAT262_2***: From Tuesday, December 8th 2020, 02:00pm UTC to Wednesday, December 9th 2020,11:00am UTC
 <br>
+
 ![](images/DI User Registration Tool.JPG)
 
 
