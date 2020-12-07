@@ -19,7 +19,7 @@ In certain scenarios, it is required to enhance the scope of a data-driven appli
 
 Other than during the on-site TechEd events in the past years, it was not feasible to provide the Eclipse based ABAP Development Tools (ADT) and the SAP GUI to our participants in the this year's virtual version of the TechEd. But it is a goal of this workshop to show and get the hands on the complete end-to-end implementation processes of ABAP integration with SAP Data Intelligence.<br>
 - For this reason, all parts of this session that require these (local) applications will be presented as ***live Deep Dive demos***, conducted in ADT and in SAP S/4HANA **by the trainer**,
-- The ***Exercises*** - in opposite - are then intended to be performed by the participants in SAP Data Intelligence and will leverage those objects in S/4HANA that got created during the Deep Dive sections.<br><br>
+- The ***Exercises*** - in opposite - are then intended to be performed **by the participants** in SAP Data Intelligence and will leverage those objects in S/4HANA that got created during the Deep Dive sections.<br><br>
 
 
 ## Short introduction to the Enterprise Procurement Model (EPM) in SAP S/4HANA
