@@ -65,7 +65,7 @@ For so doing, please follow the link to the **[Data Intelligence User Registrati
 
 After you have successfully obtained your credentials for the SAP Data Intelligence system, you can log on as follows:
 - in a Chrome or Firefox Browser, open the link to: **https://vsystem.ingress.dh-6srbrjhsl.dh-canary.shoot.live.k8s-hana.ondemand.com/login/?tenant=dat262**
-- the tenant name is ***default***. User credential as received from the user registration service described above
+- the tenant name is ***dat262***. User credential as received from the user registration service described above
 - the logon process is also introduced step-by-step in the exercise sections.
 
 The SAP Data Intelligence environment that is assigned to this hands-on workshop already contains a Connection of type RFC to the backend SAP S/4HANA system set up (see also in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage this existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop.<br><br>
