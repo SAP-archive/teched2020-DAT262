@@ -45,9 +45,21 @@ Here is how these tables relate to each other:<br>
 
 ## Access to the exercise Data Intelligence environment
 
-All participants are requested to register for a user name on the workshop specific SAP Data Intelligence tenant. For so doing, please follow the link to the [Data Intelligence User Registration Tool](https://register.cfapps.eu10.hana.ondemand.com/).<br>
-In the **Workshop** selection list, choose the hands-on session you have registered for:
-S/4 
+All participants are requested to register for a **user name** on the workshop specific **SAP Data Intelligence tenant**.<br>
+For so doing, please follow the link to the **[Data Intelligence User Registration Tool](https://register.cfapps.eu10.hana.ondemand.com/)**.<br>
+
+In the **Workshop** selection list, choose the hands-on session you are registered for:
+- ***DAT262_1 - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On*** for the session on Tuesday, December 8th 2020, from 08:50pm to 10:50pm UTC
+- ***DAT262_2 - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On*** for the session on Wednesday, December 9th 2020, from 08:50am to 10:50am UTC
+<br>
+
+>***Important Note***
+>The user name registration service for the workshop Data Intelligence system is possible during the following timeslots
+>- DAT262_1: On Tuesday, December 8th 2020, from 10:00am UTC to 11:00pm UTC
+>- DAT262_2: From Tuesday, December 8th 2020, 02:00pm UTC to Wednesday, December 9th 2020,11:00am UTC
+
+
+DI User Registration Tool.JPG
 
 should have registered  the URL of the assigned SAP Data Intelligence tenant and an individual user/password combination, e.g.
 - URL to SAP Data Intelligence: https://vsystem.ingress.dh-xyz.dhaas-live.xyz.xyz.k8s-hana.ondemand.com/login/?redirectUrl=%2Fapp%2Fdatahub-app-launchpad%2F
