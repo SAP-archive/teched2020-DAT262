@@ -15,9 +15,9 @@ After completing these steps you will have created a Pipeline that reads EPM Cus
 
 1. Log on to SAP Data Intelligence and enter the Launchpad application. Then start the ***Modeler*** application.
    - Follow the link to your assigned Data Intelligence instance, i.e. https://vsystem.ingress.dh-6srbrjhsl.dh-canary.shoot.live.k8s-hana.ondemand.com/login/?tenant=dat262.
-   - The tenant name should be ***"dat262"***.<br><br>
-   - In the next pop-up window, enter you assigned user name (e.g. ***"TA99"***) and your password (initially ***"Welcome01"***).<br><br>
-   ![](/exercises/ex1/images/ex1-002b.JPG)<br><br>
+   - The tenant name should be ***"dat262"***.
+   - In the next pop-up window, enter your assigned user name (e.g. ***"TA99"***) and your individual password received from the user registration.<br><br>
+   ![](/exercises/ex1/images/ex1-002c.JPG)<br><br>
    - From the Launchpad, start the ***Modeler*** application by clicking on the corresponding tile.<br><br>
    ![](/exercises/ex1/images/ex1-003b.JPG)<br><br>
 
