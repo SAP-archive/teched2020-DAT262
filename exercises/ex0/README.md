@@ -45,12 +45,12 @@ Here is how these tables relate to each other:<br>
 
 ## Access to the exercise Data Intelligence environment
 
-All participants are requested to register for a **user name** on the workshop specific **SAP Data Intelligence tenant**.<br>
+All participants are requested to register for a **individual user name and password** on the workshop specific **SAP Data Intelligence tenant**.<br>
 For so doing, please follow the link to the **[Data Intelligence User Registration Tool](https://register.cfapps.eu10.hana.ondemand.com/)**.<br>
 
 In the **Workshop** selection list, choose the hands-on session you are registered for:
-- ***DAT262_1 - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On*** for the session on Tuesday, December 8th 2020, from 08:50pm to 10:50pm UTC
-- ***DAT262_2 - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On*** for the session on Wednesday, December 9th 2020, from 08:50am to 10:50am UTC
+- ***DAT262_1*** - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On for the session on ***Tuesday, December 8th 2020, from 08:50pm to 10:50pm UTC***
+- ***DAT262_2*** - Integrating SAP S/4HANA into SAP Data Intelligence - Deep Dive and Hands-On for the session on ***Wednesday, December 9th 2020, from 08:50am to 10:50am UTC***
 <br>
 
 >***Important Note***
@@ -58,15 +58,14 @@ In the **Workshop** selection list, choose the hands-on session you are register
 >- DAT262_1: On Tuesday, December 8th 2020, from 10:00am UTC to 11:00pm UTC
 >- DAT262_2: From Tuesday, December 8th 2020, 02:00pm UTC to Wednesday, December 9th 2020,11:00am UTC
 
+![](images/DI User Registration Tool.JPG)
 
-DI User Registration Tool.JPG
 
-should have registered  the URL of the assigned SAP Data Intelligence tenant and an individual user/password combination, e.g.
-- URL to SAP Data Intelligence: https://vsystem.ingress.dh-xyz.dhaas-live.xyz.xyz.k8s-hana.ondemand.com/login/?redirectUrl=%2Fapp%2Fdatahub-app-launchpad%2F
-- User: TAXX
-- PW: Welcome00
+After you have successfully obtained your credentials for the SAP Data Intelligence system, you can log on using the following URL:
+https://vsystem.ingress.dh-6srbrjhsl.dh-canary.shoot.live.k8s-hana.ondemand.com/login/?tenant=dat262<br>
+The tenant name is ***default***. User credential as received from the user registration service described above.<br><br>
 
-All SAP Data Intelligence environments that are used for this hands-on workshop already have a Connection of type RFC to the backend SAP S/4HANA system set up (see in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage the existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop. 
+The SAP Data Intelligence environment that is assigned to this hands-on workshop already contains a Connection of type RFC to the backend SAP S/4HANA system set up (see also in DI Connection Management). In the Pipelines that you create in SAP Data Intelligence, you can leverage this existing RFC Connection and find and integrate the provided CDS Views and custom ABAP Operators that were implemented during the Deep Dive parts of the workshop. 
 
 ## Next Step
 
