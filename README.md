@@ -38,6 +38,7 @@ The Deep Dive live demos and the hands-on Exercise contents reflect the above sc
 Since it is a goal of this workshop to show and get the hands on the complete end-to-end implementation processes of ABAP integration with SAP Data Intelligence, all parts of this session that require these (local) applications will be presented as **live Deep Dive demos, conducted in ADT and in SAP S/4HANA by the trainer**, the **Exercises - in opposite - are then performed by the participants** in SAP Data Intelligence and will leverage those artifacts in S/4HANA that got created during the Deep Dive demos.<br><br>
 
 - **[Overview and Getting Started](exercises/ex0/)**
+     - [Deep Dive demos vs. Exercises](exercises/ex0#deep-dive-vs-exercise-sections-in-this-document)
 
 - **[Short introduction to the Enterprise Procurement Model (EPM) in ABAP systems](exercises/ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana)**
 
