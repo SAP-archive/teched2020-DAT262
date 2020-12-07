@@ -56,7 +56,7 @@ For so doing, please follow the link to the **[Data Intelligence User Registrati
 
 >***Important Note***
 >The user name registration service for the workshop's Data Intelligence system is available during the following timeslots
->- ***DAT262_1***: On Tuesday, December 8th 2020, from 10:00am UTC to 11:00pm UTC
+>- ***DAT262_1***: On Tuesday, December 8th 2020, from 11:30am UTC to 11:00pm UTC
 >- ***DAT262_2***: From Tuesday, December 8th 2020, 02:00pm UTC to Wednesday, December 9th 2020,11:00am UTC
 <br>
 
