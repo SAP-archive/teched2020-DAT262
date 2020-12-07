@@ -319,7 +319,7 @@ A new copy of the operator is being included in the Pipeline canvas.<br><br>
 16. Double-click on the ***Join*** operation.<br><br>
 ![](/exercises/ex1/images/ex1-069b.JPG)<br><br>
 
-17. Re-arrange the position of input tables on the canvas as per your convenience and then connect the **"C5" field of Join_Input1** with the **"C0" field of Join_Input2**. This will map the Customer GUID fields of the two tables.<br><br>
+17. Re-arrange the position of input tables on the canvas as per your convenience and then connect the **"C5" field of Join_Input1** (Sales Order) with the **"C0" field of Join_Input2** (Customer). This will map the Customer GUID fields of the two tables. We're using an INNER JOIN.<br><br>
 ![](/exercises/ex1/images/ex1-070b.JPG)<br><br>
 
 18. Proceed to tab ***Columns*** in order to select the output fields. Click on the ***Auto map by name*** icon (see red box), which enter all fields of the two input nodes to the list of output fields. Then mark the buttom occurrences of the output fields "C0" to "C7" (of Join_Input2!) and delete these.<br><br>
