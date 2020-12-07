@@ -59,7 +59,7 @@ In the **Workshop** selection list, choose the hands-on session you are register
 >- ***DAT262_2***: From Tuesday, December 8th 2020, 02:00pm UTC to Wednesday, December 9th 2020,11:00am UTC
 <br>
 
-![](images/DI User Registration Tool.JPG)
+![](images/DI_User_Registration_Tool.JPG)
 
 
 After you have successfully obtained your credentials for the SAP Data Intelligence system, you can log on using the following URL:
