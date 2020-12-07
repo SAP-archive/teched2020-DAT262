@@ -39,8 +39,10 @@ Since it is a goal of this workshop to show and get the hands on the complete en
 
 - **[Overview and Getting Started](exercises/ex0/)**
      - [Deep Dive demos vs. Exercises](exercises/ex0#deep-dive-vs-exercise-sections-in-this-document)
+     - [Short introduction to the Enterprise Procurement Model (EPM) in ABAP systems](exercises/ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana)
+     - fsdf
+     - fffsd
 
-- **[Short introduction to the Enterprise Procurement Model (EPM) in ABAP systems](exercises/ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana)**
 
 - **[Deep Dive 1 - ABAP CDS View based data extraction in SAP Data Intelligence](exercises/dd1/)**
     - [Deep Dive 1.1 - Create a simple ABAP CDS View in ABAP Develoment Tools (ADT)](exercises/dd1#deep-dive-11---create-a-simple-abap-cds-view-in-adt)
