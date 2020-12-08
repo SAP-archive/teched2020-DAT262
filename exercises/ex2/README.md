@@ -134,7 +134,7 @@ Bengt Mertens and Tobias Koebler<br><br>
 
 **************************************************
 
-**Related TechEd Lectures and Workshops**
+**Related TechEd2020 Lectures and Workshops**
 
 - [Introduction to SAP Data Intelligence [DAT111]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750108001uev5)
 - [Road Map: SAP Data Intelligence [DAT829]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751546001uZ7S)
