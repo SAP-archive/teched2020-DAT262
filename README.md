@@ -68,9 +68,9 @@ Since it is a goal of this workshop to show and get the hands on the complete en
 
 ## How to obtain support
 
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.<br><br>
+Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.<br>
 
-In case you have problems with implementing the pipelines, you can download (and then import into Data Intelligence Modeler) the example pipelines here:
+In case you have problems with implementing the pipelines, you can download (and then import into Data Intelligence Modeler) the example pipelines here (right-click --> save link as):
 - [Customer Master Data Replication Pipeline](https://github.com/SAP-samples/teched2020-DAT262/blob/main/pipelines/teched.TA99.EPM_Customer_Replication_to_S3.json)
 - [Sales Order Replication Pipeline](https://github.com/SAP-samples/teched2020-DAT262/blob/main/pipelines/teched.TA99.EPM_SalesOrder_Replication_to_S3.json)
 - [Sales Order Replication and Enrichment Pipeline](https://github.com/SAP-samples/teched2020-DAT262/blob/main/pipelines/teched.TA99.EPM_SalesOrder_Replication_Enrich_to_S3.json)
