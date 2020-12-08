@@ -13,8 +13,6 @@ As a matter of fact, it was neither possible to make the ABAP Development Tools 
 You can find more information about CDS in the **[ABAP keyword documentation](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abencds.htm)** and the **[SAP Community](https://community.sap.com/topics/abap)**.<br>
 <br>
 Starting with SAP S/4HANA Cloud 1905 and SAP S/4HANA 1909 FPS01 (on-premise), **Change Data Capture (CDC)** is supported for ABAP CDS Views. After an ABAP CDS View is enabled for this delta method, changes in tables belonging to this view are recorded by the CDC mechanism. From a technology perspective, this delta method makes use of real-time database triggers on table level based on SLT technology.<br>INSERT, UPDATE and DELETE operations can be recorded by the framework.<br>
-- In case of an **INSERT** or **UPDATE** operation a scheduled job is selecting the records based on these key combinations from the CDS view and pushes them as complete records into the Operational Delta Queue (ODQ).
-- In case of a **DELETE** operation the job generates an empty record with just the key field(s) filled, sets the deletion indicator and hands them over to ODQ.
 
 Those who are interesed in more information about Change Data Capture for ABAP CDS Views may like to read the related part of the **[Data Intelligence - ABAP Integration Guide](https://help.sap.com/viewer/3a65df0ce7cd40d3a61225b7d3c86703/Cloud/en-US/55b2a17f987744cba62903e97dd99aae.html)** or the blog **[CDS based data extraction – Part II Delta Handling](https://blogs.sap.com/2019/12/16/cds-based-data-extraction-part-ii-delta-handling/)**.<br><br>
 
