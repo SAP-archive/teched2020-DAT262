@@ -68,7 +68,10 @@ Since it is a goal of this workshop to show and get the hands on the complete en
 
 ## How to obtain support
 
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.<br><br>
+
+In case you have problems with implementing the pipelines, you can download (and then import into Data Intelligence Modeler) the example pipelines here:
+- [Customer Master Data Replication Pipeline](images/teched.TA99.EPM_Customer_Replication_to_S3.json)
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
