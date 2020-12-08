@@ -81,6 +81,7 @@ please continue to **[Deep Dive 1 - ABAP CDS View based data extraction in SAP D
 
 *****************************************************
 
+<br> **Table of Contents / Navigation**
 
 - **[Overview and Getting Started](exercises/ex0/)**
      - [Deep Dive demos vs. Exercises](exercises/ex0#deep-dive-vs-exercise-sections-in-this-document)
