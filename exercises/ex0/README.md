@@ -84,7 +84,7 @@ please continue to **[Deep Dive 1 - ABAP CDS View based data extraction in SAP D
 
 <br> **Table of Contents / Navigation**
 
-- **[Overview and Getting Started](exercises/ex0/)**
+- **[Overview and Getting Started](../exercises/ex0/)**
      - [Deep Dive demos vs. Exercises](exercises/ex0#deep-dive-vs-exercise-sections-in-this-document)
      - [Short introduction to the Enterprise Procurement Model (EPM) in ABAP systems](exercises/ex0#short-introduction-to-the-enterprise-procurement-model-epm-in-sap-s4hana)
      - [Access to the exercises' Data Intelligence environment](exercises/ex0#access-to-the-exercises-data-intelligence-environment)
