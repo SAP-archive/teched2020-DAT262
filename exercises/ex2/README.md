@@ -130,8 +130,22 @@ More information can be found [here](https://blogs.sap.com/2019/10/29/abap-integ
 
 **THANK YOU VERY MUCH** for having participated in this Deep Dive and Hands On workshop. We hope you have enjoyed it!
 
-Bengt Mertens and Tobias Koebler
+Bengt Mertens and Tobias Koebler<br><br>
 
 **************************************************
 
-Related TechEd Lectures and Workshops
+**Related TechEd Lectures and Workshops**
+
+- [Introduction to SAP Data Intelligence [DAT111]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750108001uev5)
+- [Road Map: SAP Data Intelligence [DAT829]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751546001uZ7S)
+- [Integrating SAP S/4HANA into SAP Data Intelligence [DAT206]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751031001uFT1)
+- [Integrating SAP S/4HANA into SAP Data Intelligence: Overview and Use Cases [DAT203]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750868001ucdH)
+- [Create and Manage End-to-End Data Pipelines with SAP Data Intelligence [DAT263]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751331001uH22)
+- [How SAP Data Intelligence Supports Your Data Governance Projects [DAT112]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750159001uApr)
+- [A Data Governance Journey with SAP Data Intelligence [DAT163]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750580001uaPx)
+- [Create Data Flows Covering Both SAP and Non-SAP Using SAP Data Intelligence [DAT164]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750632001uCze)
+- [SAP Data Intelligence: Extensibility & Business Content [DAT942]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751700001uDa1)
+- [Hybrid Data Management SAP Data Intelligence Cloud [DAT110]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750055001ucgf)
+- [Expert Q&A on SAP Data Intelligence [DAT943]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751752001uc3V)
+- [SAP Data Intelligence as Part of SAP HANA Cloud [ST102]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1603382154918001u9LA)
+- 
