@@ -144,8 +144,8 @@ Bengt Mertens and Tobias Koebler<br><br>
 - [How SAP Data Intelligence Supports Your Data Governance Projects [DAT112]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750159001uApr)
 - [A Data Governance Journey with SAP Data Intelligence [DAT163]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750580001uaPx)
 - [Create Data Flows Covering Both SAP and Non-SAP Using SAP Data Intelligence [DAT164]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750632001uCze)
+- [Upscaling to Hybrid: EIM and SAP Data Intelligence [DAT205]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750978001u6PR)
 - [SAP Data Intelligence: Extensibility & Business Content [DAT942]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751700001uDa1)
 - [Hybrid Data Management SAP Data Intelligence Cloud [DAT110]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555750055001ucgf)
 - [Expert Q&A on SAP Data Intelligence [DAT943]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1602555751752001uc3V)
 - [SAP Data Intelligence as Part of SAP HANA Cloud [ST102]](https://events.sapteched.com/widget/sap/sapteched2020/Catalog/session/1603382154918001u9LA)
-- 
