@@ -64,7 +64,7 @@ Since it is a goal of this workshop to show and get the hands on the complete en
     - [Exercise 2.2 - Using a custom ABAP Operator to verify your Delta Replication of EPM Sales Orders](exercises/ex2#exercise-22---using-a-custom-abap-operator-to-verify-your-delta-replication-of-epm-sales-orders)
 
 <br>Here is a graphical overview about the topics and processes that we will focus on during this hands-on workshop and how they relate to each other.<br><br>
-![](workshop_overview.JPG)<br><br>
+![](DAT262_Workshop_Scenarios.JPG)<br><br>
 
 ## How to obtain support
 
