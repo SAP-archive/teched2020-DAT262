@@ -131,3 +131,7 @@ More information can be found [here](https://blogs.sap.com/2019/10/29/abap-integ
 **THANK YOU VERY MUCH** for having participated in this Deep Dive and Hands On workshop. We hope you have enjoyed it!
 
 Bengt Mertens and Tobias Koebler
+
+**************************************************
+
+Related TechEd Lectures and Workshops
