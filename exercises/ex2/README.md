@@ -112,7 +112,7 @@ You can now test the delta processing capabilities of the ABAP CDS View based da
 ![](/exercises/ex2/images/ex2-023b.JPG)<br><br>
 
 12. You can now see that also the processing of the delta data within the Pipeline to S3 worked seamlessly. The delta records contain the enrichments and the "U" indicator that with which updates are flagged by the ABAP CDS View CDC framework.<br><br>
-![](/exercises/ex2/images/ex2-020b.JPG)<br><br>
+![](/exercises/ex2/images/ex2-024b.JPG)<br><br>
 
 **Very well done!** You successfully followed the integration approach for data processing and functional execution between S/4HANA and SAP Data Intelligence and know how to realize such implementations.
 
