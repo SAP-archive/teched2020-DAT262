@@ -1,5 +1,7 @@
 # DAT262 - Integrating SAP S/4HANA into SAP Data Intelligence: Deep Dive and Hands On
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DAT262)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DAT262)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session called<br>
